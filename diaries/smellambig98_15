@@ -1,0 +1,199 @@
+PsychJavaTrouble: Will now try to add the PsychJava folder to Matlabs dynamic classpath...
+PsychJavaTrouble: Added PsychJava folder to dynamic class path. Psychtoolbox Java commands should work now!
+
+
+PTB-INFO: This is Psychtoolbox-3 for Apple OS X, under Matlab (Version 3.0.8 - Build date: Jun 18 2010).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the GNU General Public License (GPL).
+PTB-INFO: See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+
+
+OpenGL-Extensions are: GL_ARB_transpose_matrix GL_ARB_vertex_program GL_ARB_vertex_blend GL_ARB_window_pos GL_ARB_shader_objects GL_ARB_vertex_shader GL_ARB_shading_language_100 GL_EXT_multi_draw_arrays GL_EXT_clip_volume_hint GL_EXT_rescale_normal GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_gpu_program_parameters GL_EXT_geometry_shader4 GL_EXT_transform_feedback GL_APPLE_client_storage GL_APPLE_specular_vector GL_APPLE_transform_hint GL_APPLE_packed_pixels GL_APPLE_fence GL_APPLE_vertex_array_object GL_APPLE_vertex_program_evaluators GL_APPLE_element_array GL_APPLE_flush_render GL_APPLE_aux_depth_stencil GL_NV_texgen_reflection GL_NV_light_max_exponent GL_IBM_rasterpos_clip GL_SGIS_generate_mipmap GL_ARB_imaging GL_ARB_point_parameters GL_ARB_texture_env_crossbar GL_ARB_texture_border_clamp GL_ARB_multitexture GL_ARB_texture_env_add GL_ARB_texture_cube_map GL_ARB_texture_env_dot3 GL_ARB_multisample GL_ARB_texture_env_combine GL_ARB_texture_compression GL_ARB_texture_mirrored_repeat GL_ARB_shadow GL_ARB_depth_texture GL_ARB_shadow_ambient GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_occlusion_query GL_ARB_point_sprite GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ARB_pixel_buffer_object GL_ARB_draw_buffers GL_ARB_shader_texture_lod GL_ARB_color_buffer_float GL_ARB_half_float_vertex GL_ARB_texture_rg GL_ARB_texture_compression_rgtc GL_ARB_framebuffer_object GL_EXT_compiled_vertex_array GL_EXT_draw_buffers2 GL_EXT_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_texture_rectangle GL_ARB_texture_rectangle GL_EXT_texture_env_add GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_texture_lod_bias GL_EXT_abgr GL_EXT_bgra GL_EXT_stencil_wrap GL_EXT_texture_filter_anisotropic GL_EXT_separate_specular_color GL_EXT_secondary_color GL_EXT_blend_func_separate GL_EXT_shadow_funcs GL_EXT_stencil_two_side GL_EXT_texture_compression_s3tc GL_EXT_texture_compression_dxt1 GL_EXT_texture_sRGB GL_EXT_blend_equation_separate GL_EXT_texture_mirror_clamp GL_EXT_packed_depth_stencil GL_EXT_bindable_uniform GL_EXT_texture_integer GL_EXT_gpu_shader4 GL_EXT_framebuffer_sRGB GL_EXT_provoking_vertex GL_APPLE_flush_buffer_range GL_APPLE_ycbcr_422 GL_APPLE_rgb_422 GL_APPLE_vertex_array_range GL_APPLE_texture_range GL_APPLE_float_pixels GL_ATI_texture_float GL_ARB_texture_float GL_ARB_half_float_pixel GL_APPLE_pixel_buffer GL_APPLE_object_purgeable GL_NV_blend_square GL_NV_fog_distance GL_NV_conditional_render GL_ATI_texture_mirror_once GL_ATI_blend_equation_separate GL_ATI_blend_weighted_minmax GL_ATI_texture_env_combine3 GL_ATI_separate_stencil GL_ATI_texture_compression_3dc GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_SGI_color_matrix GL_EXT_texture_array GL_EXT_vertex_array_bgra GL_ARB_instanced_arrays GL_ARB_depth_buffer_float GL_EXT_packed_float GL_EXT_texture_shared_exponent 
+
+
+
+PTB-INFO: OpenGL-Renderer is ATI Technologies Inc. :: ATI Radeon HD 2600 PRO OpenGL Engine :: 2.1 ATI-1.6.26
+PTB-INFO: Renderer has 256 MB of VRAM and a maximum 245 MB of texture memory.
+PTB-INFO: VBL startline = 1200 , VBL Endline = -1
+PTB-INFO: Beamposition queries unsupported on this system. Will try to use kernel-level vbl interrupts as fallback.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.600290 ms [60.239912 Hz]. (50 valid samples taken, stddev=0.038496 ms.)
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Using OpenGL GL_TEXTURE_RECTANGLE_EXT extension for efficient high-performance texture mapping...
+
+
+Huettel Risk/Ambiguity: 
+
+
+trial 1
+opt1type: 3, opt1val1: 0, opt1val2: 45, opt1prob: 0
+opt2type: 1, opt2val1: 14, opt2val2: 0, opt2prob: 1
+choice onset: 0.0269842 
+RT: 2.11483, key: 1!
+chose option: 2
+choice made: 2.16285
+opt 1 angle: 4.86623, prob: 0, side: 2 
+opt 2 angle: 4.70974, prob: 6.28319, side: 2
+outcome: 14, non-chosen outcome: 45
+outcome revealed: 3.24406
+
+trial 2
+opt1type: 3, opt1val1: 45, opt1val2: 0, opt1prob: 1
+opt2type: 1, opt2val1: 25, opt2val2: 0, opt2prob: 1
+choice onset: 5.87004 
+RT: 0.487277, key: 1!
+chose option: 1
+choice made: 6.37649
+opt 1 angle: 0.589834, prob: 6.28319, side: 1 
+opt 2 angle: 1.04968, prob: 6.28319, side: 1
+outcome: 45, non-chosen outcome: 25
+outcome revealed: 7.39995
+
+trial 3
+opt1type: 3, opt1val1: 15, opt1val2: 0, opt1prob: 1
+opt2type: 1, opt2val1: 12, opt2val2: 0, opt2prob: 1
+choice onset: 7.85427 
+RT: 0.463358, key: 1!
+chose option: 1
+choice made: 8.32748
+opt 1 angle: 0.614474, prob: 6.28319, side: 1 
+opt 2 angle: 2.79813, prob: 6.28319, side: 1
+outcome: 15, non-chosen outcome: 12
+outcome revealed: 9.34284
+
+trial 4
+opt1type: 3, opt1val1: 0, opt1val2: 25, opt1prob: 0.25
+opt2type: 1, opt2val1: 20, opt2val2: 0, opt2prob: 1
+choice onset: 9.6618 
+RT: 0.373609, key: 1!
+chose option: 1
+choice made: 10.0479
+opt 1 angle: 4.00489, prob: 1.5708, side: 1 
+opt 2 angle: 5.57375, prob: 6.28319, side: 1
+outcome: 25, non-chosen outcome: 20
+outcome revealed: 11.0688
+
+trial 5
+opt1type: 3, opt1val1: 45, opt1val2: 0, opt1prob: 0.5
+opt2type: 1, opt2val1: 25, opt2val2: 25, opt2prob: 1
+choice onset: 11.2242 
+RT: 0.325622, key: 1!
+chose option: 2
+choice made: 11.5598
+opt 1 angle: 3.44042, prob: 3.14159, side: 2 
+opt 2 angle: 4.00913, prob: 6.28319, side: 2
+outcome: 25, non-chosen outcome: 0
+outcome revealed: 12.5794
+
+trial 6
+opt1type: 3, opt1val1: 50, opt1val2: 0, opt1prob: 0.5
+opt2type: 1, opt2val1: 5, opt2val2: 5, opt2prob: 1
+choice onset: 12.733 
+RT: 0.375605, key: 1!
+chose option: 1
+choice made: 13.1202
+opt 1 angle: 0.924751, prob: 3.14159, side: 1 
+opt 2 angle: 4.31806, prob: 6.28319, side: 1
+outcome: 50, non-chosen outcome: 5
+outcome revealed: 14.1408
+
+trial 7
+opt1type: 3, opt1val1: 0, opt1val2: 40, opt1prob: 1
+opt2type: 1, opt2val1: 10, opt2val2: 10, opt2prob: 1
+choice onset: 14.2102 
+RT: 0.331245, key: 1!
+chose option: 2
+choice made: 14.5534
+opt 1 angle: 4.91094, prob: 6.28319, side: 2 
+opt 2 angle: 1.50476, prob: 6.28319, side: 2
+outcome: 10, non-chosen outcome: 0
+outcome revealed: 15.5673
+
+trial 8
+opt1type: 3, opt1val1: 15, opt1val2: 0, opt1prob: 0
+opt2type: 1, opt2val1: 14, opt2val2: 14, opt2prob: 1
+choice onset: 15.8001 
+RT: 0.271707, key: 1!
+chose option: 2
+choice made: 16.0876
+opt 1 angle: 6.18078, prob: 0, side: 2 
+opt 2 angle: 4.94455, prob: 6.28319, side: 2
+outcome: 14, non-chosen outcome: 0
+outcome revealed: 17.1114
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 7 times out of a total of 522 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+load('/Users/grace/Dropbox/odor530/smellambig/data/smellambig88.mat')
+data.HuettelData
+
+ans =
+
+  Columns 1 through 7
+
+            2           20            8          0.5            1           12            0
+            2           20            4         0.75            2           50           10
+            3           35            0         0.25            1           12            0
+            3           35            0         0.25            2           20           12
+
+  Columns 8 through 14
+
+            1            1       17.951            1            8           12    0.0098193
+         0.25            4       18.583            2           10            4       31.954
+            1            4       3.0952            2           12           35       62.517
+         0.25            4       5.9331            2           12           35       77.677
+
+  Columns 15 through 16
+
+       17.969       25.914
+       50.544       58.474
+       65.636       69.632
+       83.615       87.616
+
+load('/Users/grace/Dropbox/odor530/smellambig/data/smellambig98.mat')
+data.HuettelData
+
+ans =
+
+  Columns 1 through 7
+
+            3            0           45            0            1           14            0
+            3           45            0            1            1           25            0
+            3           15            0            1            1           12            0
+            3            0           25         0.25            1           20            0
+            3           45            0          0.5            1           25           25
+            3           50            0          0.5            1            5            5
+            3            0           40            1            1           10           10
+            3           15            0            0            1           14           14
+
+  Columns 8 through 14
+
+            1            1       2.1148            2           14           45     0.026984
+            1            1      0.48728            1           45           25         5.87
+            1            1      0.46336            1           15           12       7.8543
+            1            1      0.37361            1           25           20       9.6618
+            1            1      0.32562            2           25            0       11.224
+            1            1       0.3756            1           50            5       12.733
+            1            1      0.33124            2           10            0        14.21
+            1            1      0.27171            2           14            0         15.8
+
+  Columns 15 through 16
+
+       2.1629       3.2441
+       6.3765       7.3999
+       8.3275       9.3428
+       10.048       11.069
+        11.56       12.579
+        13.12       14.141
+       14.553       15.567
+       16.088       17.111
+
+builtin('cd','/Users/grace/Dropbox/odor530/smellambig/stim');

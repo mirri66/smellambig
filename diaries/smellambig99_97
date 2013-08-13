@@ -1,0 +1,187 @@
+{Warning: The RandStream.setDefaultStream static method will be removed in a future release.
+Use RandStream.setGlobalStream instead.} 
+{> In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012a\toolbox\matlab\randfun\@RandStream\RandStream.m',456,1)">RandStream.RandStream>RandStream.setDefaultStream at 456</a>
+  In <a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\Stanford-PsychToolBox\functions\exptSetup.m',8,1)">exptSetup at 8</a>
+  In <a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\smellambig\smellambig.m',60,1)">smellambig at 60</a>} 
+PsychJavaTrouble: Will now try to add the PsychJava folder to Matlabs dynamic classpath...
+{Warning: Objects of minivas class exist - not clearing java} 
+{> In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012a\toolbox\matlab\general\javaclasspath.m',375,1)">javaclasspath>doclear at 375</a>
+  In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012a\toolbox\matlab\general\javaclasspath.m',192,1)">javaclasspath>local_javapath at 192</a>
+  In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012a\toolbox\matlab\general\javaclasspath.m',117,1)">javaclasspath at 117</a>
+  In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012a\toolbox\matlab\general\javaaddpath.m',69,1)">javaaddpath at 69</a>
+  In <a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychJava\PsychJavaTrouble.m',83,1)">PsychJavaTrouble at 83</a>
+  In <a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\Stanford-PsychToolBox\functions\exptSetup.m',10,1)">exptSetup at 10</a>
+  In <a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\smellambig\smellambig.m',60,1)">smellambig at 60</a>} 
+PsychJavaTrouble: Added PsychJava folder to dynamic class path. Psychtoolbox Java commands should work now!
+PTB-INFO: Multi-display setup in explicit multi-display mode detected. Using the following mapping:
+PTB-INFO: Screen 0 corresponds to the full Windows desktop area. Useful for stereo presentations in stereomode=4 ...
+PTB-INFO: Screen 1 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY1 ...
+PTB-INFO: Screen 2 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY2 ...
+PTB-WARNING: Screens 1 and 2 do have non-equal width and height. This will probably cause wrong behaviour
+PTB-WARNING: when trying to open a fullscreen window on Screen 0 that is supposed to fully cover displays 1 and 2.
+PTB-WARNING: In that case, either change your screen settings to matching size and refresh rate in the display control
+PTB-WARNING: panel and retry after a 'clear all', or manually specify a [rect] parameter for the window in the
+PTB-WARNING: Screen('OpenWindow', 0, [color], [rect]); command to manually enforce creation of a proper onscreen window.
+
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab (Version 3.0.9 - Build date: Apr  2 2012).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Will disable DWM because a regular fullscreen onscreen window is opened -> We want best timing and performance.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: Quadro 400/PCIe/SSE2 :: 3.3.0
+PTB-INFO: VBL startline = 1200 , VBL Endline = 1199
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.680404 ms [59.950587 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.675434 ms [59.968453 Hz]. (148 valid samples taken, stddev=0.199763 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.949153 ms [59.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Support for fast OffscreenWindows enabled.
+
+
+Huettel Risk/Ambiguity: 
+
+odor on: 0.000588733
+
+opt1type: 3, opt1val1: 20, opt1val2: 0, opt1prob: 0.5
+opt2type: 1, opt2val1: 16, opt2val2: 10, opt2prob: 0.75
+choice onset: 6.15093 
+RT: 9.76725, key: 1!
+chose option: 2
+choice made: 15.9372
+odor off: 17.9579
+opt 1 angle: 0.00112301, prob: 3.14159, side: 2 
+opt 2 angle: 5.17531, prob: 4.71239, side: 2
+outcome: 10, non-chosen outcome: 20
+outcome revealed: 21.9847
+odor on: 26.0169
+
+opt1type: 3, opt1val1: 30, opt1val2: 0, opt1prob: 0.25
+opt2type: 2, opt2val1: 25, opt2val2: 8, opt2prob: 0.5
+choice onset: 32.0714 
+RT: 3.63783, key: 4$
+chose option: 2
+choice made: 35.7275
+odor off: 37.7422
+opt 1 angle: 0.15537, prob: 1.5708, side: 1 
+opt 2 angle: 6.1742, prob: 3.14159, side: 1
+outcome: 8, non-chosen outcome: 30
+outcome revealed: 41.6869
+odor on: 49.7142
+
+opt1type: 3, opt1val1: 18, opt1val2: 0, opt1prob: 0.5
+opt2type: 2, opt2val1: 12, opt2val2: 30, opt2prob: 1
+choice onset: 55.777 
+RT: 16.4295, key: 4$
+chose option: 2
+choice made: 72.2224
+odor off: 74.2379
+opt 1 angle: 5.4809, prob: 3.14159, side: 1 
+opt 2 angle: 6.20814, prob: 6.28319, side: 1
+outcome: 12, non-chosen outcome: 0
+outcome revealed: 80.1521
+odor on: 86.1794
+
+opt1type: 3, opt1val1: 26, opt1val2: 0, opt1prob: 0.25
+opt2type: 2, opt2val1: 17, opt2val2: 0, opt2prob: 0.5
+choice onset: 92.2405 
+RT: 13.6623, key: 1!
+chose option: 1
+choice made: 105.918
+odor off: 107.932
+opt 1 angle: 4.28186, prob: 1.5708, side: 1 
+opt 2 angle: 3.05717, prob: 3.14159, side: 1
+outcome: 0, non-chosen outcome: 17
+outcome revealed: 109.919
+odor on: 113.954
+
+opt1type: 2, opt1val1: 20, opt1val2: 0, opt1prob: 0.5
+opt2type: 1, opt2val1: 15, opt2val2: 0, opt2prob: 1
+choice onset: 120.007 
+RT: 5.4096, key: 1!
+chose option: 2
+choice made: 125.422
+odor off: 127.433
+opt 1 angle: 1.64442, prob: 3.14159, side: 2 
+opt 2 angle: 0.852487, prob: 6.28319, side: 2
+outcome: 15, non-chosen outcome: 20
+outcome revealed: 131.382
+odor on: 135.405
+
+opt1type: 3, opt1val1: 11, opt1val2: 0, opt1prob: 0.25
+opt2type: 2, opt2val1: 8, opt2val2: 0, opt2prob: 0.25
+choice onset: 141.464 
+RT: 3.68558, key: 4$
+chose option: 1
+choice made: 145.166
+odor off: 147.182
+opt 1 angle: 5.64675, prob: 1.5708, side: 2 
+opt 2 angle: 5.44387, prob: 1.5708, side: 2
+outcome: 0, non-chosen outcome: 0
+outcome revealed: 151.144
+odor on: 159.171
+
+opt1type: 2, opt1val1: 15, opt1val2: 0, opt1prob: 0.25
+opt2type: 2, opt2val1: 30, opt2val2: 10, opt2prob: 1
+choice onset: 165.23 
+RT: 4.76503, key: 1!
+chose option: 2
+choice made: 170.014
+odor off: 172.035
+opt 1 angle: 3.07491, prob: 1.5708, side: 2 
+opt 2 angle: 2.19476, prob: 6.28319, side: 2
+outcome: 30, non-chosen outcome: 0
+outcome revealed: 174.013
+odor on: 180.04
+
+opt1type: 3, opt1val1: 12, opt1val2: 9, opt1prob: 0.5
+opt2type: 1, opt2val1: 18, opt2val2: 0, opt2prob: 1
+choice onset: 186.097 
+{Operation terminated by user during <a href="matlab:helpUtils.errorDocCallback('KbCheck', 'C:\toolbox\Psychtoolbox\PsychBasic\KbCheck.m', 214)" style="font-weight:bold">KbCheck</a> (<a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychBasic\KbCheck.m',214,0)">line 214</a>)
+
+In <a href="matlab:helpUtils.errorDocCallback('GetKey', 'C:\Users\experimenter\Dropbox\odor530\GT-PTB\GetKey.m', 64)" style="font-weight:bold">GetKey</a> (<a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\GT-PTB\GetKey.m',64,0)">line 64</a>)
+    [keyIsDown,press_time,keyArr] = KbCheck(deviceNum);
+
+In <a href="matlab:helpUtils.errorDocCallback('smellHuettelRisk>HuettelTrial', 'C:\Users\experimenter\Dropbox\odor530\smellambig\scripts\smellHuettelRisk.m', 385)" style="font-weight:bold">smellHuettelRisk>HuettelTrial</a> (<a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\smellambig\scripts\smellHuettelRisk.m',385,0)">line 385</a>)
+[testTrials.key testTrials.RT] = GetKey({'1!','4$'},[],[],-3);
+
+In <a href="matlab:helpUtils.errorDocCallback('smellHuettelRisk', 'C:\Users\experimenter\Dropbox\odor530\smellambig\scripts\smellHuettelRisk.m', 302)" style="font-weight:bold">smellHuettelRisk</a> (<a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\smellambig\scripts\smellHuettelRisk.m',302,0)">line 302</a>)
+    data = HuettelTrial(c,v,xx,opt1type, opt1val1,opt1val2,opt1prob,opt2type,
+    opt2val1,opt2val2,opt2prob);
+
+In <a href="matlab:helpUtils.errorDocCallback('smellambig', 'C:\Users\experimenter\Dropbox\odor530\smellambig\smellambig.m', 71)" style="font-weight:bold">smellambig</a> (<a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\smellambig\smellambig.m',71,0)">line 71</a>)
+[HuettelData] = smellHuettelRisk(c,v);
+} 
+sca
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 16 times out of a total of 1589 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+smellambig
+PsychJavaTrouble: Will now try to add the PsychJava folder to Matlabs dynamic classpath...
+PsychJavaTrouble: Added PsychJava folder to dynamic class path. Psychtoolbox Java commands should work now!
+
+ans =
+
+C:\Users\experimenter\Dropbox\odor530\smellambig
+
+Welcome!
+What is the subject number? (0-99): 99

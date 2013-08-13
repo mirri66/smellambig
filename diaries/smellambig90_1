@@ -1,0 +1,143 @@
+{Warning: The RandStream.setDefaultStream static method will be removed in a future release.
+Use RandStream.setGlobalStream instead.} 
+{> In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012a\toolbox\matlab\randfun\@RandStream\RandStream.m',456,1)">RandStream.RandStream>RandStream.setDefaultStream at 456</a>
+  In <a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\Stanford-PsychToolBox\functions\exptSetup.m',8,1)">exptSetup at 8</a>
+  In <a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\smellambig\smellambig.m',48,1)">smellambig at 48</a>} 
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab (Version 3.0.9 - Build date: Apr  2 2012).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Will disable DWM because a regular fullscreen onscreen window is opened -> We want best timing and performance.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: Quadro 400/PCIe/SSE2 :: 3.3.0
+PTB-INFO: VBL startline = 1200 , VBL Endline = 1199
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.679889 ms [59.952439 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.676966 ms [59.962947 Hz]. (174 valid samples taken, stddev=0.199944 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.949153 ms [59.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Support for fast OffscreenWindows enabled.
+
+opt1type: 1, opt1val1: 12, opt1val2: 0, opt1prob: 1
+opt2type: 2, opt2val1: 8, opt2val2: 20, opt2prob: 0.5
+choice onset: 14.002 
+RT: 1.41046, key: 1!
+chose option: 1
+choice made: 15.4214
+opt 1 angle: 3.63412, prob: 6.28319, side: 1 
+opt 2 angle: 0.23902, prob: 3.14159, side: 1
+outcome: 12, non-chosen outcome: 8
+outcome revealed: 21.4188
+
+opt1type: 1, opt1val1: 12, opt1val2: 0, opt1prob: 1
+opt2type: 3, opt2val1: 35, opt2val2: 0, opt2prob: 0.5
+choice onset: 27.4862 
+RT: 1.30975, key: 4$
+chose option: 2
+choice made: 28.8155
+opt 1 angle: 5.26517, prob: 6.28319, side: 1 
+opt 2 angle: 0.748826, prob: 3.14159, side: 1
+outcome: 35, non-chosen outcome: 12
+outcome revealed: 34.8324
+
+opt1type: 2, opt1val1: 4, opt1val2: 20, opt1prob: 0.25
+opt2type: 2, opt2val1: 10, opt2val2: 50, opt2prob: 0.75
+choice onset: 40.8769 
+RT: 7.62646, key: 1!
+chose option: 1
+choice made: 48.5243
+opt 1 angle: 5.25255, prob: 1.5708, side: 1 
+opt 2 angle: 0.0957069, prob: 4.71239, side: 1
+outcome: 20, non-chosen outcome: 10
+outcome revealed: 52.5153
+
+opt1type: 2, opt1val1: 12, opt1val2: 20, opt1prob: 0.75
+opt2type: 3, opt2val1: 35, opt2val2: 0, opt2prob: 0.25
+choice onset: 60.5658 
+RT: 0.647225, key: 1!
+chose option: 1
+choice made: 61.2282
+opt 1 angle: 3.80368, prob: 4.71239, side: 1 
+opt 2 angle: 0.244159, prob: 1.5708, side: 1
+outcome: 12, non-chosen outcome: 35
+outcome revealed: 67.2114
+
+
+Huettel Risk/Ambiguity: 
+
+
+opt1type: 2, opt1val1: 20, opt1val2: 8, opt1prob: 0.5
+opt2type: 1, opt2val1: 12, opt2val2: 0, opt2prob: 1
+choice onset: 0.00887326 
+RT: 2.78213, key: 4$
+chose option: 1
+choice made: 2.79941
+opt 1 angle: 4.84388, prob: 3.14159, side: 2 
+opt 2 angle: 4.99323, prob: 6.28319, side: 2
+outcome: 8, non-chosen outcome: 12
+outcome revealed: 6.80523
+
+opt1type: 2, opt1val1: 20, opt1val2: 4, opt1prob: 0.75
+opt2type: 2, opt2val1: 50, opt2val2: 10, opt2prob: 0.25
+choice onset: 10.8488 
+RT: 6.58012, key: 4$
+chose option: 1
+choice made: 17.4396
+opt 1 angle: 0.509546, prob: 4.71239, side: 2 
+opt 2 angle: 0.920473, prob: 1.5708, side: 2
+outcome: 20, non-chosen outcome: 50
+outcome revealed: 25.3964
+
+opt1type: 3, opt1val1: 35, opt1val2: 0, opt1prob: 0.25
+opt2type: 1, opt2val1: 12, opt2val2: 0, opt2prob: 1
+choice onset: 29.4325 
+RT: 0.749811, key: 4$
+chose option: 2
+choice made: 30.1913
+opt 1 angle: 3.56713, prob: 1.5708, side: 1 
+opt 2 angle: 1.99537, prob: 6.28319, side: 1
+outcome: 12, non-chosen outcome: 0
+outcome revealed: 36.1536
+
+opt1type: 3, opt1val1: 35, opt1val2: 0, opt1prob: 0.25
+opt2type: 2, opt2val1: 20, opt2val2: 12, opt2prob: 0.25
+choice onset: 44.1935 
+RT: 4.65935, key: 1!
+chose option: 2
+choice made: 48.863
+opt 1 angle: 1.86429, prob: 1.5708, side: 2 
+opt 2 angle: 1.10292, prob: 1.5708, side: 2
+outcome: 20, non-chosen outcome: 0
+outcome revealed: 52.8853
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 8 times out of a total of 1694 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+smellambig
+PsychJavaTrouble: Will now try to add the PsychJava folder to Matlabs dynamic classpath...
+PsychJavaTrouble: Added PsychJava folder to dynamic class path. Psychtoolbox Java commands should work now!
+
+ans =
+
+C:\Users\experimenter\Dropbox\odor530\smellambig
+
+Welcome!
+What is the subject number? (0-99): 99

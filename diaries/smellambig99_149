@@ -1,0 +1,29 @@
+java.net.ConnectException: Operation timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:432)
+	at java.net.Socket.connect(Socket.java:529)
+	at java.net.Socket.connect(Socket.java:478)
+	at java.net.Socket.<init>(Socket.java:375)
+	at java.net.Socket.<init>(Socket.java:189)
+	at minivas.connect(minivas.java:56)
+	at minivas.<init>(minivas.java:40)
+{??? Operation terminated by user during ==> <a href="matlab: opentoline('/Users/grace/Dropbox/odor530/smellambig/smellambig.m',48,0)">smellambig at 48</a>
+} 
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+smellambig
+PsychJavaTrouble: Will now try to add the PsychJava folder to Matlabs dynamic classpath...
+PsychJavaTrouble: Added PsychJava folder to dynamic class path. Psychtoolbox Java commands should work now!
+
+ans =
+
+/Users/grace/Dropbox/odor530/smellambig
+
+Welcome!
+What is the subject number? (0-99): 98

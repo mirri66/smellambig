@@ -1,0 +1,163 @@
+{Warning: The RandStream.setDefaultStream static method will be removed in a future release.
+Use RandStream.setGlobalStream instead.} 
+{> In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012a\toolbox\matlab\randfun\@RandStream\RandStream.m',456,1)">RandStream.RandStream>RandStream.setDefaultStream at 456</a>
+  In <a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\Stanford-PsychToolBox\functions\exptSetup.m',8,1)">exptSetup at 8</a>
+  In <a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\smellambig\smellambig.m',48,1)">smellambig at 48</a>} 
+PTB-INFO: Multi-display setup in explicit multi-display mode detected. Using the following mapping:
+PTB-INFO: Screen 0 corresponds to the full Windows desktop area. Useful for stereo presentations in stereomode=4 ...
+PTB-INFO: Screen 1 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY1 ...
+PTB-INFO: Screen 2 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY2 ...
+PTB-WARNING: Screens 1 and 2 do have non-equal width and height. This will probably cause wrong behaviour
+PTB-WARNING: when trying to open a fullscreen window on Screen 0 that is supposed to fully cover displays 1 and 2.
+PTB-WARNING: In that case, either change your screen settings to matching size and refresh rate in the display control
+PTB-WARNING: panel and retry after a 'clear all', or manually specify a [rect] parameter for the window in the
+PTB-WARNING: Screen('OpenWindow', 0, [color], [rect]); command to manually enforce creation of a proper onscreen window.
+
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab (Version 3.0.9 - Build date: Apr  2 2012).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Will disable DWM because a regular fullscreen onscreen window is opened -> We want best timing and performance.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: Quadro 400/PCIe/SSE2 :: 3.3.0
+PTB-INFO: VBL startline = 1200 , VBL Endline = 1199
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.680276 ms [59.951047 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.680096 ms [59.951694 Hz]. (297 valid samples taken, stddev=0.281853 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.949153 ms [59.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Support for fast OffscreenWindows enabled.
+
+opt1type: 1, opt1val1: 12, opt1val2: 0, opt1prob: 1
+opt2type: 2, opt2val1: 8, opt2val2: 20, opt2prob: 0.5
+choice onset: 110.158 
+RT: 0.70106, key: 4$
+chose option: 2
+choice made: 110.874
+opt 1 angle: 3.0864, prob: 6.28319, side: 1 
+opt 2 angle: 3.43922, prob: 3.14159, side: 1
+outcome: 20, non-chosen outcome: 12
+outcome revealed: 118.849
+
+opt1type: 1, opt1val1: 12, opt1val2: 0, opt1prob: 1
+opt2type: 3, opt2val1: 35, opt2val2: 0, opt2prob: 0.5
+choice onset: 124.931 
+RT: 4.48152, key: 4$
+chose option: 1
+choice made: 129.432
+opt 1 angle: 0.486747, prob: 6.28319, side: 2 
+opt 2 angle: 3.14669, prob: 3.14159, side: 2
+outcome: 12, non-chosen outcome: 0
+outcome revealed: 135.404
+
+opt1type: 2, opt1val1: 4, opt1val2: 20, opt1prob: 0.25
+opt2type: 2, opt2val1: 10, opt2val2: 50, opt2prob: 0.75
+choice onset: 139.445 
+RT: 7.6496, key: 1!
+chose option: 1
+choice made: 147.112
+opt 1 angle: 4.81591, prob: 1.5708, side: 1 
+opt 2 angle: 3.60814, prob: 4.71239, side: 1
+outcome: 20, non-chosen outcome: 10
+outcome revealed: 151.113
+
+opt1type: 2, opt1val1: 12, opt1val2: 20, opt1prob: 0.75
+opt2type: 3, opt2val1: 35, opt2val2: 0, opt2prob: 0.25
+choice onset: 155.159 
+RT: 315.691, key: 4$
+chose option: 2
+choice made: 470.866
+opt 1 angle: 1.27286, prob: 4.71239, side: 1 
+opt 2 angle: 4.12442, prob: 1.5708, side: 1
+outcome: 0, non-chosen outcome: 12
+outcome revealed: 478.799
+
+
+Huettel Risk/Ambiguity: 
+
+
+opt1type: 2, opt1val1: 20, opt1val2: 8, opt1prob: 0.5
+opt2type: 1, opt2val1: 12, opt2val2: 0, opt2prob: 1
+choice onset: 0.00882319 
+RT: 1.16662, key: 4$
+chose option: 1
+choice made: 1.1821
+opt 1 angle: 1.89001, prob: 3.14159, side: 2 
+opt 2 angle: 2.46905, prob: 6.28319, side: 2
+outcome: 20, non-chosen outcome: 12
+outcome revealed: 7.14444
+
+opt1type: 2, opt1val1: 20, opt1val2: 4, opt1prob: 0.75
+opt2type: 2, opt2val1: 50, opt2val2: 10, opt2prob: 0.25
+choice onset: 11.1882 
+RT: 4.99779, key: 1!
+chose option: 1
+choice made: 16.2058
+opt 1 angle: 0.90819, prob: 4.71239, side: 1 
+opt 2 angle: 4.7607, prob: 1.5708, side: 1
+outcome: 20, non-chosen outcome: 10
+outcome revealed: 20.2066
+
+opt1type: 3, opt1val1: 35, opt1val2: 0, opt1prob: 0.25
+opt2type: 1, opt2val1: 12, opt2val2: 0, opt2prob: 1
+choice onset: 26.2481 
+RT: 22.671, key: 4$
+chose option: 1
+choice made: 48.9248
+opt 1 angle: 0.651487, prob: 1.5708, side: 2 
+opt 2 angle: 2.69673, prob: 6.28319, side: 2
+outcome: 35, non-chosen outcome: 12
+outcome revealed: 56.8521
+
+opt1type: 3, opt1val1: 35, opt1val2: 0, opt1prob: 0.25
+opt2type: 2, opt2val1: 20, opt2val2: 12, opt2prob: 0.25
+choice onset: 62.8978 
+RT: 1.24007, key: 1!
+chose option: 2
+choice made: 64.1572
+opt 1 angle: 4.44594, prob: 1.5708, side: 2 
+opt 2 angle: 1.74541, prob: 1.5708, side: 2
+outcome: 12, non-chosen outcome: 0
+outcome revealed: 68.1626
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 4 times out of a total of 1930 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+smellambig
+PsychJavaTrouble: Will now try to add the PsychJava folder to Matlabs dynamic classpath...
+PsychJavaTrouble: Added PsychJava folder to dynamic class path. Psychtoolbox Java commands should work now!
+
+ans =
+
+C:\Users\experimenter\Dropbox\odor530\smellambig
+
+Welcome!
+What is the subject number? (0-99): 99
+PTB-INFO: Multi-display setup in explicit multi-display mode detected. Using the following mapping:
+PTB-INFO: Screen 0 corresponds to the full Windows desktop area. Useful for stereo presentations in stereomode=4 ...
+PTB-INFO: Screen 1 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY1 ...
+PTB-INFO: Screen 2 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY2 ...
+PTB-WARNING: Screens 1 and 2 do have non-equal width and height. This will probably cause wrong behaviour
+PTB-WARNING: when trying to open a fullscreen window on Screen 0 that is supposed to fully cover displays 1 and 2.
+PTB-WARNING: In that case, either change your screen settings to matching size and refresh rate in the display control
+PTB-WARNING: panel and retry after a 'clear all', or manually specify a [rect] parameter for the window in the
+PTB-WARNING: Screen('OpenWindow', 0, [color], [rect]); command to manually enforce creation of a proper onscreen window.
+

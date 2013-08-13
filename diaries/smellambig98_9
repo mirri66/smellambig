@@ -1,0 +1,269 @@
+PsychJavaTrouble: Will now try to add the PsychJava folder to Matlabs dynamic classpath...
+PsychJavaTrouble: Added PsychJava folder to dynamic class path. Psychtoolbox Java commands should work now!
+
+
+PTB-INFO: This is Psychtoolbox-3 for Apple OS X, under Matlab (Version 3.0.8 - Build date: Jun 18 2010).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the GNU General Public License (GPL).
+PTB-INFO: See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+
+
+OpenGL-Extensions are: GL_ARB_transpose_matrix GL_ARB_vertex_program GL_ARB_vertex_blend GL_ARB_window_pos GL_ARB_shader_objects GL_ARB_vertex_shader GL_ARB_shading_language_100 GL_EXT_multi_draw_arrays GL_EXT_clip_volume_hint GL_EXT_rescale_normal GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_gpu_program_parameters GL_EXT_geometry_shader4 GL_EXT_transform_feedback GL_APPLE_client_storage GL_APPLE_specular_vector GL_APPLE_transform_hint GL_APPLE_packed_pixels GL_APPLE_fence GL_APPLE_vertex_array_object GL_APPLE_vertex_program_evaluators GL_APPLE_element_array GL_APPLE_flush_render GL_APPLE_aux_depth_stencil GL_NV_texgen_reflection GL_NV_light_max_exponent GL_IBM_rasterpos_clip GL_SGIS_generate_mipmap GL_ARB_imaging GL_ARB_point_parameters GL_ARB_texture_env_crossbar GL_ARB_texture_border_clamp GL_ARB_multitexture GL_ARB_texture_env_add GL_ARB_texture_cube_map GL_ARB_texture_env_dot3 GL_ARB_multisample GL_ARB_texture_env_combine GL_ARB_texture_compression GL_ARB_texture_mirrored_repeat GL_ARB_shadow GL_ARB_depth_texture GL_ARB_shadow_ambient GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_occlusion_query GL_ARB_point_sprite GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ARB_pixel_buffer_object GL_ARB_draw_buffers GL_ARB_shader_texture_lod GL_ARB_color_buffer_float GL_ARB_half_float_vertex GL_ARB_texture_rg GL_ARB_texture_compression_rgtc GL_ARB_framebuffer_object GL_EXT_compiled_vertex_array GL_EXT_draw_buffers2 GL_EXT_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_texture_rectangle GL_ARB_texture_rectangle GL_EXT_texture_env_add GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_texture_lod_bias GL_EXT_abgr GL_EXT_bgra GL_EXT_stencil_wrap GL_EXT_texture_filter_anisotropic GL_EXT_separate_specular_color GL_EXT_secondary_color GL_EXT_blend_func_separate GL_EXT_shadow_funcs GL_EXT_stencil_two_side GL_EXT_texture_compression_s3tc GL_EXT_texture_compression_dxt1 GL_EXT_texture_sRGB GL_EXT_blend_equation_separate GL_EXT_texture_mirror_clamp GL_EXT_packed_depth_stencil GL_EXT_bindable_uniform GL_EXT_texture_integer GL_EXT_gpu_shader4 GL_EXT_framebuffer_sRGB GL_EXT_provoking_vertex GL_APPLE_flush_buffer_range GL_APPLE_ycbcr_422 GL_APPLE_rgb_422 GL_APPLE_vertex_array_range GL_APPLE_texture_range GL_APPLE_float_pixels GL_ATI_texture_float GL_ARB_texture_float GL_ARB_half_float_pixel GL_APPLE_pixel_buffer GL_APPLE_object_purgeable GL_NV_blend_square GL_NV_fog_distance GL_NV_conditional_render GL_ATI_texture_mirror_once GL_ATI_blend_equation_separate GL_ATI_blend_weighted_minmax GL_ATI_texture_env_combine3 GL_ATI_separate_stencil GL_ATI_texture_compression_3dc GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_SGI_color_matrix GL_EXT_texture_array GL_EXT_vertex_array_bgra GL_ARB_instanced_arrays GL_ARB_depth_buffer_float GL_EXT_packed_float GL_EXT_texture_shared_exponent 
+
+
+
+PTB-INFO: OpenGL-Renderer is ATI Technologies Inc. :: ATI Radeon HD 2600 PRO OpenGL Engine :: 2.1 ATI-1.6.26
+PTB-INFO: Renderer has 256 MB of VRAM and a maximum 245 MB of texture memory.
+PTB-INFO: VBL startline = 1200 , VBL Endline = -1
+PTB-INFO: Beamposition queries unsupported on this system. Will try to use kernel-level vbl interrupts as fallback.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.599723 ms [60.241970 Hz]. (50 valid samples taken, stddev=0.045383 ms.)
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Using OpenGL GL_TEXTURE_RECTANGLE_EXT extension for efficient high-performance texture mapping...
+
+
+Huettel Risk/Ambiguity: 
+
+
+trial 1
+opt1type: 2, opt1val1: 2, opt1val2: 18, opt1prob: 0.5
+opt2type: 2, opt2val1: 13, opt2val2: 1, opt2prob: 0.75
+choice onset: 0.0265283 
+RT: 1.55512, key: 4$
+chose option: 2
+choice made: 1.60929
+opt 1 angle: 3.33102, prob: 3.14159, side: 1 
+opt 2 angle: 3.99565, prob: 4.71239, side: 1
+outcome: 13, non-chosen outcome: 18
+outcome revealed: 2.68594
+
+trial 2
+opt1type: 2, opt1val1: 22, opt1val2: 6, opt1prob: 0.5
+opt2type: 2, opt2val1: 2, opt2val2: 26, opt2prob: 0.5
+choice onset: 5.00425 
+RT: 0.990561, key: 1!
+chose option: 1
+choice made: 6.00669
+opt 1 angle: 3.02561, prob: 3.14159, side: 1 
+opt 2 angle: 0.267266, prob: 3.14159, side: 1
+outcome: 22, non-chosen outcome: 2
+outcome revealed: 7.02487
+
+trial 3
+opt1type: 2, opt1val1: 25, opt1val2: 5, opt1prob: 0.25
+opt2type: 2, opt2val1: 13, opt2val2: 1, opt2prob: 0.75
+choice onset: 8.57429 
+RT: 0.894886, key: 1!
+chose option: 2
+choice made: 9.47903
+opt 1 angle: 5.13323, prob: 1.5708, side: 2 
+opt 2 angle: 4.47531, prob: 4.71239, side: 2
+outcome: 13, non-chosen outcome: 5
+outcome revealed: 10.4944
+
+trial 4
+opt1type: 2, opt1val1: 16, opt1val2: 8, opt1prob: 0.5
+opt2type: 2, opt2val1: 17, opt2val2: 5, opt2prob: 0.75
+choice onset: 10.8804 
+RT: 0.419485, key: 1!
+chose option: 2
+choice made: 11.312
+opt 1 angle: 2.80733, prob: 3.14159, side: 2 
+opt 2 angle: 0.0364973, prob: 4.71239, side: 2
+outcome: 17, non-chosen outcome: 16
+outcome revealed: 12.337
+
+trial 5
+opt1type: 3, opt1val1: 0, opt1val2: 20, opt1prob: 0.75
+opt2type: 2, opt2val1: 17, opt2val2: 13, opt2prob: 0.75
+choice onset: 12.4589 
+RT: 0.426486, key: 1!
+chose option: 2
+choice made: 12.9117
+opt 1 angle: 4.72046, prob: 4.71239, side: 2 
+opt 2 angle: 1.69, prob: 4.71239, side: 2
+outcome: 17, non-chosen outcome: 20
+outcome revealed: 13.9309
+
+trial 6
+opt1type: 3, opt1val1: 0, opt1val2: 50, opt1prob: 0.25
+opt2type: 2, opt2val1: 0, opt2val2: 28, opt2prob: 0.5
+choice onset: 14.2832 
+RT: 0.507078, key: 1!
+chose option: 1
+choice made: 14.8076
+opt 1 angle: 4.41391, prob: 1.5708, side: 1 
+opt 2 angle: 5.83954, prob: 3.14159, side: 1
+outcome: 50, non-chosen outcome: 28
+outcome revealed: 15.8398
+
+trial 7
+opt1type: 3, opt1val1: 35, opt1val2: 0, opt1prob: 0.75
+opt2type: 2, opt2val1: 24, opt2val2: 8, opt2prob: 0.25
+choice onset: 16.1387 
+RT: 0.509921, key: 1!
+chose option: 1
+choice made: 16.6645
+opt 1 angle: 3.63132, prob: 4.71239, side: 1 
+opt 2 angle: 5.04053, prob: 1.5708, side: 1
+outcome: 35, non-chosen outcome: 8
+outcome revealed: 17.6825
+
+trial 8
+opt1type: 3, opt1val1: 0, opt1val2: 50, opt1prob: 0.5
+opt2type: 2, opt2val1: 4, opt2val2: 20, opt2prob: 0.5
+choice onset: 17.8706 
+RT: 0.436961, key: 1!
+chose option: 1
+choice made: 18.3207
+opt 1 angle: 5.32936, prob: 3.14159, side: 1 
+opt 2 angle: 3.80221, prob: 3.14159, side: 1
+outcome: 50, non-chosen outcome: 20
+outcome revealed: 19.3429
+
+trial 9
+opt1type: 3, opt1val1: 30, opt1val2: 0, opt1prob: 0.5
+opt2type: 2, opt2val1: 0, opt2val2: 20, opt2prob: 0.75
+choice onset: 19.7123 
+RT: 0.428681, key: 1!
+chose option: 1
+choice made: 20.1519
+opt 1 angle: 4.68788, prob: 3.14159, side: 1 
+opt 2 angle: 5.32615, prob: 4.71239, side: 1
+outcome: 0, non-chosen outcome: 20
+outcome revealed: 21.1683
+
+trial 10
+opt1type: 3, opt1val1: 20, opt1val2: 0, opt1prob: 1
+opt2type: 2, opt2val1: 0, opt2val2: 16, opt2prob: 0.25
+choice onset: 21.3565 
+RT: 0.431457, key: 1!
+chose option: 2
+choice made: 21.8006
+opt 1 angle: 1.64766, prob: 6.28319, side: 2 
+opt 2 angle: 1.67554, prob: 1.5708, side: 2
+outcome: 16, non-chosen outcome: 20
+outcome revealed: 22.8135
+
+trial 11
+opt1type: 2, opt1val1: 10, opt1val2: 0, opt1prob: 0.5
+opt2type: 1, opt2val1: 10, opt2val2: 0, opt2prob: 1
+choice onset: 23.031 
+RT: 0.401313, key: 1!
+chose option: 1
+choice made: 23.4467
+opt 1 angle: 1.48636, prob: 3.14159, side: 1 
+opt 2 angle: 2.35154, prob: 6.28319, side: 1
+outcome: 10, non-chosen outcome: 10
+outcome revealed: 24.4712
+
+trial 12
+opt1type: 2, opt1val1: 40, opt1val2: 10, opt1prob: 0.5
+opt2type: 1, opt2val1: 25, opt2val2: 0, opt2prob: 1
+choice onset: 24.6577 
+RT: 1.55172, key: 1!
+chose option: 2
+choice made: 26.2234
+opt 1 angle: 4.99889, prob: 3.14159, side: 2 
+opt 2 angle: 3.85239, prob: 6.28319, side: 2
+outcome: 25, non-chosen outcome: 10
+outcome revealed: 27.2435
+
+trial 13
+opt1type: 2, opt1val1: 50, opt1val2: 10, opt1prob: 0.25
+opt2type: 1, opt2val1: 25, opt2val2: 0, opt2prob: 1
+choice onset: 27.7964 
+RT: 0.872015, key: 1!
+chose option: 2
+choice made: 28.6832
+opt 1 angle: 3.63248, prob: 1.5708, side: 2 
+opt 2 angle: 2.08631, prob: 6.28319, side: 2
+outcome: 25, non-chosen outcome: 10
+outcome revealed: 29.7003
+
+trial 14
+opt1type: 3, opt1val1: 0, opt1val2: 25, opt1prob: 0
+opt2type: 1, opt2val1: 16, opt2val2: 0, opt2prob: 1
+choice onset: 30.1362 
+RT: 0.840179, key: 1!
+chose option: 1
+choice made: 30.9899
+opt 1 angle: 4.54452, prob: 0, side: 1 
+opt 2 angle: 0.687751, prob: 6.28319, side: 1
+outcome: 25, non-chosen outcome: 16
+outcome revealed: 32.008
+
+trial 15
+opt1type: 3, opt1val1: 0, opt1val2: 50, opt1prob: 0.25
+opt2type: 1, opt2val1: 10, opt2val2: 0, opt2prob: 1
+choice onset: 32.3275 
+RT: 0.540781, key: 1!
+chose option: 2
+choice made: 32.88
+opt 1 angle: 2.89941, prob: 1.5708, side: 2 
+opt 2 angle: 1.00886, prob: 6.28319, side: 2
+outcome: 10, non-chosen outcome: 50
+outcome revealed: 33.9004
+
+trial 16
+opt1type: 3, opt1val1: 0, opt1val2: 30, opt1prob: 1
+opt2type: 1, opt2val1: 0, opt2val2: 10, opt2prob: 0
+choice onset: 34.2201 
+RT: 0.239671, key: 1!
+chose option: 2
+choice made: 34.4719
+opt 1 angle: 2.74789, prob: 6.28319, side: 2 
+opt 2 angle: 1.33157, prob: 0, side: 2
+outcome: 10, non-chosen outcome: 0
+outcome revealed: 35.4941
+
+trial 17
+opt1type: 3, opt1val1: 0, opt1val2: 25, opt1prob: 0
+opt2type: 1, opt2val1: 12, opt2val2: 0, opt2prob: 1
+choice onset: 41.707 
+RT: 0.665754, key: 1!
+chose option: 1
+choice made: 42.3841
+opt 1 angle: 1.53344, prob: 0, side: 1 
+opt 2 angle: 5.73213, prob: 6.28319, side: 1
+outcome: 25, non-chosen outcome: 12
+outcome revealed: 43.3961
+
+trial 18
+opt1type: 3, opt1val1: 10, opt1val2: 0, opt1prob: 0.75
+opt2type: 1, opt2val1: 0, opt2val2: 5, opt2prob: 0
+choice onset: 43.848 
+RT: 0.481531, key: 1!
+chose option: 1
+choice made: 44.3431
+opt 1 angle: 1.33429, prob: 4.71239, side: 1 
+opt 2 angle: 4.07803, prob: 0, side: 1
+outcome: 10, non-chosen outcome: 5
+outcome revealed: 45.3546
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 9 times out of a total of 1162 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+smellambig
+PsychJavaTrouble: Will now try to add the PsychJava folder to Matlabs dynamic classpath...
+PsychJavaTrouble: Added PsychJava folder to dynamic class path. Psychtoolbox Java commands should work now!
+
+ans =
+
+/Users/grace/Dropbox/odor530/smellambig
+
+Welcome!
+What is the subject number? (0-99): 98

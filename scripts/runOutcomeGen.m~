@@ -1,0 +1,42 @@
+% random trial payment outcome generator
+% This script takes one trial from the subject's trials
+% and draws a random trial to count for real. Then the outcome of that
+% choice is computed.
+
+function [payout] = runOutcomeGen(subjNo)
+
+RandStream.setDefaultStream(RandStream('mt19937ar','seed',sum(100*clock)));
+
+%% CHANGE THESE
+xx.outcomeCol = 12;
+
+
+dataFile=['cert_' num2str(subjNo) '.mat'];
+
+if exist(inLabFile) == 0
+    fprintf('Did not participate in certainty task..?');
+    array = basenum.d.data{1}(:,1:5);
+elseif exist(inLabFile) >0
+    r=load(inLabFile);
+    array = cat(1, basenum.d.data{1}(:,1:5),r.d.data(:,1:5));
+end
+
+
+randTrial=randi(length(array));
+
+choice = array(randTrial,choseRiskCol);
+
+if choice ==1 % if subject picked risky choice for this trial
+    
+    prob = array(randTrial, probCol);
+    win = randsample('01',1,true,[(1-prob), prob]);
+    if win=='1';
+        payout = array(randTrial,riskCol);
+    elseif win =='0'
+        payout = 0;
+    end
+elseif choice ==0 % if subject picked certain choice for this trial
+    payout = array(randTrial,certCol);
+end
+
+

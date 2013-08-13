@@ -1,0 +1,225 @@
+{Warning: The RandStream.setDefaultStream static method will be removed in a future
+release.  Use RandStream.setGlobalStream instead.} 
+{> In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012a\toolbox\matlab\randfun\@RandStream\RandStream.m',456,1)">RandStream.RandStream>RandStream.setDefaultStream at 456</a>
+  In <a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\Stanford-PsychToolBox\functions\exptSetup.m',8,1)">exptSetup at 8</a>
+  In <a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\smellambig\smellambig.m',60,1)">smellambig at 60</a>} 
+PsychJavaTrouble: Will now try to add the PsychJava folder to Matlabs dynamic classpath...
+{Warning: Objects of minivas class exist - not clearing java} 
+{> In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012a\toolbox\matlab\general\javaclasspath.m',375,1)">javaclasspath>doclear at 375</a>
+  In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012a\toolbox\matlab\general\javaclasspath.m',192,1)">javaclasspath>local_javapath at 192</a>
+  In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012a\toolbox\matlab\general\javaclasspath.m',117,1)">javaclasspath at 117</a>
+  In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012a\toolbox\matlab\general\javaaddpath.m',69,1)">javaaddpath at 69</a>
+  In <a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychJava\PsychJavaTrouble.m',83,1)">PsychJavaTrouble at 83</a>
+  In <a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\Stanford-PsychToolBox\functions\exptSetup.m',10,1)">exptSetup at 10</a>
+  In <a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\smellambig\smellambig.m',60,1)">smellambig at 60</a>} 
+PsychJavaTrouble: Added PsychJava folder to dynamic class path. Psychtoolbox Java commands should work now!
+PTB-INFO: Multi-display setup in explicit multi-display mode detected. Using the following mapping:
+PTB-INFO: Screen 0 corresponds to the full Windows desktop area. Useful for stereo presentations in stereomode=4 ...
+PTB-INFO: Screen 1 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY1 ...
+PTB-INFO: Screen 2 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY2 ...
+PTB-WARNING: Screens 1 and 2 do have non-equal width and height. This will probably cause wrong behaviour
+PTB-WARNING: when trying to open a fullscreen window on Screen 0 that is supposed to fully cover displays 1 and 2.
+PTB-WARNING: In that case, either change your screen settings to matching size and refresh rate in the display control
+PTB-WARNING: panel and retry after a 'clear all', or manually specify a [rect] parameter for the window in the
+PTB-WARNING: Screen('OpenWindow', 0, [color], [rect]); command to manually enforce creation of a proper onscreen window.
+
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab (Version 3.0.9 - Build date: Apr  2 2012).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Will disable DWM because a regular fullscreen onscreen window is opened -> We want best timing and performance.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: Quadro 400/PCIe/SSE2 :: 3.3.0
+PTB-INFO: VBL startline = 1200 , VBL Endline = 1199
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.680956 ms [59.948604 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.682863 ms [59.941751 Hz]. (50 valid samples taken, stddev=0.066173 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.949153 ms [59.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Support for fast OffscreenWindows enabled.
+
+
+Huettel Risk/Ambiguity: 
+
+odor on: 0.000639728
+
+opt1type: 2, opt1val1: 12, opt1val2: 3, opt1prob: 0.75
+opt2type: 1, opt2val1: 8, opt2val2: 0, opt2prob: 1
+choice onset: 6.11553 
+RT: 2.9301, key: 1!
+chose option: 1
+choice made: 9.05753
+odor off: 11.0919
+opt 1 angle: 4.24731, prob: 4.71239, side: 1 
+opt 2 angle: 1.81519, prob: 6.28319, side: 1
+outcome: 12, non-chosen outcome: 8
+outcome revealed: 15.0947
+odor on: 19.1338
+
+opt1type: 3, opt1val1: 25, opt1val2: 0, opt1prob: 0.25
+opt2type: 1, opt2val1: 17, opt2val2: 0, opt2prob: 1
+choice onset: 25.1858 
+RT: 1.36931, key: 4$
+chose option: 2
+choice made: 26.5756
+odor off: 28.589
+opt 1 angle: 2.57147, prob: 1.5708, side: 1 
+opt 2 angle: 3.21541, prob: 6.28319, side: 1
+outcome: 17, non-chosen outcome: 0
+outcome revealed: 30.6783
+{Operation terminated by user during <a href="matlab:helpUtils.errorDocCallback('smellHuettelRisk>HuettelTrial', 'C:\Users\experimenter\Dropbox\odor530\smellambig\scripts\smellHuettelRisk.m', 735)" style="font-weight:bold">smellHuettelRisk>HuettelTrial</a> (<a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\smellambig\scripts\smellHuettelRisk.m',735,0)">line 735</a>)
+
+In <a href="matlab:helpUtils.errorDocCallback('smellHuettelRisk', 'C:\Users\experimenter\Dropbox\odor530\smellambig\scripts\smellHuettelRisk.m', 322)" style="font-weight:bold">smellHuettelRisk</a> (<a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\smellambig\scripts\smellHuettelRisk.m',322,0)">line 322</a>)
+    data = HuettelTrial(c,v,xx,opt1type, opt1val1,opt1val2,opt1prob,opt2type,
+    opt2val1,opt2val2,opt2prob);
+
+In <a href="matlab:helpUtils.errorDocCallback('smellambig', 'C:\Users\experimenter\Dropbox\odor530\smellambig\smellambig.m', 71)" style="font-weight:bold">smellambig</a> (<a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\smellambig\smellambig.m',71,0)">line 71</a>)
+[HuettelData] = smellHuettelRisk(c,v);
+} 
+sca
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 2 times out of a total of 376 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+Exception in thread "AWT-EventQueue-0" java.lang.OutOfMemoryError: Java heap space
+	at java.awt.image.DataBufferInt.<init>(Unknown Source)
+	at java.awt.image.Raster.createPackedRaster(Unknown Source)
+	at java.awt.image.DirectColorModel.createCompatibleWritableRaster(Unknown Source)
+	at sun.awt.image.SunVolatileImage.getBackupImage(Unknown Source)
+	at sun.awt.image.VolatileSurfaceManager.getBackupSurface(Unknown Source)
+	at sun.awt.image.VolatileSurfaceManager.initialize(Unknown Source)
+	at sun.awt.image.SunVolatileImage.<init>(Unknown Source)
+	at sun.awt.image.SunVolatileImage.<init>(Unknown Source)
+	at java.awt.GraphicsConfiguration.createCompatibleVolatileImage(Unknown Source)
+	at java.awt.GraphicsConfiguration.createCompatibleVolatileImage(Unknown Source)
+	at javax.swing.RepaintManager.getVolatileOffscreenBuffer(Unknown Source)
+	at javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+	at javax.swing.RepaintManager.paint(Unknown Source)
+	at javax.swing.JComponent.paint(Unknown Source)
+	at java.awt.GraphicsCallback$PaintCallback.run(Unknown Source)
+	at sun.awt.SunGraphicsCallback.runOneComponent(Unknown Source)
+	at sun.awt.SunGraphicsCallback.runComponents(Unknown Source)
+	at java.awt.Container.paint(Unknown Source)
+	at javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+	at javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+	at javax.swing.RepaintManager.seqPaintDirtyRegions(Unknown Source)
+	at javax.swing.SystemEventQueueUtilities$ComponentWorkRequest.run(Unknown Source)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Exception in thread "AWT-EventQueue-0" java.lang.OutOfMemoryError: Java heap space
+	at java.awt.image.DataBufferInt.<init>(Unknown Source)
+	at java.awt.image.Raster.createPackedRaster(Unknown Source)
+	at java.awt.image.DirectColorModel.createCompatibleWritableRaster(Unknown Source)
+	at sun.awt.image.SunVolatileImage.getBackupImage(Unknown Source)
+	at sun.awt.image.VolatileSurfaceManager.getBackupSurface(Unknown Source)
+	at sun.awt.image.VolatileSurfaceManager.initialize(Unknown Source)
+	at sun.awt.image.SunVolatileImage.<init>(Unknown Source)
+	at sun.awt.image.SunVolatileImage.<init>(Unknown Source)
+	at java.awt.GraphicsConfiguration.createCompatibleVolatileImage(Unknown Source)
+	at java.awt.GraphicsConfiguration.createCompatibleVolatileImage(Unknown Source)
+	at javax.swing.RepaintManager.getVolatileOffscreenBuffer(Unknown Source)
+	at javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+	at javax.swing.RepaintManager.paint(Unknown Source)
+	at javax.swing.JComponent.paint(Unknown Source)
+	at java.awt.GraphicsCallback$PaintCallback.run(Unknown Source)
+	at sun.awt.SunGraphicsCallback.runOneComponent(Unknown Source)
+	at sun.awt.SunGraphicsCallback.runComponents(Unknown Source)
+	at java.awt.Container.paint(Unknown Source)
+	at javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+	at javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+	at javax.swing.RepaintManager.seqPaintDirtyRegions(Unknown Source)
+	at javax.swing.SystemEventQueueUtilities$ComponentWorkRequest.run(Unknown Source)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Exception in thread "AWT-EventQueue-0" java.lang.OutOfMemoryError: Java heap space
+	at java.awt.image.DataBufferInt.<init>(Unknown Source)
+	at java.awt.image.Raster.createPackedRaster(Unknown Source)
+	at java.awt.image.DirectColorModel.createCompatibleWritableRaster(Unknown Source)
+	at sun.awt.image.SunVolatileImage.getBackupImage(Unknown Source)
+	at sun.awt.image.VolatileSurfaceManager.getBackupSurface(Unknown Source)
+	at sun.awt.image.VolatileSurfaceManager.initialize(Unknown Source)
+	at sun.awt.image.SunVolatileImage.<init>(Unknown Source)
+	at sun.awt.image.SunVolatileImage.<init>(Unknown Source)
+	at java.awt.GraphicsConfiguration.createCompatibleVolatileImage(Unknown Source)
+	at java.awt.GraphicsConfiguration.createCompatibleVolatileImage(Unknown Source)
+	at javax.swing.RepaintManager.getVolatileOffscreenBuffer(Unknown Source)
+	at javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+	at javax.swing.RepaintManager.paint(Unknown Source)
+	at javax.swing.JComponent.paint(Unknown Source)
+	at java.awt.GraphicsCallback$PaintCallback.run(Unknown Source)
+	at sun.awt.SunGraphicsCallback.runOneComponent(Unknown Source)
+	at sun.awt.SunGraphicsCallback.runComponents(Unknown Source)
+	at java.awt.Container.paint(Unknown Source)
+	at javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+	at javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+	at javax.swing.RepaintManager.seqPaintDirtyRegions(Unknown Source)
+	at javax.swing.SystemEventQueueUtilities$ComponentWorkRequest.run(Unknown Source)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Exception in thread "AWT-EventQueue-0" java.lang.OutOfMemoryError: Java heap space
+	at java.awt.image.DataBufferInt.<init>(Unknown Source)
+	at java.awt.image.Raster.createPackedRaster(Unknown Source)
+	at java.awt.image.DirectColorModel.createCompatibleWritableRaster(Unknown Source)
+	at sun.awt.image.SunVolatileImage.getBackupImage(Unknown Source)
+	at sun.awt.image.VolatileSurfaceManager.getBackupSurface(Unknown Source)
+	at sun.awt.image.VolatileSurfaceManager.initialize(Unknown Source)
+	at sun.awt.image.SunVolatileImage.<init>(Unknown Source)
+	at sun.awt.image.SunVolatileImage.<init>(Unknown Source)
+	at java.awt.GraphicsConfiguration.createCompatibleVolatileImage(Unknown Source)
+	at java.awt.GraphicsConfiguration.createCompatibleVolatileImage(Unknown Source)
+	at javax.swing.RepaintManager.getVolatileOffscreenBuffer(Unknown Source)
+	at javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+	at javax.swing.RepaintManager.paint(Unknown Source)
+	at javax.swing.JComponent.paint(Unknown Source)
+	at java.awt.GraphicsCallback$PaintCallback.run(Unknown Source)
+	at sun.awt.SunGraphicsCallback.runOneComponent(Unknown Source)
+	at sun.awt.SunGraphicsCallback.runComponents(Unknown Source)
+	at java.awt.Container.paint(Unknown Source)
+	at javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+	at javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+	at javax.swing.RepaintManager.seqPaintDirtyRegions(Unknown Source)
+	at javax.swing.SystemEventQueueUtilities$ComponentWorkRequest.run(Unknown Source)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)

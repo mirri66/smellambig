@@ -1,0 +1,106 @@
+{Warning: The RandStream.setDefaultStream static method will be removed in a future release.
+Use RandStream.setGlobalStream instead.} 
+{> In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012a\toolbox\matlab\randfun\@RandStream\RandStream.m',456,1)">RandStream.RandStream>RandStream.setDefaultStream at 456</a>
+  In <a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\Stanford-PsychToolBox\functions\exptSetup.m',8,1)">exptSetup at 8</a>
+  In <a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\smellambig\smellambig.m',60,1)">smellambig at 60</a>} 
+PTB-INFO: Multi-display setup in explicit multi-display mode detected. Using the following mapping:
+PTB-INFO: Screen 0 corresponds to the full Windows desktop area. Useful for stereo presentations in stereomode=4 ...
+PTB-INFO: Screen 1 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY1 ...
+PTB-INFO: Screen 2 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY2 ...
+PTB-WARNING: Screens 1 and 2 do have non-equal width and height. This will probably cause wrong behaviour
+PTB-WARNING: when trying to open a fullscreen window on Screen 0 that is supposed to fully cover displays 1 and 2.
+PTB-WARNING: In that case, either change your screen settings to matching size and refresh rate in the display control
+PTB-WARNING: panel and retry after a 'clear all', or manually specify a [rect] parameter for the window in the
+PTB-WARNING: Screen('OpenWindow', 0, [color], [rect]); command to manually enforce creation of a proper onscreen window.
+
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab (Version 3.0.9 - Build date: Apr  2 2012).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Will disable DWM because a regular fullscreen onscreen window is opened -> We want best timing and performance.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: Quadro 400/PCIe/SSE2 :: 3.3.0
+PTB-INFO: VBL startline = 1200 , VBL Endline = 1199
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.681018 ms [59.948378 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.682972 ms [59.941360 Hz]. (50 valid samples taken, stddev=0.059973 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.949153 ms [59.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Support for fast OffscreenWindows enabled.
+
+opt1type: 1, opt1val1: 12, opt1val2: 0, opt1prob: 1
+opt2type: 2, opt2val1: 8, opt2val2: 20, opt2prob: 0.5
+choice onset: 23.8673 
+RT: 1.80499, key: 1!
+chose option: 1
+choice made: 25.6899
+odor off: 27.7166
+opt 1 angle: 0.471174, prob: 6.28319, side: 1 
+opt 2 angle: 2.30252, prob: 3.14159, side: 1
+outcome: 12, non-chosen outcome: 8
+outcome revealed: 31.7283
+
+opt1type: 1, opt1val1: 12, opt1val2: 0, opt1prob: 1
+opt2type: 3, opt2val1: 35, opt2val2: 0, opt2prob: 0.5
+choice onset: 35.8066 
+RT: 2.26201, key: 1!
+chose option: 1
+choice made: 38.0896
+odor off: 40.11
+opt 1 angle: 2.51893, prob: 6.28319, side: 1 
+opt 2 angle: 5.47362, prob: 3.14159, side: 1
+outcome: 12, non-chosen outcome: 0
+outcome revealed: 46.0249
+
+opt1type: 2, opt1val1: 4, opt1val2: 20, opt1prob: 0.25
+opt2type: 2, opt2val1: 10, opt2val2: 50, opt2prob: 0.75
+choice onset: 50.0691 
+RT: 1.91971, key: 1!
+chose option: 2
+choice made: 52.008
+odor off: 54.0227
+opt 1 angle: 4.66492, prob: 1.5708, side: 2 
+opt 2 angle: 2.21997, prob: 4.71239, side: 2
+outcome: 10, non-chosen outcome: 20
+outcome revealed: 56.0178
+
+opt1type: 2, opt1val1: 12, opt1val2: 20, opt1prob: 0.75
+opt2type: 3, opt2val1: 35, opt2val2: 0, opt2prob: 0.25
+choice onset: 62.0616 
+RT: 2.53419, key: 4$
+chose option: 2
+choice made: 64.6157
+odor off: 66.6317
+opt 1 angle: 0.85717, prob: 4.71239, side: 1 
+opt 2 angle: 2.14124, prob: 1.5708, side: 1
+outcome: 0, non-chosen outcome: 12
+outcome revealed: 68.6113
+{Operation terminated by user during <a href="matlab:helpUtils.errorDocCallback('GetKey', 'C:\Users\experimenter\Dropbox\odor530\GT-PTB\GetKey.m', 68)" style="font-weight:bold">GetKey</a> (<a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\GT-PTB\GetKey.m',68,0)">line 68</a>)
+
+In <a href="matlab:helpUtils.errorDocCallback('smellHuettelRisk', 'C:\Users\experimenter\Dropbox\odor530\smellambig\scripts\smellHuettelRisk.m', 224)" style="font-weight:bold">smellHuettelRisk</a> (<a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\smellambig\scripts\smellHuettelRisk.m',224,0)">line 224</a>)
+    GetKey('3#',[],[],-3);
+
+In <a href="matlab:helpUtils.errorDocCallback('smellambig', 'C:\Users\experimenter\Dropbox\odor530\smellambig\smellambig.m', 71)" style="font-weight:bold">smellambig</a> (<a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\smellambig\smellambig.m',71,0)">line 71</a>)
+[HuettelData] = smellHuettelRisk(c,v);
+} 
+sca
+smellambig
+PsychJavaTrouble: Will now try to add the PsychJava folder to Matlabs dynamic classpath...
+PsychJavaTrouble: Added PsychJava folder to dynamic class path. Psychtoolbox Java commands should work now!
+
+ans =
+
+C:\Users\experimenter\Dropbox\odor530\smellambig
+
+Welcome!
+What is the subject number? (0-99): 99

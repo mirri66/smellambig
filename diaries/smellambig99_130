@@ -1,0 +1,168 @@
+{Warning: Duplicate entry,/Users/grace/Dropbox/odor530/smellambig} 
+> In <a href="matlab: opentoline('/Applications/MATLAB_R2009b.app/toolbox/matlab/general/javaclasspath.m',276,1)">javaclasspath>local_validate_dynamic_path at 276</a>
+  In <a href="matlab: opentoline('/Applications/MATLAB_R2009b.app/toolbox/matlab/general/javaclasspath.m',184,1)">javaclasspath>local_javapath at 184</a>
+  In <a href="matlab: opentoline('/Applications/MATLAB_R2009b.app/toolbox/matlab/general/javaclasspath.m',119,1)">javaclasspath at 119</a>
+  In <a href="matlab: opentoline('/Applications/MATLAB_R2009b.app/toolbox/matlab/general/javaaddpath.m',69,1)">javaaddpath at 69</a>
+  In <a href="matlab: opentoline('/Users/grace/Dropbox/odor530/smellambig/smellambig.m',47,1)">smellambig at 47</a>
+java.net.ConnectException: Operation timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:351)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:213)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:432)
+	at java.net.Socket.connect(Socket.java:529)
+	at java.net.Socket.connect(Socket.java:478)
+	at java.net.Socket.<init>(Socket.java:375)
+	at java.net.Socket.<init>(Socket.java:189)
+	at minivas.connect(minivas.java:56)
+	at minivas.<init>(minivas.java:40)
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannelsEnabled(minivas.java:131)
+PsychJavaTrouble: Will now try to add the PsychJava folder to Matlabs dynamic classpath...
+{Warning: /Applications/Psychtoolbox/PsychJava already specified on static java path} 
+> In <a href="matlab: opentoline('/Applications/MATLAB_R2009b.app/toolbox/matlab/general/javaclasspath.m',282,1)">javaclasspath>local_validate_dynamic_path at 282</a>
+  In <a href="matlab: opentoline('/Applications/MATLAB_R2009b.app/toolbox/matlab/general/javaclasspath.m',184,1)">javaclasspath>local_javapath at 184</a>
+  In <a href="matlab: opentoline('/Applications/MATLAB_R2009b.app/toolbox/matlab/general/javaclasspath.m',119,1)">javaclasspath at 119</a>
+  In <a href="matlab: opentoline('/Applications/MATLAB_R2009b.app/toolbox/matlab/general/javaaddpath.m',69,1)">javaaddpath at 69</a>
+  In <a href="matlab: opentoline('/Applications/Psychtoolbox/PsychJava/PsychJavaTrouble.m',83,1)">PsychJavaTrouble at 83</a>
+  In <a href="matlab: opentoline('/Users/grace/Dropbox/odor530/Stanford-PsychToolBox/functions/exptSetup.m',10,1)">exptSetup at 10</a>
+  In <a href="matlab: opentoline('/Users/grace/Dropbox/odor530/smellambig/smellambig.m',60,1)">smellambig at 60</a>
+{Warning: Objects of minivas class exist - not clearing java} 
+> In <a href="matlab: opentoline('/Applications/MATLAB_R2009b.app/toolbox/matlab/general/javaclasspath.m',194,1)">javaclasspath>local_javapath at 194</a>
+  In <a href="matlab: opentoline('/Applications/MATLAB_R2009b.app/toolbox/matlab/general/javaclasspath.m',119,1)">javaclasspath at 119</a>
+  In <a href="matlab: opentoline('/Applications/MATLAB_R2009b.app/toolbox/matlab/general/javaaddpath.m',69,1)">javaaddpath at 69</a>
+  In <a href="matlab: opentoline('/Applications/Psychtoolbox/PsychJava/PsychJavaTrouble.m',83,1)">PsychJavaTrouble at 83</a>
+  In <a href="matlab: opentoline('/Users/grace/Dropbox/odor530/Stanford-PsychToolBox/functions/exptSetup.m',10,1)">exptSetup at 10</a>
+  In <a href="matlab: opentoline('/Users/grace/Dropbox/odor530/smellambig/smellambig.m',60,1)">smellambig at 60</a>
+PsychJavaTrouble: Added PsychJava folder to dynamic class path. Psychtoolbox Java commands should work now!
+
+
+PTB-INFO: This is Psychtoolbox-3 for Apple OS X, under Matlab 64-Bit (Version 3.0.10 - Build date: Jan  7 2013).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Broken Apple OS/X 10.7 or later detected: Using CoreVideo timestamping instead of precise vbl-irq timestamping.
+
+
+PTB-INFO: OpenGL-Renderer is Intel Inc. :: Intel HD Graphics 4000 OpenGL Engine :: 2.1 APPLE-7.26.9
+PTB-INFO: Renderer has 1284 MB of VRAM and a maximum 1024 MB of texture memory.
+PTB-INFO: VBL startline = 768 , VBL Endline = -1
+PTB-INFO: Beamposition queries unsupported on this system. Will try to use kernel-level vbl interrupts as fallback.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.748041 ms [59.708475 Hz]. (50 valid samples taken, stddev=0.076544 ms.)
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Support for fast OffscreenWindows enabled.
+{Warning: Could not start Excel server for import, 'basic' mode will be used. Refer to HELP XLSREAD for
+more information.} 
+> In <a href="matlab: opentoline('/Applications/MATLAB_R2009b.app/toolbox/matlab/iofun/xlsread.m',176,1)">xlsread at 176</a>
+  In <a href="matlab: opentoline('/Users/grace/Dropbox/odor530/smellambig/scripts/smellHuettelRisk.m',97,1)">smellHuettelRisk at 97</a>
+  In <a href="matlab: opentoline('/Users/grace/Dropbox/odor530/smellambig/smellambig.m',71,1)">smellambig at 71</a>
+
+
+PTB-ERROR: Screen('Flip'); kernel-level timestamping computed bogus values!!!
+PTB-ERROR: vbltimestampquery_retrycount = 8, preflip_vbltimestamp=postflip= 97888.756433, time_at_swaprequest= 97888.760554
+PTB-ERROR: This error can be due to either of the following causes (No simple way to discriminate):
+PTB-ERROR: Either something is broken in your systems VBL-IRQ timestamping. I've disabled high precision
+PTB-ERROR: timestamping for now. Returned timestamps will be less robust and accurate, but at least ok, if that was the culprit.
+
+PTB-ERROR: An equally likely cause would be that Synchronization of stimulus onset (buffer swap) to the
+PTB-ERROR: vertical blank interval VBL is not working properly.
+PTB-ERROR: Please run the script PerceptualVBLSyncTest to check this. With non-working sync to VBL, all stimulus timing
+PTB-ERROR: becomes quite futile. Also read 'help SyncTrouble' !
+
+
+
+
+Huettel Risk/Ambiguity: 
+
+odor on: 0.00103955
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 15, opt1val2: 0, opt1prob: 1
+opt2type: 1, opt2val1: 13, opt2val2: 0, opt2prob: 1
+choice onset: 6.12763 
+RT: 38.1215, key: 4$
+chose option: 2
+choice made: 44.2735
+odor off: 46.2956
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 6.038, prob: 6.28319, side: 1 
+opt 2 angle: 4.51878, prob: 6.28319, side: 1
+outcome: 13, non-chosen outcome: 15
+outcome revealed: 50.4085
+odor on: 58.4396
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 23, opt1val2: 18, opt1prob: 0.5
+opt2type: 2, opt2val1: 26, opt2val2: 6, opt2prob: 0.75
+choice onset: 64.4604 
+RT: 5.00088, key: 1!
+chose option: 2
+choice made: 69.4824
+odor off: 71.5012
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.263763, prob: 3.14159, side: 2 
+opt 2 angle: 2.15032, prob: 4.71239, side: 2
+outcome: 26, non-chosen outcome: 23
+outcome revealed: 73.5241
+odor on: 81.5468
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 12, opt1val2: 0, opt1prob: 0
+opt2type: 1, opt2val1: 6, opt2val2: 0, opt2prob: 1
+choice onset: 87.5716 
+RT: 5.77624, key: 1!
+chose option: 1
+choice made: 93.3685
+odor off: 95.383
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.06282, prob: 0, side: 1 
+opt 2 angle: 1.51131, prob: 6.28319, side: 1
+outcome: 0, non-chosen outcome: 6
+outcome revealed: 99.3988
+odor on: 103.423
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 16, opt1val2: 14, opt1prob: 0.25
+opt2type: 1, opt2val1: 15, opt2val2: 0, opt2prob: 1
+choice onset: 109.461 
+RT: 3.01927, key: 1!
+chose option: 2
+choice made: 112.501
+odor off: 114.508
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.14938, prob: 1.5708, side: 2 
+opt 2 angle: 1.00579, prob: 6.28319, side: 2
+outcome: 15, non-chosen outcome: 14
+outcome revealed: 118.525
+odor on: 122.548
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 18, opt1val2: 5, opt1prob: 0.75
+opt2type: 1, opt2val1: 15, opt2val2: 0, opt2prob: 1
+choice onset: 128.569 
+RT: 3.23059, key: 1!
+chose option: 1
+choice made

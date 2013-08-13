@@ -1,0 +1,6 @@
+function stimuli_behavioral()
+
+fid = fopen('stimuli.txt','w');
+for i = 1:8,
+    load(strcat('trialinfo_practice_',num2str(run)));
+    for j = 1:size(trial_info,2)

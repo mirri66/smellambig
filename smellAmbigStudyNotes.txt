@@ -1,0 +1,17 @@
+Huettel Study Notes
+
+-certain 9 vs ambig 10
+-16 14 vs certain 15
+-certain 13 vs 14 20
+-20 16 vs ambig 20
+-28 certain vs 28 ambig
+-all ambiguous vs certain trials are hard to justify
+-22 18 vs 22 amb
+-screen goes white randomly
+-more spacing in between circles
+-hide the entire ambiguous circles 
+-too many trials
+-best ones have values in between 8-20
+-20 1vs 18 15
+-21 6 vs 20 5
+-22 6 vs 18 6

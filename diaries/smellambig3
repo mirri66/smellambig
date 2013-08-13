@@ -1,0 +1,4413 @@
+java.io.FileNotFoundException: minivas.pref (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at minivas.<init>(minivas.java:22)
+java.net.ConnectException: connect: Address is invalid on local machine, or port is not valid on remote machine
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at minivas.connect(minivas.java:56)
+	at minivas.<init>(minivas.java:40)
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannelsEnabled(minivas.java:131)
+{Warning: The RandStream.setDefaultStream static method will be removed in a future release.
+Use RandStream.setGlobalStream instead.} 
+{> In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012a\toolbox\matlab\randfun\@RandStream\RandStream.m',456,1)">RandStream.RandStream>RandStream.setDefaultStream at 456</a>
+  In <a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\Stanford-PsychToolBox\functions\exptSetup.m',8,1)">exptSetup at 8</a>
+  In <a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\smellambig\smellambig.m',60,1)">smellambig at 60</a>} 
+PsychJavaTrouble: Will now try to add the PsychJava folder to Matlabs dynamic classpath...
+{Warning: Objects of minivas class exist - not clearing java} 
+{> In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012a\toolbox\matlab\general\javaclasspath.m',375,1)">javaclasspath>doclear at 375</a>
+  In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012a\toolbox\matlab\general\javaclasspath.m',192,1)">javaclasspath>local_javapath at 192</a>
+  In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012a\toolbox\matlab\general\javaclasspath.m',117,1)">javaclasspath at 117</a>
+  In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012a\toolbox\matlab\general\javaaddpath.m',69,1)">javaaddpath at 69</a>
+  In <a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychJava\PsychJavaTrouble.m',83,1)">PsychJavaTrouble at 83</a>
+  In <a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\Stanford-PsychToolBox\functions\exptSetup.m',10,1)">exptSetup at 10</a>
+  In <a href="matlab: opentoline('C:\Users\experimenter\Dropbox\odor530\smellambig\smellambig.m',60,1)">smellambig at 60</a>} 
+PsychJavaTrouble: Added PsychJava folder to dynamic class path. Psychtoolbox Java commands should work now!
+PTB-INFO: Multi-display setup in explicit multi-display mode detected. Using the following mapping:
+PTB-INFO: Screen 0 corresponds to the full Windows desktop area. Useful for stereo presentations in stereomode=4 ...
+PTB-INFO: Screen 1 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY1 ...
+PTB-INFO: Screen 2 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY2 ...
+PTB-WARNING: Screens 1 and 2 do have non-equal width and height. This will probably cause wrong behaviour
+PTB-WARNING: when trying to open a fullscreen window on Screen 0 that is supposed to fully cover displays 1 and 2.
+PTB-WARNING: In that case, either change your screen settings to matching size and refresh rate in the display control
+PTB-WARNING: panel and retry after a 'clear all', or manually specify a [rect] parameter for the window in the
+PTB-WARNING: Screen('OpenWindow', 0, [color], [rect]); command to manually enforce creation of a proper onscreen window.
+
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab (Version 3.0.9 - Build date: Apr  2 2012).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Will disable DWM because a regular fullscreen onscreen window is opened -> We want best timing and performance.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: Quadro 400/PCIe/SSE2 :: 3.3.0
+PTB-INFO: VBL startline = 1200 , VBL Endline = 1199
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.681445 ms [59.946846 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.663181 ms [60.012550 Hz]. (111 valid samples taken, stddev=0.199424 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.949153 ms [59.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Support for fast OffscreenWindows enabled.
+
+opt1type: 1, opt1val1: 12, opt1val2: 0, opt1prob: 1
+opt2type: 2, opt2val1: 8, opt2val2: 20, opt2prob: 0.5
+choice onset: 78.0795 
+RT: 2.04629, key: 1!
+chose option: 2
+choice made: 80.1404
+odor off: 82.1757
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.67346, prob: 6.28319, side: 2 
+opt 2 angle: 3.75072, prob: 3.14159, side: 2
+outcome: 20, non-chosen outcome: 12
+outcome revealed: 88.1693
+
+opt1type: 1, opt1val1: 12, opt1val2: 0, opt1prob: 1
+opt2type: 3, opt2val1: 35, opt2val2: 0, opt2prob: 0.5
+choice onset: 94.2375 
+RT: 4.38014, key: 4$
+chose option: 1
+choice made: 98.6358
+odor off: 100.658
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.785123, prob: 6.28319, side: 2 
+opt 2 angle: 1.05801, prob: 3.14159, side: 2
+outcome: 12, non-chosen outcome: 35
+outcome revealed: 106.576
+
+opt1type: 2, opt1val1: 4, opt1val2: 20, opt1prob: 0.25
+opt2type: 2, opt2val1: 10, opt2val2: 50, opt2prob: 0.75
+choice onset: 112.617 
+RT: 5.96519, key: 1!
+chose option: 2
+choice made: 118.603
+odor off: 120.624
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.71376, prob: 1.5708, side: 2 
+opt 2 angle: 4.68486, prob: 4.71239, side: 2
+outcome: 10, non-chosen outcome: 20
+outcome revealed: 124.587
+
+opt1type: 2, opt1val1: 12, opt1val2: 20, opt1prob: 0.75
+opt2type: 3, opt2val1: 35, opt2val2: 0, opt2prob: 0.25
+choice onset: 128.635 
+RT: 2.28736, key: 4$
+chose option: 2
+choice made: 130.939
+odor off: 132.967
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.02205, prob: 4.71239, side: 1 
+opt 2 angle: 4.00361, prob: 1.5708, side: 1
+outcome: 0, non-chosen outcome: 12
+outcome revealed: 134.945
+
+
+Huettel Risk/Ambiguity: 
+
+odor on: 0.000631341
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 20, opt1val2: 10, opt1prob: 0.5
+opt2type: 1, opt2val1: 15, opt2val2: 0, opt2prob: 1
+choice onset: 6.07201 
+RT: 1.95331, key: 1!
+chose option: 1
+choice made: 8.03178
+odor off: 10.0439
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.62239, prob: 3.14159, side: 1 
+opt 2 angle: 5.40033, prob: 6.28319, side: 1
+outcome: 10, non-chosen outcome: 15
+outcome revealed: 13.9901
+odor on: 18.0174
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 28, opt1val2: 0, opt1prob: 0.25
+opt2type: 1, opt2val1: 21, opt2val2: 0, opt2prob: 1
+choice onset: 24.0729 
+RT: 3.1552, key: 4$
+chose option: 1
+choice made: 27.247
+odor off: 29.2592
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.30002, prob: 1.5708, side: 2 
+opt 2 angle: 2.26576, prob: 6.28319, side: 2
+outcome: 28, non-chosen outcome: 21
+outcome revealed: 31.2358
+odor on: 37.2643
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 30, opt1val2: 0, opt1prob: 0.75
+opt2type: 1, opt2val1: 25, opt2val2: 0, opt2prob: 1
+choice onset: 43.3216 
+RT: 2.78576, key: 1!
+chose option: 2
+choice made: 46.1271
+odor off: 48.1416
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.20743, prob: 4.71239, side: 2 
+opt 2 angle: 4.20781, prob: 6.28319, side: 2
+outcome: 25, non-chosen outcome: 30
+outcome revealed: 54.0548
+odor on: 58.0831
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 26, opt1val2: 5, opt1prob: 0.25
+opt2type: 2, opt2val1: 14, opt2val2: 6, opt2prob: 0.75
+choice onset: 64.1384 
+RT: 4.76876, key: 1!
+chose option: 1
+choice made: 68.9268
+odor off: 70.9436
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.03341, prob: 1.5708, side: 1 
+opt 2 angle: 3.72344, prob: 4.71239, side: 1
+outcome: 5, non-chosen outcome: 14
+outcome revealed: 76.8911
+odor on: 82.9185
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 13, opt1val2: 0, opt1prob: 0
+opt2type: 1, opt2val1: 9, opt2val2: 0, opt2prob: 1
+choice onset: 88.9758 
+RT: 1.515, key: 4$
+chose option: 2
+choice made: 90.5102
+odor off: 92.528
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.819305, prob: 0, side: 1 
+opt 2 angle: 1.30651, prob: 6.28319, side: 1
+outcome: 9, non-chosen outcome: 0
+outcome revealed: 94.5104
+odor on: 98.533
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 30, opt1val2: 0, opt1prob: 1
+opt2type: 1, opt2val1: 26, opt2val2: 0, opt2prob: 1
+choice onset: 104.589 
+RT: 1.88545, key: 1!
+chose option: 2
+choice made: 106.494
+odor off: 108.508
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.43007, prob: 6.28319, side: 2 
+opt 2 angle: 0.566087, prob: 6.28319, side: 2
+outcome: 26, non-chosen outcome: 30
+outcome revealed: 112.453
+odor on: 118.481
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 29, opt1val2: 0, opt1prob: 0.5
+opt2type: 2, opt2val1: 22, opt2val2: 11, opt2prob: 0.5
+choice onset: 124.542 
+RT: 1.82397, key: 4$
+chose option: 2
+choice made: 126.382
+odor off: 128.407
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.0546771, prob: 3.14159, side: 1 
+opt 2 angle: 3.2648, prob: 3.14159, side: 1
+outcome: 11, non-chosen outcome: 29
+outcome revealed: 130.402
+odor on: 136.429
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 13, opt1val2: 0, opt1prob: 0
+opt2type: 2, opt2val1: 7, opt2val2: 5, opt2prob: 0.25
+choice onset: 142.488 
+RT: 4.00311, key: 4$
+chose option: 2
+choice made: 146.509
+odor off: 148.524
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.1524, prob: 0, side: 1 
+opt 2 angle: 3.87998, prob: 1.5708, side: 1
+outcome: 5, non-chosen outcome: 0
+outcome revealed: 152.521
+odor on: 158.547
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 23, opt1val2: 0, opt1prob: 1
+opt2type: 1, opt2val1: 19, opt2val2: 0, opt2prob: 1
+choice onset: 164.605 
+RT: 7.56611, key: 1!
+chose option: 1
+choice made: 172.19
+odor off: 174.212
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.14602, prob: 6.28319, side: 1 
+opt 2 angle: 2.64056, prob: 6.28319, side: 1
+outcome: 23, non-chosen outcome: 19
+outcome revealed: 180.125
+odor on: 184.153
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 22, opt1val2: 6, opt1prob: 0.25
+opt2type: 2, opt2val1: 18, opt2val2: 6, opt2prob: 0.5
+choice onset: 190.21 
+RT: 2.40781, key: 4$
+chose option: 1
+choice made: 192.637
+odor off: 194.662
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.14405, prob: 1.5708, side: 2 
+opt 2 angle: 5.43611, prob: 3.14159, side: 2
+outcome: 6, non-chosen outcome: 6
+outcome revealed: 198.608
+odor on: 204.635
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 26, opt1val2: 0, opt1prob: 0.5
+opt2type: 2, opt2val1: 19, opt2val2: 12, opt2prob: 0.5
+choice onset: 210.696 
+RT: 10.243, key: 1!
+chose option: 2
+choice made: 220.956
+odor off: 222.985
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.60029, prob: 3.14159, side: 2 
+opt 2 angle: 4.83823, prob: 3.14159, side: 2
+outcome: 12, non-chosen outcome: 26
+outcome revealed: 228.916
+odor on: 234.944
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 8, opt1val2: 0, opt1prob: 0.5
+opt2type: 1, opt2val1: 5, opt2val2: 0, opt2prob: 1
+choice onset: 241.002 
+RT: 3.79136, key: 1!
+chose option: 2
+choice made: 244.902
+odor off: 246.922
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.98405, prob: 3.14159, side: 2 
+opt 2 angle: 2.36538, prob: 6.28319, side: 2
+outcome: 5, non-chosen outcome: 0
+outcome revealed: 252.852
+odor on: 256.88
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 10, opt1val2: 0, opt1prob: 0.5
+opt2type: 2, opt2val1: 8, opt2val2: 3, opt2prob: 0.5
+choice onset: 262.937 
+RT: 2.99258, key: 4$
+chose option: 1
+choice made: 265.948
+odor off: 267.972
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.399775, prob: 3.14159, side: 2 
+opt 2 angle: 2.07436, prob: 3.14159, side: 2
+outcome: 10, non-chosen outcome: 8
+outcome revealed: 269.95
+odor on: 277.977
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 12, opt1val2: 9, opt1prob: 0.75
+opt2type: 2, opt2val1: 16, opt2val2: 5, opt2prob: 0.5
+choice onset: 284.035 
+RT: 2.88377, key: 1!
+chose option: 1
+choice made: 286.94
+odor off: 288.956
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.07228, prob: 4.71239, side: 1 
+opt 2 angle: 2.51951, prob: 3.14159, side: 1
+outcome: 12, non-chosen outcome: 16
+outcome revealed: 292.935
+odor on: 296.963
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 8, opt1val2: 3, opt1prob: 0.75
+opt2type: 1, opt2val1: 6, opt2val2: 0, opt2prob: 1
+choice onset: 303.017 
+RT: 2.44505, key: 4$
+chose option: 1
+choice made: 305.483
+odor off: 307.505
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.695365, prob: 4.71239, side: 2 
+opt 2 angle: 2.30951, prob: 6.28319, side: 2
+outcome: 8, non-chosen outcome: 6
+outcome revealed: 313.42
+odor on: 321.446
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 10, opt1val2: 5, opt1prob: 0.25
+opt2type: 2, opt2val1: 8, opt2val2: 6, opt2prob: 0.75
+choice onset: 327.504 
+RT: 2.67783, key: 1!
+chose option: 2
+choice made: 330.203
+odor off: 332.225
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.20828, prob: 1.5708, side: 2 
+opt 2 angle: 5.50389, prob: 4.71239, side: 2
+outcome: 6, non-chosen outcome: 5
+outcome revealed: 334.219
+odor on: 338.247
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 22, opt1val2: 13, opt1prob: 0.25
+opt2type: 1, opt2val1: 16, opt2val2: 0, opt2prob: 1
+choice onset: 344.298 
+RT: 8.82555, key: 1!
+chose option: 1
+choice made: 353.131
+odor off: 355.144
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.46329, prob: 1.5708, side: 1 
+opt 2 angle: 5.44706, prob: 6.28319, side: 1
+outcome: 13, non-chosen outcome: 16
+outcome revealed: 357.121
+odor on: 363.149
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 19, opt1val2: 10, opt1prob: 0.5
+opt2type: 1, opt2val1: 14, opt2val2: 0, opt2prob: 1
+choice onset: 369.203 
+RT: 4.28922, key: 4$
+chose option: 2
+choice made: 373.498
+odor off: 375.51
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.6175, prob: 3.14159, side: 1 
+opt 2 angle: 3.83303, prob: 6.28319, side: 1
+outcome: 14, non-chosen outcome: 10
+outcome revealed: 381.424
+odor on: 387.452
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 24, opt1val2: 0, opt1prob: 0.25
+opt2type: 2, opt2val1: 13, opt2val2: 5, opt2prob: 0.25
+choice onset: 393.512 
+RT: 3.12045, key: 1!
+chose option: 1
+choice made: 396.65
+odor off: 398.663
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.390829, prob: 1.5708, side: 1 
+opt 2 angle: 0.43045, prob: 1.5708, side: 1
+outcome: 24, non-chosen outcome: 13
+outcome revealed: 400.658
+odor on: 406.685
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 28, opt1val2: 0, opt1prob: 0.75
+opt2type: 1, opt2val1: 19, opt2val2: 0, opt2prob: 1
+choice onset: 412.739 
+RT: 2.75243, key: 1!
+chose option: 2
+choice made: 415.497
+odor off: 417.512
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.25629, prob: 4.71239, side: 2 
+opt 2 angle: 4.07127, prob: 6.28319, side: 2
+outcome: 19, non-chosen outcome: 0
+outcome revealed: 423.425
+odor on: 429.454
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 9, opt1val2: 4, opt1prob: 0.5
+opt2type: 1, opt2val1: 7, opt2val2: 0, opt2prob: 1
+choice onset: 435.508 
+RT: 3.72669, key: 1!
+chose option: 2
+choice made: 439.257
+odor off: 441.281
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.43919, prob: 3.14159, side: 2 
+opt 2 angle: 0.50769, prob: 6.28319, side: 2
+outcome: 7, non-chosen outcome: 4
+outcome revealed: 443.282
+odor on: 449.32
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 16, opt1val2: 6, opt1prob: 0.5
+opt2type: 2, opt2val1: 20, opt2val2: 5, opt2prob: 0.5
+choice onset: 455.376 
+RT: 3.92379, key: 4$
+chose option: 2
+choice made: 459.321
+odor off: 461.332
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.74267, prob: 3.14159, side: 1 
+opt 2 angle: 0.195979, prob: 3.14159, side: 1
+outcome: 20, non-chosen outcome: 6
+outcome revealed: 463.309
+odor on: 471.339
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 13, opt1val2: 0, opt1prob: 0.75
+opt2type: 2, opt2val1: 10, opt2val2: 6, opt2prob: 0.5
+choice onset: 477.396 
+RT: 3.50519, key: 4$
+chose option: 2
+choice made: 480.92
+odor off: 482.932
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.72411, prob: 4.71239, side: 1 
+opt 2 angle: 4.87017, prob: 3.14159, side: 1
+outcome: 6, non-chosen outcome: 0
+outcome revealed: 486.895
+odor on: 494.926
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 27, opt1val2: 15, opt1prob: 0.75
+opt2type: 1, opt2val1: 21, opt2val2: 0, opt2prob: 1
+choice onset: 500.979 
+RT: 3.10237, key: 1!
+chose option: 2
+choice made: 504.089
+odor off: 506.101
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.14719, prob: 4.71239, side: 2 
+opt 2 angle: 6.26057, prob: 6.28319, side: 2
+outcome: 21, non-chosen outcome: 27
+outcome revealed: 512.02
+odor on: 516.043
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 26, opt1val2: 0, opt1prob: 0.25
+opt2type: 2, opt2val1: 18, opt2val2: 4, opt2prob: 0.25
+choice onset: 522.1 
+RT: 4.16174, key: 1!
+chose option: 1
+choice made: 526.28
+odor off: 528.303
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.9331, prob: 1.5708, side: 1 
+opt 2 angle: 2.20187, prob: 1.5708, side: 1
+outcome: 0, non-chosen outcome: 4
+outcome revealed: 534.234
+odor on: 542.261
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 26, opt1val2: 12, opt1prob: 0.75
+opt2type: 1, opt2val1: 20, opt2val2: 0, opt2prob: 1
+choice onset: 548.318 
+RT: 3.90719, key: 1!
+chose option: 2
+choice made: 552.232
+odor off: 554.242
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.97575, prob: 4.71239, side: 2 
+opt 2 angle: 4.19174, prob: 6.28319, side: 2
+outcome: 20, non-chosen outcome: 26
+outcome revealed: 560.154
+odor on: 568.183
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 16, opt1val2: 0, opt1prob: 0.5
+opt2type: 2, opt2val1: 12, opt2val2: 7, opt2prob: 0.5
+choice onset: 574.245 
+RT: 1.90574, key: 4$
+chose option: 2
+choice made: 576.167
+odor off: 578.194
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.89805, prob: 3.14159, side: 1 
+opt 2 angle: 0.646516, prob: 3.14159, side: 1
+outcome: 12, non-chosen outcome: 0
+outcome revealed: 584.126
+odor on: 588.152
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 15, opt1val2: 0, opt1prob: 0.5
+opt2type: 1, opt2val1: 13, opt2val2: 0, opt2prob: 1
+choice onset: 594.207 
+RT: 7.45927, key: 1!
+chose option: 1
+choice made: 601.687
+odor off: 603.698
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.95558, prob: 3.14159, side: 1 
+opt 2 angle: 4.73864, prob: 6.28319, side: 1
+outcome: 15, non-chosen outcome: 13
+outcome revealed: 609.629
+odor on: 615.657
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 20, opt1val2: 16, opt1prob: 0.5
+opt2type: 2, opt2val1: 25, opt2val2: 10, opt2prob: 0.5
+choice onset: 621.712 
+RT: 4.08122, key: 1!
+chose option: 1
+choice made: 625.798
+odor off: 627.818
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.76859, prob: 3.14159, side: 1 
+opt 2 angle: 0.34752, prob: 3.14159, side: 1
+outcome: 20, non-chosen outcome: 25
+outcome revealed: 631.764
+odor on: 637.792
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 14, opt1val2: 0, opt1prob: 0.25
+opt2type: 1, opt2val1: 4, opt2val2: 0, opt2prob: 1
+choice onset: 643.845 
+RT: 5.22593, key: 4$
+chose option: 1
+choice made: 649.079
+odor off: 651.104
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.2445, prob: 1.5708, side: 2 
+opt 2 angle: 5.38349, prob: 6.28319, side: 2
+outcome: 0, non-chosen outcome: 4
+outcome revealed: 655.053
+odor on: 663.08
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 13, opt1val2: 6, opt1prob: 0.75
+opt2type: 2, opt2val1: 20, opt2val2: 10, opt2prob: 0.25
+choice onset: 669.137 
+RT: 2.32214, key: 4$
+chose option: 2
+choice made: 671.478
+odor off: 673.49
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.35031, prob: 4.71239, side: 1 
+opt 2 angle: 3.32632, prob: 1.5708, side: 1
+outcome: 10, non-chosen outcome: 13
+outcome revealed: 677.585
+odor on: 683.613
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 16, opt1val2: 12, opt1prob: 0.75
+opt2type: 2, opt2val1: 17, opt2val2: 12, opt2prob: 0.5
+choice onset: 689.669 
+RT: 5.21139, key: 1!
+chose option: 1
+choice made: 694.901
+odor off: 696.925
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.8776, prob: 4.71239, side: 1 
+opt 2 angle: 3.48148, prob: 3.14159, side: 1
+outcome: 12, non-chosen outcome: 12
+outcome revealed: 698.904
+odor on: 702.93
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 16, opt1val2: 0, opt1prob: 0.75
+opt2type: 2, opt2val1: 13, opt2val2: 7, opt2prob: 0.5
+choice onset: 708.989 
+RT: 3.19132, key: 4$
+chose option: 2
+choice made: 712.197
+odor off: 714.223
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.33263, prob: 4.71239, side: 1 
+opt 2 angle: 1.70903, prob: 3.14159, side: 1
+outcome: 13, non-chosen outcome: 16
+outcome revealed: 718.186
+odor on: 724.213
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 26, opt1val2: 0, opt1prob: 0.25
+opt2type: 1, opt2val1: 19, opt2val2: 0, opt2prob: 1
+choice onset: 730.268 
+RT: 2.25895, key: 1!
+chose option: 2
+choice made: 732.533
+odor off: 734.556
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.08867, prob: 1.5708, side: 2 
+opt 2 angle: 2.81025, prob: 6.28319, side: 2
+outcome: 19, non-chosen outcome: 26
+outcome revealed: 740.47
+odor on: 744.498
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 30, opt1val2: 8, opt1prob: 0.25
+opt2type: 2, opt2val1: 22, opt2val2: 9, opt2prob: 0.5
+choice onset: 750.552 
+RT: 5.99082, key: 1!
+chose option: 2
+choice made: 756.564
+odor off: 758.576
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.285, prob: 1.5708, side: 2 
+opt 2 angle: 4.58686, prob: 3.14159, side: 2
+outcome: 9, non-chosen outcome: 8
+outcome revealed: 762.539
+odor on: 766.566
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 23, opt1val2: 10, opt1prob: 0.75
+opt2type: 1, opt2val1: 18, opt2val2: 0, opt2prob: 1
+choice onset: 772.618 
+RT: 4.6112, key: 1!
+chose option: 1
+choice made: 777.253
+odor off: 779.276
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.30317, prob: 4.71239, side: 1 
+opt 2 angle: 5.18837, prob: 6.28319, side: 1
+outcome: 23, non-chosen outcome: 18
+outcome revealed: 785.197
+odor on: 789.235
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 19, opt1val2: 7, opt1prob: 0.75
+opt2type: 2, opt2val1: 23, opt2val2: 10, opt2prob: 0.25
+choice onset: 795.289 
+RT: 3.22204, key: 4$
+chose option: 2
+choice made: 798.533
+odor off: 800.543
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.385479, prob: 4.71239, side: 1 
+opt 2 angle: 1.25192, prob: 1.5708, side: 1
+outcome: 23, non-chosen outcome: 19
+outcome revealed: 804.492
+odor on: 808.517
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 18, opt1val2: 9, opt1prob: 0.5
+opt2type: 1, opt2val1: 12, opt2val2: 0, opt2prob: 1
+choice onset: 814.57 
+RT: 5.45859, key: 4$
+chose option: 1
+choice made: 820.036
+odor off: 822.045
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.1263, prob: 3.14159, side: 2 
+opt 2 angle: 5.32747, prob: 6.28319, side: 2
+outcome: 18, non-chosen outcome: 12
+outcome revealed: 826.008
+odor on: 832.035
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 22, opt1val2: 5, opt1prob: 0.5
+opt2type: 1, opt2val1: 11, opt2val2: 0, opt2prob: 1
+choice onset: 838.09 
+RT: 2.62702, key: 1!
+chose option: 2
+choice made: 840.739
+odor off: 842.761
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.10812, prob: 3.14159, side: 2 
+opt 2 angle: 5.49066, prob: 6.28319, side: 2
+outcome: 11, non-chosen outcome: 22
+outcome revealed: 844.738
+odor on: 852.767
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 16, opt1val2: 0, opt1prob: 0.5
+opt2type: 1, opt2val1: 12, opt2val2: 0, opt2prob: 1
+choice onset: 858.826 
+RT: 0.789507, key: 1!
+chose option: 2
+choice made: 859.635
+odor off: 861.661
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.45937, prob: 3.14159, side: 2 
+opt 2 angle: 4.33982, prob: 6.28319, side: 2
+outcome: 12, non-chosen outcome: 16
+outcome revealed: 865.606
+odor on: 873.634
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 25, opt1val2: 10, opt1prob: 0.25
+opt2type: 2, opt2val1: 16, opt2val2: 11, opt2prob: 0.75
+choice onset: 879.694 
+RT: 4.36927, key: 4$
+chose option: 2
+choice made: 884.083
+odor off: 886.097
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.36099, prob: 1.5708, side: 1 
+opt 2 angle: 0.843507, prob: 4.71239, side: 1
+outcome: 16, non-chosen outcome: 10
+outcome revealed: 892.029
+odor on: 900.059
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 12, opt1val2: 9, opt1prob: 0.5
+opt2type: 2, opt2val1: 18, opt2val2: 6, opt2prob: 0.5
+choice onset: 906.116 
+RT: 2.44327, key: 4$
+chose option: 2
+choice made: 908.579
+odor off: 910.601
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 6.20456, prob: 3.14159, side: 1 
+opt 2 angle: 3.23126, prob: 3.14159, side: 1
+outcome: 6, non-chosen outcome: 9
+outcome revealed: 916.514
+odor on: 922.543
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 30, opt1val2: 14, opt1prob: 0.25
+opt2type: 1, opt2val1: 19, opt2val2: 0, opt2prob: 1
+choice onset: 928.598 
+RT: 2.37432, key: 1!
+chose option: 1
+choice made: 930.994
+odor off: 933.004
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.753009, prob: 1.5708, side: 1 
+opt 2 angle: 4.89973, prob: 6.28319, side: 1
+outcome: 30, non-chosen outcome: 19
+outcome revealed: 936.947
+odor on: 944.981
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 15, opt1val2: 8, opt1prob: 0.25
+opt2type: 1, opt2val1: 9, opt2val2: 0, opt2prob: 1
+choice onset: 951.033 
+RT: 2.27439, key: 1!
+chose option: 2
+choice made: 953.329
+odor off: 955.339
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.81418, prob: 1.5708, side: 2 
+opt 2 angle: 3.25596, prob: 6.28319, side: 2
+outcome: 9, non-chosen outcome: 8
+outcome revealed: 961.252
+odor on: 969.283
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 16, opt1val2: 0, opt1prob: 0.25
+opt2type: 2, opt2val1: 7, opt2val2: 1, opt2prob: 0.5
+choice onset: 975.342 
+RT: 4.14731, key: 1!
+chose option: 1
+choice made: 979.506
+odor off: 981.526
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.96291, prob: 1.5708, side: 1 
+opt 2 angle: 0.765035, prob: 3.14159, side: 1
+outcome: 0, non-chosen outcome: 7
+outcome revealed: 987.473
+odor on: 993.501
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 28, opt1val2: 0, opt1prob: 0.25
+opt2type: 1, opt2val1: 23, opt2val2: 0, opt2prob: 1
+choice onset: 999.559 
+RT: 2.15094, key: 4$
+chose option: 2
+choice made: 1001.73
+odor off: 1003.74
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.516448, prob: 1.5708, side: 1 
+opt 2 angle: 4.91876, prob: 6.28319, side: 1
+outcome: 23, non-chosen outcome: 28
+outcome revealed: 1007.69
+odor on: 1011.72
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 17, opt1val2: 0, opt1prob: 1
+opt2type: 2, opt2val1: 16, opt2val2: 8, opt2prob: 0.75
+choice onset: 1017.77 
+RT: 4.44733, key: 1!
+chose option: 2
+choice made: 1022.24
+odor off: 1024.26
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 6.04597, prob: 6.28319, side: 2 
+opt 2 angle: 1.15475, prob: 4.71239, side: 2
+outcome: 16, non-chosen outcome: 17
+outcome revealed: 1030.19
+odor on: 1034.22
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 16, opt1val2: 0, opt1prob: 0
+opt2type: 2, opt2val1: 10, opt2val2: 7, opt2prob: 0.25
+choice onset: 1040.27 
+RT: 4.92197, key: 1!
+chose option: 2
+choice made: 1045.2
+odor off: 1047.21
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.5458, prob: 0, side: 2 
+opt 2 angle: 2.5127, prob: 1.5708, side: 2
+outcome: 7, non-chosen outcome: 0
+outcome revealed: 1053.15
+odor on: 1061.19
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 26, opt1val2: 0, opt1prob: 0.5
+opt2type: 2, opt2val1: 23, opt2val2: 8, opt2prob: 0.5
+choice onset: 1067.25 
+RT: 0.828711, key: 4$
+chose option: 2
+choice made: 1068.1
+odor off: 1070.12
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.18284, prob: 3.14159, side: 1 
+opt 2 angle: 3.40923, prob: 3.14159, side: 1
+outcome: 8, non-chosen outcome: 26
+outcome revealed: 1076.05
+odor on: 1080.07
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 18, opt1val2: 0, opt1prob: 0.5
+opt2type: 2, opt2val1: 13, opt2val2: 5, opt2prob: 0.5
+choice onset: 1086.13 
+RT: 1.19386, key: 1!
+chose option: 2
+choice made: 1087.34
+odor off: 1089.36
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.65298, prob: 3.14159, side: 2 
+opt 2 angle: 5.23319, prob: 3.14159, side: 2
+outcome: 5, non-chosen outcome: 0
+outcome revealed: 1095.28
+odor on: 1101.31
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 15, opt1val2: 18, opt1prob: 0.5
+opt2type: 2, opt2val1: 20, opt2val2: 1, opt2prob: 0.75
+choice onset: 1107.36 
+RT: 12.5048, key: 4$
+chose option: 1
+choice made: 1119.89
+odor off: 1121.91
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.41716, prob: 3.14159, side: 2 
+opt 2 angle: 5.99943, prob: 4.71239, side: 2
+outcome: 15, non-chosen outcome: 1
+outcome revealed: 1127.82
+odor on: 1131.85
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 20, opt1val2: 10, opt1prob: 0.5
+opt2type: 1, opt2val1: 13, opt2val2: 0, opt2prob: 1
+choice onset: 1137.9 
+RT: 2.72972, key: 1!
+chose option: 2
+choice made: 1140.64
+odor off: 1142.66
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.81777, prob: 3.14159, side: 2 
+opt 2 angle: 1.19801, prob: 6.28319, side: 2
+outcome: 13, non-chosen outcome: 10
+outcome revealed: 1144.79
+odor on: 1150.81
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 24, opt1val2: 0, opt1prob: 0.25
+opt2type: 1, opt2val1: 20, opt2val2: 0, opt2prob: 1
+choice onset: 1156.87 
+RT: 4.85134, key: 1!
+chose option: 1
+choice made: 1161.74
+odor off: 1163.76
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.99154, prob: 1.5708, side: 1 
+opt 2 angle: 1.1649, prob: 6.28319, side: 1
+outcome: 0, non-chosen outcome: 20
+outcome revealed: 1167.71
+odor on: 1171.73
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 29, opt1val2: 7, opt1prob: 0.75
+opt2type: 1, opt2val1: 19, opt2val2: 0, opt2prob: 1
+choice onset: 1177.78 
+RT: 2.33457, key: 1!
+chose option: 1
+choice made: 1180.13
+odor off: 1182.14
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.11911, prob: 4.71239, side: 1 
+opt 2 angle: 3.06954, prob: 6.28319, side: 1
+outcome: 29, non-chosen outcome: 19
+outcome revealed: 1188.08
+odor on: 1194.12
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 14, opt1val2: 6, opt1prob: 0.75
+opt2type: 1, opt2val1: 11, opt2val2: 0, opt2prob: 1
+choice onset: 1200.17 
+RT: 3.5005, key: 4$
+chose option: 1
+choice made: 1203.68
+odor off: 1205.69
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.147137, prob: 4.71239, side: 2 
+opt 2 angle: 1.30669, prob: 6.28319, side: 2
+outcome: 14, non-chosen outcome: 11
+outcome revealed: 1209.65
+odor on: 1217.69
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 19, opt1val2: 0, opt1prob: 0
+opt2type: 1, opt2val1: 12, opt2val2: 0, opt2prob: 1
+choice onset: 1223.74 
+RT: 3.00231, key: 4$
+chose option: 2
+choice made: 1226.77
+odor off: 1228.78
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.87595, prob: 0, side: 1 
+opt 2 angle: 3.25319, prob: 6.28319, side: 1
+outcome: 12, non-chosen outcome: 0
+outcome revealed: 1232.73
+odor on: 1236.77
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 30, opt1val2: 0, opt1prob: 0.5
+opt2type: 2, opt2val1: 23, opt2val2: 11, opt2prob: 0.5
+choice onset: 1242.83 
+RT: 7.55286, key: 4$
+chose option: 2
+choice made: 1250.4
+odor off: 1252.42
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.28121, prob: 3.14159, side: 1 
+opt 2 angle: 5.96578, prob: 3.14159, side: 1
+outcome: 11, non-chosen outcome: 30
+outcome revealed: 1256.4
+odor on: 1264.42
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 25, opt1val2: 7, opt1prob: 0.75
+opt2type: 2, opt2val1: 19, opt2val2: 14, opt2prob: 0.75
+choice onset: 1270.48 
+RT: 3.52877, key: 1!
+chose option: 2
+choice made: 1274.03
+odor off: 1276.05
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.42379, prob: 4.71239, side: 2 
+opt 2 angle: 5.28465, prob: 4.71239, side: 2
+outcome: 14, non-chosen outcome: 7
+outcome revealed: 1281.97
+odor on: 1290
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 15, opt1val2: 8, opt1prob: 0.75
+opt2type: 2, opt2val1: 12, opt2val2: 10, opt2prob: 0.75
+choice onset: 1296.05 
+RT: 2.77159, key: 1!
+chose option: 1
+choice made: 1298.84
+odor off: 1300.86
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.14573, prob: 4.71239, side: 1 
+opt 2 angle: 4.29222, prob: 4.71239, side: 1
+outcome: 8, non-chosen outcome: 12
+outcome revealed: 1306.79
+odor on: 1312.81
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 11, opt1val2: 0, opt1prob: 0.5
+opt2type: 1, opt2val1: 9, opt2val2: 0, opt2prob: 1
+choice onset: 1318.87 
+RT: 7.00895, key: 4$
+chose option: 2
+choice made: 1325.9
+odor off: 1327.91
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.55364, prob: 3.14159, side: 1 
+opt 2 angle: 0.423382, prob: 6.28319, side: 1
+outcome: 9, non-chosen outcome: 0
+outcome revealed: 1329.89
+odor on: 1337.92
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 12, opt1val2: 3, opt1prob: 0.75
+opt2type: 1, opt2val1: 8, opt2val2: 0, opt2prob: 1
+choice onset: 1343.97 
+RT: 2.54522, key: 4$
+chose option: 2
+choice made: 1346.53
+odor off: 1348.54
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.31627, prob: 4.71239, side: 1 
+opt 2 angle: 3.96896, prob: 6.28319, side: 1
+outcome: 8, non-chosen outcome: 12
+outcome revealed: 1352.49
+odor on: 1360.52
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 10, opt1val2: 6, opt1prob: 0.5
+opt2type: 1, opt2val1: 8, opt2val2: 0, opt2prob: 1
+choice onset: 1366.58 
+RT: 5.38238, key: 4$
+chose option: 1
+choice made: 1371.98
+odor off: 1374
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.0544507, prob: 3.14159, side: 2 
+opt 2 angle: 2.74404, prob: 6.28319, side: 2
+outcome: 10, non-chosen outcome: 8
+outcome revealed: 1379.93
+odor on: 1383.96
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 21, opt1val2: 18, opt1prob: 0.25
+opt2type: 2, opt2val1: 30, opt2val2: 5, opt2prob: 0.5
+choice onset: 1390.01 
+RT: 3.08152, key: 4$
+chose option: 2
+choice made: 1393.12
+odor off: 1395.13
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.28417, prob: 1.5708, side: 1 
+opt 2 angle: 1.01897, prob: 3.14159, side: 1
+outcome: 30, non-chosen outcome: 18
+outcome revealed: 1397.11
+odor on: 1405.14
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 14, opt1val2: 0, opt1prob: 0.5
+opt2type: 1, opt2val1: 14, opt2val2: 0, opt2prob: 1
+choice onset: 1411.2 
+RT: 5.22596, key: 1!
+chose option: 2
+choice made: 1416.44
+odor off: 1418.47
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.26279, prob: 3.14159, side: 2 
+opt 2 angle: 1.84473, prob: 6.28319, side: 2
+outcome: 14, non-chosen outcome: 0
+outcome revealed: 1422.41
+odor on: 1426.44
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 22, opt1val2: 6, opt1prob: 0.75
+opt2type: 2, opt2val1: 17, opt2val2: 9, opt2prob: 0.75
+choice onset: 1432.5 
+RT: 2.4042, key: 1!
+chose option: 2
+choice made: 1434.92
+odor off: 1436.93
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.35644, prob: 4.71239, side: 2 
+opt 2 angle: 3.09029, prob: 4.71239, side: 2
+outcome: 17, non-chosen outcome: 22
+outcome revealed: 1438.91
+odor on: 1442.94
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 27, opt1val2: 0, opt1prob: 0.75
+opt2type: 1, opt2val1: 21, opt2val2: 0, opt2prob: 1
+choice onset: 1449 
+RT: 2.68911, key: 4$
+chose option: 1
+choice made: 1451.71
+odor off: 1453.73
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.0471077, prob: 4.71239, side: 2 
+opt 2 angle: 1.54054, prob: 6.28319, side: 2
+outcome: 27, non-chosen outcome: 21
+outcome revealed: 1455.71
+odor on: 1459.74
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 28, opt1val2: 6, opt1prob: 0.25
+opt2type: 2, opt2val1: 14, opt2val2: 11, opt2prob: 0.75
+choice onset: 1465.79 
+RT: 1.87843, key: 1!
+chose option: 2
+choice made: 1467.69
+odor off: 1469.71
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.03308, prob: 1.5708, side: 2 
+opt 2 angle: 2.31771, prob: 4.71239, side: 2
+outcome: 14, non-chosen outcome: 6
+outcome revealed: 1473.66
+odor on: 1481.69
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 16, opt1val2: 9, opt1prob: 0.5
+opt2type: 2, opt2val1: 25, opt2val2: 6, opt2prob: 0.25
+choice onset: 1487.74 
+RT: 3.7023, key: 4$
+chose option: 2
+choice made: 1491.47
+odor off: 1493.48
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.393045, prob: 3.14159, side: 1 
+opt 2 angle: 3.38133, prob: 1.5708, side: 1
+outcome: 6, non-chosen outcome: 16
+outcome revealed: 1495.49
+odor on: 1501.52
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 25, opt1val2: 0, opt1prob: 0.75
+opt2type: 2, opt2val1: 18, opt2val2: 11, opt2prob: 0.75
+choice onset: 1507.58 
+RT: 1.72449, key: 1!
+chose option: 1
+choice made: 1509.32
+odor off: 1511.35
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.74472, prob: 4.71239, side: 1 
+opt 2 angle: 3.0971, prob: 4.71239, side: 1
+outcome: 25, non-chosen outcome: 18
+outcome revealed: 1515.32
+odor on: 1521.35
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 15, opt1val2: 0, opt1prob: 0.25
+opt2type: 2, opt2val1: 9, opt2val2: 3, opt2prob: 0.25
+choice onset: 1527.41 
+RT: 3.05972, key: 1!
+chose option: 2
+choice made: 1530.49
+odor off: 1532.51
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 6.02121, prob: 1.5708, side: 2 
+opt 2 angle: 6.18644, prob: 1.5708, side: 2
+outcome: 3, non-chosen outcome: 0
+outcome revealed: 1536.48
+odor on: 1542.5
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 18, opt1val2: 14, opt1prob: 0.25
+opt2type: 2, opt2val1: 20, opt2val2: 10, opt2prob: 0.5
+choice onset: 1548.56 
+RT: 3.60369, key: 1!
+chose option: 2
+choice made: 1552.18
+odor off: 1554.2
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.73254, prob: 1.5708, side: 2 
+opt 2 angle: 5.95342, prob: 3.14159, side: 2
+outcome: 10, non-chosen outcome: 14
+outcome revealed: 1556.18
+odor on: 1560.2
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 19, opt1val2: 0, opt1prob: 1
+opt2type: 1, opt2val1: 16, opt2val2: 0, opt2prob: 1
+choice onset: 1566.26 
+RT: 4.17739, key: 4$
+chose option: 1
+choice made: 1570.46
+odor off: 1572.48
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.01152, prob: 6.28319, side: 2 
+opt 2 angle: 1.98296, prob: 6.28319, side: 2
+outcome: 19, non-chosen outcome: 16
+outcome revealed: 1578.39
+odor on: 1582.42
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 21, opt1val2: 6, opt1prob: 0.25
+opt2type: 2, opt2val1: 20, opt2val2: 5, opt2prob: 0.25
+choice onset: 1588.59 
+RT: 2.72348, key: 4$
+chose option: 1
+choice made: 1591.34
+odor off: 1593.36
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.23183, prob: 1.5708, side: 2 
+opt 2 angle: 1.44937, prob: 1.5708, side: 2
+outcome: 6, non-chosen outcome: 20
+outcome revealed: 1599.3
+odor on: 1607.34
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 15, opt1val2: 0, opt1prob: 0
+opt2type: 2, opt2val1: 9, opt2val2: 5, opt2prob: 0.25
+choice onset: 1613.4 
+RT: 6.97482, key: 1!
+chose option: 2
+choice made: 1620.39
+odor off: 1622.42
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.0185024, prob: 0, side: 2 
+opt 2 angle: 3.15102, prob: 1.5708, side: 2
+outcome: 5, non-chosen outcome: 0
+outcome revealed: 1626.4
+odor on: 1630.54
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 30, opt1val2: 0, opt1prob: 0.75
+opt2type: 1, opt2val1: 24, opt2val2: 0, opt2prob: 1
+choice onset: 1636.6 
+RT: 1.61221, key: 4$
+chose option: 1
+choice made: 1638.23
+odor off: 1640.25
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.200894, prob: 4.71239, side: 2 
+opt 2 angle: 5.88114, prob: 6.28319, side: 2
+outcome: 30, non-chosen outcome: 24
+outcome revealed: 1646.17
+odor on: 1650.19
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 15, opt1val2: 0, opt1prob: 0
+opt2type: 1, opt2val1: 10, opt2val2: 0, opt2prob: 1
+choice onset: 1656.25 
+RT: 1.60973, key: 1!
+chose option: 2
+choice made: 1657.86
+odor off: 1659.88
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.81162, prob: 0, side: 2 
+opt 2 angle: 4.96294, prob: 6.28319, side: 2
+outcome: 10, non-chosen outcome: 0
+outcome revealed: 1665.84
+odor on: 1671.88
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 14, opt1val2: 0, opt1prob: 1
+opt2type: 2, opt2val1: 10, opt2val2: 28, opt2prob: 0.75
+choice onset: 1677.94 
+RT: 1.253, key: 4$
+chose option: 2
+choice made: 1679.21
+odor off: 1681.24
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.7652, prob: 6.28319, side: 1 
+opt 2 angle: 1.36395, prob: 4.71239, side: 1
+outcome: 10, non-chosen outcome: 14
+outcome revealed: 1683.23
+odor on: 1687.26
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 10, opt1val2: 1, opt1prob: 0.25
+opt2type: 1, opt2val1: 3, opt2val2: 0, opt2prob: 1
+choice onset: 1693.31 
+RT: 1.42619, key: 1!
+chose option: 1
+choice made: 1694.76
+odor off: 1696.78
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.63902, prob: 1.5708, side: 1 
+opt 2 angle: 2.68668, prob: 6.28319, side: 1
+outcome: 1, non-chosen outcome: 3
+outcome revealed: 1702.8
+odor on: 1710.82
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 10, opt1val2: 0, opt1prob: 0
+opt2type: 1, opt2val1: 5, opt2val2: 0, opt2prob: 1
+choice onset: 1716.88 
+RT: 0.928096, key: 4$
+chose option: 2
+choice made: 1717.83
+odor off: 1719.85
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.85331, prob: 0, side: 1 
+opt 2 angle: 1.46335, prob: 6.28319, side: 1
+outcome: 5, non-chosen outcome: 0
+outcome revealed: 1721.83
+odor on: 1725.86
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 29, opt1val2: 0, opt1prob: 1
+opt2type: 1, opt2val1: 24, opt2val2: 0, opt2prob: 1
+choice onset: 1731.91 
+RT: 1.89894, key: 1!
+chose option: 2
+choice made: 1733.83
+odor off: 1735.85
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.72852, prob: 6.28319, side: 2 
+opt 2 angle: 5.24231, prob: 6.28319, side: 2
+outcome: 24, non-chosen outcome: 29
+outcome revealed: 1741.76
+odor on: 1745.79
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 18, opt1val2: 26, opt1prob: 0.5
+opt2type: 2, opt2val1: 23, opt2val2: 17, opt2prob: 0.75
+choice onset: 1751.85 
+RT: 3.43629, key: 1!
+chose option: 1
+choice made: 1755.3
+odor off: 1757.31
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.678093, prob: 3.14159, side: 1 
+opt 2 angle: 1.15798, prob: 4.71239, side: 1
+outcome: 18, non-chosen outcome: 23
+outcome revealed: 1761.26
+odor on: 1767.29
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 30, opt1val2: 0, opt1prob: 0.75
+opt2type: 1, opt2val1: 26, opt2val2: 0, opt2prob: 1
+choice onset: 1773.34 
+RT: 1.85552, key: 4$
+chose option: 2
+choice made: 1775.22
+odor off: 1777.23
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.99176, prob: 4.71239, side: 1 
+opt 2 angle: 0.0856097, prob: 6.28319, side: 1
+outcome: 26, non-chosen outcome: 0
+outcome revealed: 1783.15
+odor on: 1791.19
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 30, opt1val2: 0, opt1prob: 1
+opt2type: 1, opt2val1: 27, opt2val2: 0, opt2prob: 1
+choice onset: 1797.25 
+RT: 5.9208, key: 4$
+chose option: 1
+choice made: 1803.17
+odor off: 1805.19
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.52834, prob: 6.28319, side: 2 
+opt 2 angle: 0.526339, prob: 6.28319, side: 2
+outcome: 30, non-chosen outcome: 27
+outcome revealed: 1811.12
+odor on: 1815.15
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 12, opt1val2: 0, opt1prob: 0
+opt2type: 1, opt2val1: 6, opt2val2: 0, opt2prob: 1
+choice onset: 1821.2 
+RT: 2.84605, key: 4$
+chose option: 2
+choice made: 1824.07
+odor off: 1826.09
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 6.16454, prob: 0, side: 1 
+opt 2 angle: 2.39566, prob: 6.28319, side: 1
+outcome: 6, non-chosen outcome: 0
+outcome revealed: 1828.07
+odor on: 1834.09
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 13, opt1val2: 5, opt1prob: 0.75
+opt2type: 2, opt2val1: 24, opt2val2: 4, opt2prob: 0.25
+choice onset: 1840.14 
+RT: 7.27366, key: 1!
+chose option: 2
+choice made: 1847.43
+odor off: 1849.44
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.0723042, prob: 4.71239, side: 2 
+opt 2 angle: 1.38696, prob: 1.5708, side: 2
+outcome: 24, non-chosen outcome: 13
+outcome revealed: 1853.39
+odor on: 1861.43
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 19, opt1val2: 13, opt1prob: 0.5
+opt2type: 2, opt2val1: 25, opt2val2: 15, opt2prob: 0.25
+choice onset: 1867.49 
+RT: 1.53384, key: 1!
+chose option: 1
+choice made: 1869.04
+odor off: 1871.06
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.18142, prob: 3.14159, side: 1 
+opt 2 angle: 3.71947, prob: 1.5708, side: 1
+outcome: 13, non-chosen outcome: 15
+outcome revealed: 1873.04
+odor on: 1879.06
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 20, opt1val2: 6, opt1prob: 0.25
+opt2type: 2, opt2val1: 11, opt2val2: 8, opt2prob: 0.25
+choice onset: 1885.12 
+RT: 2.01483, key: 1!
+chose option: 2
+choice made: 1887.16
+odor off: 1889.17
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.72625, prob: 1.5708, side: 2 
+opt 2 angle: 6.0052, prob: 1.5708, side: 2
+outcome: 8, non-chosen outcome: 6
+outcome revealed: 1891.18
+odor on: 1895.21
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 18, opt1val2: 0, opt1prob: 0.75
+opt2type: 2, opt2val1: 21, opt2val2: 9, opt2prob: 0.25
+choice onset: 1901.27 
+RT: 4.17119, key: 1!
+chose option: 2
+choice made: 1905.46
+odor off: 1907.47
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.936, prob: 4.71239, side: 2 
+opt 2 angle: 4.93834, prob: 1.5708, side: 2
+outcome: 9, non-chosen outcome: 18
+outcome revealed: 1913.39
+odor on: 1921.41
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 24, opt1val2: 0, opt1prob: 0.75
+opt2type: 2, opt2val1: 17, opt2val2: 28, opt2prob: 0.75
+choice onset: 1927.47 
+RT: 7.83867, key: 4$
+chose option: 2
+choice made: 1935.33
+odor off: 1937.35
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.34838, prob: 4.71239, side: 1 
+opt 2 angle: 0.263918, prob: 4.71239, side: 1
+outcome: 17, non-chosen outcome: 24
+outcome revealed: 1941.34
+odor on: 1947.37
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 12, opt1val2: 0, opt1prob: 0.5
+opt2type: 1, opt2val1: 8, opt2val2: 0, opt2prob: 1
+choice onset: 1953.43 
+RT: 2.89132, key: 1!
+chose option: 1
+choice made: 1956.34
+odor off: 1958.36
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.163822, prob: 3.14159, side: 1 
+opt 2 angle: 4.15237, prob: 6.28319, side: 1
+outcome: 12, non-chosen outcome: 8
+outcome revealed: 1960.34
+odor on: 1964.37
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 10, opt1val2: 0, opt1prob: 1
+opt2type: 2, opt2val1: 5, opt2val2: 20, opt2prob: 0.75
+choice onset: 1970.43 
+RT: 2.43734, key: 4$
+chose option: 2
+choice made: 1972.88
+odor off: 1974.89
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.97789, prob: 6.28319, side: 1 
+opt 2 angle: 3.6647, prob: 4.71239, side: 1
+outcome: 5, non-chosen outcome: 10
+outcome revealed: 1980.83
+odor on: 1988.85
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 18, opt1val2: 5, opt1prob: 0.25
+opt2type: 2, opt2val1: 19, opt2val2: 3, opt2prob: 0.25
+choice onset: 1994.91 
+RT: 3.90256, key: 4$
+chose option: 1
+choice made: 1998.83
+odor off: 2000.85
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.15328, prob: 1.5708, side: 2 
+opt 2 angle: 2.36638, prob: 1.5708, side: 2
+outcome: 5, non-chosen outcome: 3
+outcome revealed: 2004.8
+odor on: 2008.82
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 30, opt1val2: 0, opt1prob: 0.75
+opt2type: 2, opt2val1: 22, opt2val2: 30, opt2prob: 0.75
+choice onset: 2014.88 
+RT: 5.8882, key: 1!
+chose option: 2
+choice made: 2020.79
+odor off: 2022.8
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.04281, prob: 4.71239, side: 2 
+opt 2 angle: 3.58729, prob: 4.71239, side: 2
+outcome: 22, non-chosen outcome: 0
+outcome revealed: 2024.8
+odor on: 2028.82
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 10, opt1val2: 0, opt1prob: 1
+opt2type: 1, opt2val1: 9, opt2val2: 0, opt2prob: 1
+choice onset: 2034.88 
+RT: 7.35962, key: 1!
+chose option: 2
+choice made: 2042.26
+odor off: 2044.28
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.50017, prob: 6.28319, side: 2 
+opt 2 angle: 0.0230067, prob: 6.28319, side: 2
+outcome: 9, non-chosen outcome: 10
+outcome revealed: 2046.38
+odor on: 2054.41
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 13, opt1val2: 0, opt1prob: 0
+opt2type: 2, opt2val1: 10, opt2val2: 5, opt2prob: 0.25
+choice onset: 2060.47 
+RT: 2.84375, key: 4$
+chose option: 2
+choice made: 2063.33
+odor off: 2065.35
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.37931, prob: 0, side: 1 
+opt 2 angle: 5.94036, prob: 1.5708, side: 1
+outcome: 5, non-chosen outcome: 0
+outcome revealed: 2069.32
+odor on: 2073.36
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 15, opt1val2: 3, opt1prob: 0.75
+opt2type: 1, opt2val1: 13, opt2val2: 0, opt2prob: 1
+choice onset: 2079.41 
+RT: 2.61472, key: 4$
+chose option: 1
+choice made: 2082.03
+odor off: 2084.05
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.0397394, prob: 4.71239, side: 2 
+opt 2 angle: 1.54342, prob: 6.28319, side: 2
+outcome: 15, non-chosen outcome: 13
+outcome revealed: 2086.03
+odor on: 2090.06
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 20, opt1val2: 0, opt1prob: 0
+opt2type: 2, opt2val1: 15, opt2val2: 7, opt2prob: 0.25
+choice onset: 2096.11 
+RT: 2.58876, key: 4$
+chose option: 2
+choice made: 2098.72
+odor off: 2100.75
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.53939, prob: 0, side: 1 
+opt 2 angle: 0.445302, prob: 1.5708, side: 1
+outcome: 15, non-chosen outcome: 0
+outcome revealed: 2106.67
+odor on: 2112.71
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 12, opt1val2: 9, opt1prob: 0.25
+opt2type: 1, opt2val1: 10, opt2val2: 0, opt2prob: 1
+choice onset: 2118.76 
+RT: 2.68916, key: 1!
+chose option: 1
+choice made: 2121.47
+odor off: 2123.48
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.17384, prob: 1.5708, side: 1 
+opt 2 angle: 2.12568, prob: 6.28319, side: 1
+outcome: 9, non-chosen outcome: 10
+outcome revealed: 2129.4
+odor on: 2133.42
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 25, opt1val2: 0, opt1prob: 0
+opt2type: 2, opt2val1: 15, opt2val2: 10, opt2prob: 0.25
+choice onset: 2139.48 
+RT: 2.84392, key: 4$
+chose option: 2
+choice made: 2142.51
+odor off: 2144.53
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.09648, prob: 0, side: 1 
+opt 2 angle: 4.68222, prob: 1.5708, side: 1
+outcome: 10, non-chosen outcome: 0
+outcome revealed: 2148.51
+odor on: 2152.54
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 24, opt1val2: 10, opt1prob: 0.5
+opt2type: 2, opt2val1: 30, opt2val2: 17, opt2prob: 0.25
+choice onset: 2158.59 
+RT: 3.68725, key: 1!
+chose option: 1
+choice made: 2162.3
+odor off: 2164.32
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.20444, prob: 3.14159, side: 1 
+opt 2 angle: 0.573238, prob: 1.5708, side: 1
+outcome: 24, non-chosen outcome: 30
+outcome revealed: 2166.3
+odor on: 2170.32
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 30, opt1val2: 0, opt1prob: 0.25
+opt2type: 1, opt2val1: 26, opt2val2: 0, opt2prob: 1
+choice onset: 2176.37 
+RT: 2.75242, key: 1!
+chose option: 1
+choice made: 2179.14
+odor off: 2181.15
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.19749, prob: 1.5708, side: 1 
+opt 2 angle: 5.30946, prob: 6.28319, side: 1
+outcome: 0, non-chosen outcome: 26
+outcome revealed: 2185.09
+odor on: 2191.12
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 22, opt1val2: 0, opt1prob: 0.25
+opt2type: 2, opt2val1: 10, opt2val2: 3, opt2prob: 0.5
+choice onset: 2197.17 
+RT: 5.82565, key: 1!
+chose option: 2
+choice made: 2203.01
+odor off: 2205.03
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.83945, prob: 1.5708, side: 2 
+opt 2 angle: 2.18916, prob: 3.14159, side: 2
+outcome: 10, non-chosen outcome: 0
+outcome revealed: 2207.03
+odor on: 2211.05
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 24, opt1val2: 0, opt1prob: 1
+opt2type: 2, opt2val1: 30, opt2val2: 5, opt2prob: 0.75
+choice onset: 2217.11 
+RT: 4.85149, key: 4$
+chose option: 2
+choice made: 2221.98
+odor off: 2224
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.32623, prob: 6.28319, side: 1 
+opt 2 angle: 6.16662, prob: 4.71239, side: 1
+outcome: 5, non-chosen outcome: 24
+outcome revealed: 2227.98
+odor on: 2234.01
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 26, opt1val2: 0, opt1prob: 0.5
+opt2type: 2, opt2val1: 13, opt2val2: 8, opt2prob: 0.5
+choice onset: 2240.06 
+RT: 2.45905, key: 4$
+chose option: 2
+choice made: 2242.54
+odor off: 2244.57
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.18298, prob: 3.14159, side: 1 
+opt 2 angle: 6.03566, prob: 3.14159, side: 1
+outcome: 8, non-chosen outcome: 0
+outcome revealed: 2246.56
+odor on: 2254.59
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 22, opt1val2: 13, opt1prob: 0.75
+opt2type: 2, opt2val1: 25, opt2val2: 10, opt2prob: 0.5
+choice onset: 2260.65 
+RT: 3.34734, key: 1!
+chose option: 1
+choice made: 2264.01
+odor off: 2266.03
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.56815, prob: 4.71239, side: 1 
+opt 2 angle: 2.87716, prob: 3.14159, side: 1
+outcome: 13, non-chosen outcome: 25
+outcome revealed: 2269.99
+odor on: 2274.02
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 20, opt1val2: 0, opt1prob: 1
+opt2type: 1, opt2val1: 16, opt2val2: 0, opt2prob: 1
+choice onset: 2280.08 
+RT: 2.53811, key: 1!
+chose option: 2
+choice made: 2282.64
+odor off: 2284.65
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 6.20627, prob: 6.28319, side: 2 
+opt 2 angle: 6.13485, prob: 6.28319, side: 2
+outcome: 16, non-chosen outcome: 20
+outcome revealed: 2290.57
+odor on: 2294.59
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 28, opt1val2: 0, opt1prob: 0.75
+opt2type: 2, opt2val1: 20, opt2val2: 30, opt2prob: 0.75
+choice onset: 2300.65 
+RT: 3.25103, key: 4$
+chose option: 1
+choice made: 2303.92
+odor off: 2305.93
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.0468545, prob: 4.71239, side: 2 
+opt 2 angle: 1.03824, prob: 4.71239, side: 2
+outcome: 28, non-chosen outcome: 20
+outcome revealed: 2307.93
+odor on: 2313.95
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 20, opt1val2: 0, opt1prob: 0.75
+opt2type: 1, opt2val1: 17, opt2val2: 0, opt2prob: 1
+choice onset: 2320.01 
+RT: 2.65236, key: 4$
+chose option: 2
+choice made: 2322.69
+odor off: 2324.7
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.05691, prob: 4.71239, side: 1 
+opt 2 angle: 4.43651, prob: 6.28319, side: 1
+outcome: 17, non-chosen outcome: 20
+outcome revealed: 2328.65
+odor on: 2336.69
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 25, opt1val2: 0, opt1prob: 1
+opt2type: 2, opt2val1: 28, opt2val2: 11, opt2prob: 0.75
+choice onset: 2342.75 
+RT: 3.53247, key: 1!
+chose option: 2
+choice made: 2346.3
+odor off: 2348.32
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.211729, prob: 6.28319, side: 2 
+opt 2 angle: 0.0374391, prob: 4.71239, side: 2
+outcome: 28, non-chosen outcome: 25
+outcome revealed: 2352.3
+odor on: 2360.32
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 22, opt1val2: 10, opt1prob: 0.5
+opt2type: 1, opt2val1: 16, opt2val2: 0, opt2prob: 1
+choice onset: 2366.38 
+RT: 5.5606, key: 4$
+chose option: 1
+choice made: 2371.95
+odor off: 2373.97
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.33088, prob: 3.14159, side: 2 
+opt 2 angle: 5.09632, prob: 6.28319, side: 2
+outcome: 10, non-chosen outcome: 16
+outcome revealed: 2377.94
+odor on: 2385.96
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 17, opt1val2: 7, opt1prob: 0.25
+opt2type: 2, opt2val1: 20, opt2val2: 5, opt2prob: 0.25
+choice onset: 2392.02 
+RT: 3.68223, key: 1!
+chose option: 1
+choice made: 2395.73
+odor off: 2397.74
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.47943, prob: 1.5708, side: 1 
+opt 2 angle: 0.946631, prob: 1.5708, side: 1
+outcome: 7, non-chosen outcome: 20
+outcome revealed: 2403.76
+odor on: 2411.79
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 12, opt1val2: 0, opt1prob: 0
+opt2type: 1, opt2val1: 7, opt2val2: 0, opt2prob: 1
+choice onset: 2417.85 
+RT: 1.84455, key: 1!
+chose option: 2
+choice made: 2419.71
+odor off: 2421.73
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.4036, prob: 0, side: 2 
+opt 2 angle: 0.0613055, prob: 6.28319, side: 2
+outcome: 7, non-chosen outcome: 0
+outcome revealed: 2423.71
+odor on: 2431.73
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 16, opt1val2: 1, opt1prob: 0.25
+opt2type: 1, opt2val1: 5, opt2val2: 0, opt2prob: 1
+choice onset: 2437.79 
+RT: 3.65467, key: 1!
+chose option: 1
+choice made: 2441.47
+odor off: 2443.48
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.07103, prob: 1.5708, side: 1 
+opt 2 angle: 0.0539742, prob: 6.28319, side: 1
+outcome: 1, non-chosen outcome: 5
+outcome revealed: 2449.4
+odor on: 2455.44
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 20, opt1val2: 0, opt1prob: 0.5
+opt2type: 1, opt2val1: 15, opt2val2: 0, opt2prob: 1
+choice onset: 2461.5 
+RT: 9.39084, key: 4$
+chose option: 1
+choice made: 2470.91
+odor off: 2472.92
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.01699, prob: 3.14159, side: 2 
+opt 2 angle: 3.28939, prob: 6.28319, side: 2
+outcome: 20, non-chosen outcome: 15
+outcome revealed: 2478.84
+odor on: 2484.86
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 14, opt1val2: 10, opt1prob: 0.25
+opt2type: 1, opt2val1: 12, opt2val2: 0, opt2prob: 1
+choice onset: 2490.91 
+RT: 3.66264, key: 1!
+chose option: 1
+choice made: 2494.59
+odor off: 2496.61
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.49781, prob: 1.5708, side: 1 
+opt 2 angle: 3.34494, prob: 6.28319, side: 1
+outcome: 14, non-chosen outcome: 12
+outcome revealed: 2500.57
+odor on: 2508.6
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 16, opt1val2: 14, opt1prob: 0.25
+opt2type: 1, opt2val1: 15, opt2val2: 0, opt2prob: 1
+choice onset: 2514.65 
+RT: 4.66234, key: 1!
+chose option: 1
+choice made: 2519.34
+odor off: 2521.36
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.78041, prob: 1.5708, side: 1 
+opt 2 angle: 4.32216, prob: 6.28319, side: 1
+outcome: 14, non-chosen outcome: 15
+outcome revealed: 2527.31
+odor on: 2533.33
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 22, opt1val2: 0, opt1prob: 1
+opt2type: 2, opt2val1: 27, opt2val2: 17, opt2prob: 0.75
+choice onset: 2539.39 
+RT: 6.50173, key: 4$
+chose option: 2
+choice made: 2545.92
+odor off: 2547.93
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.58807, prob: 6.28319, side: 1 
+opt 2 angle: 0.687798, prob: 4.71239, side: 1
+outcome: 27, non-chosen outcome: 22
+outcome revealed: 2553.88
+odor on: 2561.91
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 18, opt1val2: 0, opt1prob: 0
+opt2type: 2, opt2val1: 13, opt2val2: 10, opt2prob: 0.25
+choice onset: 2567.97 
+RT: 5.76694, key: 4$
+chose option: 2
+choice made: 2573.75
+odor off: 2575.77
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.83694, prob: 0, side: 1 
+opt 2 angle: 6.22844, prob: 1.5708, side: 1
+outcome: 10, non-chosen outcome: 0
+outcome revealed: 2579.74
+odor on: 2583.76
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 25, opt1val2: 14, opt1prob: 0.5
+opt2type: 1, opt2val1: 18, opt2val2: 0, opt2prob: 1
+choice onset: 2589.81 
+RT: 1.65979, key: 1!
+chose option: 1
+choice made: 2591.48
+odor off: 2593.5
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.85287, prob: 3.14159, side: 1 
+opt 2 angle: 4.23188, prob: 6.28319, side: 1
+outcome: 25, non-chosen outcome: 18
+outcome revealed: 2597.46
+odor on: 2603.49
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 20, opt1val2: 14, opt1prob: 0.25
+opt2type: 1, opt2val1: 13, opt2val2: 0, opt2prob: 1
+choice onset: 2609.55 
+RT: 2.77385, key: 4$
+chose option: 1
+choice made: 2612.33
+odor off: 2614.35
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.54226, prob: 1.5708, side: 2 
+opt 2 angle: 1.44211, prob: 6.28319, side: 2
+outcome: 14, non-chosen outcome: 13
+outcome revealed: 2616.34
+odor on: 2622.36
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 10, opt1val2: 4, opt1prob: 0.75
+opt2type: 1, opt2val1: 7, opt2val2: 0, opt2prob: 1
+choice onset: 2628.41 
+RT: 4.78772, key: 4$
+chose option: 1
+choice made: 2633.22
+odor off: 2635.24
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.13973, prob: 4.71239, side: 2 
+opt 2 angle: 3.48775, prob: 6.28319, side: 2
+outcome: 10, non-chosen outcome: 7
+outcome revealed: 2639.18
+odor on: 2645.21
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 20, opt1val2: 0, opt1prob: 1
+opt2type: 2, opt2val1: 16, opt2val2: 20, opt2prob: 0.75
+choice onset: 2651.27 
+RT: 2.79974, key: 1!
+chose option: 2
+choice made: 2654.09
+odor off: 2656.1
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.73606, prob: 6.28319, side: 2 
+opt 2 angle: 2.84661, prob: 4.71239, side: 2
+outcome: 16, non-chosen outcome: 20
+outcome revealed: 2662.04
+odor on: 2666.06
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 28, opt1val2: 13, opt1prob: 0.75
+opt2type: 1, opt2val1: 22, opt2val2: 0, opt2prob: 1
+choice onset: 2672.12 
+RT: 4.12491, key: 4$
+chose option: 1
+choice made: 2676.26
+odor off: 2678.27
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.85895, prob: 4.71239, side: 2 
+opt 2 angle: 0.569232, prob: 6.28319, side: 2
+outcome: 13, non-chosen outcome: 22
+outcome revealed: 2682.24
+odor on: 2690.28
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 30, opt1val2: 18, opt1prob: 0.5
+opt2type: 1, opt2val1: 24, opt2val2: 0, opt2prob: 1
+choice onset: 2696.34 
+RT: 4.09711, key: 4$
+chose option: 1
+choice made: 2700.46
+odor off: 2702.48
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.41154, prob: 3.14159, side: 2 
+opt 2 angle: 5.27514, prob: 6.28319, side: 2
+outcome: 18, non-chosen outcome: 24
+outcome revealed: 2708.4
+odor on: 2716.43
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 28, opt1val2: 0, opt1prob: 1
+opt2type: 1, opt2val1: 28, opt2val2: 0, opt2prob: 1
+choice onset: 2722.5 
+RT: 9.10964, key: 4$
+chose option: 2
+choice made: 2731.62
+odor off: 2733.65
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.9318, prob: 6.28319, side: 1 
+opt 2 angle: 6.16535, prob: 6.28319, side: 1
+outcome: 28, non-chosen outcome: 28
+outcome revealed: 2735.63
+odor on: 2741.66
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 17, opt1val2: 20, opt1prob: 0.75
+opt2type: 2, opt2val1: 26, opt2val2: 6, opt2prob: 0.75
+choice onset: 2747.72 
+RT: 7.32956, key: 1!
+chose option: 1
+choice made: 2755.07
+odor off: 2757.09
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.73412, prob: 4.71239, side: 1 
+opt 2 angle: 4.55919, prob: 4.71239, side: 1
+outcome: 20, non-chosen outcome: 26
+outcome revealed: 2763
+odor on: 2771.03
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 29, opt1val2: 0, opt1prob: 0.25
+opt2type: 1, opt2val1: 25, opt2val2: 0, opt2prob: 1
+choice onset: 2777.09 
+RT: 6.11288, key: 1!
+chose option: 2
+choice made: 2783.22
+odor off: 2785.24
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.40571, prob: 1.5708, side: 2 
+opt 2 angle: 0.182021, prob: 6.28319, side: 2
+outcome: 25, non-chosen outcome: 29
+outcome revealed: 2791.16
+odor on: 2795.18
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 18, opt1val2: 0, opt1prob: 0.75
+opt2type: 1, opt2val1: 16, opt2val2: 0, opt2prob: 1
+choice onset: 2801.24 
+RT: 13.5938, key: 4$
+chose option: 1
+choice made: 2814.84
+odor off: 2816.89
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.12027, prob: 4.71239, side: 2 
+opt 2 angle: 3.68226, prob: 6.28319, side: 2
+outcome: 18, non-chosen outcome: 16
+outcome revealed: 2818.86
+odor on: 2824.89
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 26, opt1val2: 0, opt1prob: 0.75
+opt2type: 1, opt2val1: 20, opt2val2: 0, opt2prob: 1
+choice onset: 2830.95 
+RT: 15.6116, key: 1!
+chose option: 2
+choice made: 2846.58
+odor off: 2848.6
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.26125, prob: 4.71239, side: 2 
+opt 2 angle: 4.27084, prob: 6.28319, side: 2
+outcome: 20, non-chosen outcome: 26
+outcome revealed: 2854.52
+odor on: 2858.55
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 18, opt1val2: 12, opt1prob: 0.25
+opt2type: 1, opt2val1: 14, opt2val2: 0, opt2prob: 1
+choice onset: 2864.61 
+RT: 7.69363, key: 4$
+chose option: 2
+choice made: 2872.32
+odor off: 2874.33
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.64136, prob: 1.5708, side: 1 
+opt 2 angle: 5.74479, prob: 6.28319, side: 1
+outcome: 14, non-chosen outcome: 12
+outcome revealed: 2876.33
+odor on: 2880.36
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 20, opt1val2: 0, opt1prob: 0.75
+opt2type: 2, opt2val1: 17, opt2val2: 18, opt2prob: 0.75
+choice onset: 2886.42 
+RT: 5.7003, key: 1!
+chose option: 1
+choice made: 2892.13
+odor off: 2894.15
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.58451, prob: 4.71239, side: 1 
+opt 2 angle: 0.517798, prob: 4.71239, side: 1
+outcome: 0, non-chosen outcome: 17
+outcome revealed: 2896.13
+odor on: 2900.15
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 15, opt1val2: 6, opt1prob: 0.5
+opt2type: 1, opt2val1: 9, opt2val2: 0, opt2prob: 1
+choice onset: 2906.21 
+RT: 2.98846, key: 4$
+chose option: 1
+choice made: 2909.22
+odor off: 2911.23
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.55538, prob: 3.14159, side: 2 
+opt 2 angle: 4.62575, prob: 6.28319, side: 2
+outcome: 6, non-chosen outcome: 9
+outcome revealed: 2915.19
+odor on: 2919.22
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 14, opt1val2: 11, opt1prob: 0.25
+opt2type: 2, opt2val1: 16, opt2val2: 5, opt2prob: 0.75
+choice onset: 2925.28 
+RT: 5.0745, key: 1!
+chose option: 2
+choice made: 2930.37
+odor off: 2932.4
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.92765, prob: 1.5708, side: 2 
+opt 2 angle: 3.54081, prob: 4.71239, side: 2
+outcome: 16, non-chosen outcome: 11
+outcome revealed: 2936.35
+odor on: 2942.37
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 27, opt1val2: 0, opt1prob: 0.25
+opt2type: 1, opt2val1: 22, opt2val2: 0, opt2prob: 1
+choice onset: 2948.43 
+RT: 7.25004, key: 4$
+chose option: 2
+choice made: 2955.7
+odor off: 2957.72
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.90918, prob: 1.5708, side: 1 
+opt 2 angle: 0.520347, prob: 6.28319, side: 1
+outcome: 22, non-chosen outcome: 0
+outcome revealed: 2959.7
+odor on: 2967.72
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 28, opt1val2: 0, opt1prob: 0.75
+opt2type: 1, opt2val1: 23, opt2val2: 0, opt2prob: 1
+choice onset: 2973.78 
+RT: 16.5989, key: 4$
+chose option: 2
+choice made: 2990.4
+odor off: 2992.41
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.76745, prob: 4.71239, side: 1 
+opt 2 angle: 2.51884, prob: 6.28319, side: 1
+outcome: 23, non-chosen outcome: 28
+outcome revealed: 2998.33
+odor on: 3004.36
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 15, opt1val2: 0, opt1prob: 1
+opt2type: 1, opt2val1: 13, opt2val2: 0, opt2prob: 1
+choice onset: 3010.41 
+RT: 4.27266, key: 4$
+chose option: 2
+choice made: 3014.71
+odor off: 3016.72
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.1873, prob: 6.28319, side: 1 
+opt 2 angle: 1.92896, prob: 6.28319, side: 1
+outcome: 13, non-chosen outcome: 15
+outcome revealed: 3022.66
+odor on: 3028.69
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 17, opt1val2: 8, opt1prob: 0.5
+opt2type: 2, opt2val1: 16, opt2val2: 7, opt2prob: 0.75
+choice onset: 3034.75 
+RT: 5.98301, key: 1!
+chose option: 1
+choice made: 3040.75
+odor off: 3042.77
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.24008, prob: 3.14159, side: 1 
+opt 2 angle: 4.00225, prob: 4.71239, side: 1
+outcome: 17, non-chosen outcome: 16
+outcome revealed: 3044.75
+odor on: 3052.78
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 22, opt1val2: 0, opt1prob: 1
+opt2type: 2, opt2val1: 18, opt2val2: 22, opt2prob: 0.75
+choice onset: 3058.84 
+RT: 13.6727, key: 1!
+chose option: 2
+choice made: 3072.53
+odor off: 3074.55
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.67029, prob: 6.28319, side: 2 
+opt 2 angle: 4.22154, prob: 4.71239, side: 2
+outcome: 18, non-chosen outcome: 22
+outcome revealed: 3076.55
+odor on: 3082.57
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 25, opt1val2: 0, opt1prob: 0.25
+opt2type: 2, opt2val1: 10, opt2val2: 4, opt2prob: 0.25
+choice onset: 3088.63 
+RT: 5.17609, key: 4$
+chose option: 2
+choice made: 3093.82
+odor off: 3095.85
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.11085, prob: 1.5708, side: 1 
+opt 2 angle: 2.87366, prob: 1.5708, side: 1
+outcome: 4, non-chosen outcome: 0
+outcome revealed: 3097.88
+odor on: 3103.9
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 11, opt1val2: 0, opt1prob: 0.5
+opt2type: 1, opt2val1: 7, opt2val2: 0, opt2prob: 1
+choice onset: 3109.97 
+RT: 5.85803, key: 4$
+chose option: 1
+choice made: 3115.84
+odor off: 3117.87
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.02827, prob: 3.14159, side: 2 
+opt 2 angle: 0.080393, prob: 6.28319, side: 2
+outcome: 11, non-chosen outcome: 7
+outcome revealed: 3123.79
+odor on: 3129.81
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 27, opt1val2: 0, opt1prob: 1
+opt2type: 1, opt2val1: 22, opt2val2: 0, opt2prob: 1
+choice onset: 3135.86 
+RT: 3.23314, key: 4$
+chose option: 2
+choice made: 3139.11
+odor off: 3141.12
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.92147, prob: 6.28319, side: 1 
+opt 2 angle: 2.11177, prob: 6.28319, side: 1
+outcome: 22, non-chosen outcome: 27
+outcome revealed: 3145.07
+odor on: 3151.09
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 29, opt1val2: 0, opt1prob: 0.25
+opt2type: 1, opt2val1: 24, opt2val2: 0, opt2prob: 1
+choice onset: 3157.15 
+RT: 4.8922, key: 1!
+chose option: 1
+choice made: 3162.07
+odor off: 3164.09
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.12535, prob: 1.5708, side: 1 
+opt 2 angle: 3.43587, prob: 6.28319, side: 1
+outcome: 0, non-chosen outcome: 24
+outcome revealed: 3168.03
+odor on: 3176.06
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 23, opt1val2: 7, opt1prob: 0.75
+opt2type: 2, opt2val1: 30, opt2val2: 12, opt2prob: 0.25
+choice onset: 3182.12 
+RT: 5.64949, key: 1!
+chose option: 2
+choice made: 3187.79
+odor off: 3189.81
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.93929, prob: 4.71239, side: 2 
+opt 2 angle: 0.992773, prob: 1.5708, side: 2
+outcome: 30, non-chosen outcome: 23
+outcome revealed: 3191.81
+odor on: 3199.83
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 15, opt1val2: 0, opt1prob: 0
+opt2type: 2, opt2val1: 9, opt2val2: 6, opt2prob: 0.25
+choice onset: 3205.89 
+RT: 5.1118, key: 1!
+chose option: 2
+choice made: 3211.02
+odor off: 3213.05
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.85995, prob: 0, side: 2 
+opt 2 angle: 0.365774, prob: 1.5708, side: 2
+outcome: 9, non-chosen outcome: 0
+outcome revealed: 3215.02
+odor on: 3223.05
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 16, opt1val2: 2, opt1prob: 0.75
+opt2type: 1, opt2val1: 10, opt2val2: 0, opt2prob: 1
+choice onset: 3229.11 
+RT: 3.07625, key: 4$
+chose option: 1
+choice made: 3232.21
+odor off: 3234.23
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.23721, prob: 4.71239, side: 2 
+opt 2 angle: 2.14162, prob: 6.28319, side: 2
+outcome: 16, non-chosen outcome: 10
+outcome revealed: 3236.21
+odor on: 3242.23
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 20, opt1val2: 12, opt1prob: 0.5
+opt2type: 2, opt2val1: 28, opt2val2: 15, opt2prob: 0.25
+choice onset: 3248.29 
+RT: 4.43863, key: 4$
+chose option: 2
+choice made: 3252.75
+odor off: 3254.76
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.08635, prob: 3.14159, side: 1 
+opt 2 angle: 0.551405, prob: 1.5708, side: 1
+outcome: 28, non-chosen outcome: 20
+outcome revealed: 3260.68
+odor on: 3266.7
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 13, opt1val2: 0, opt1prob: 0.5
+opt2type: 2, opt2val1: 9, opt2val2: 5, opt2prob: 0.5
+choice onset: 3272.76 
+RT: 3.34281, key: 4$
+chose option: 2
+choice made: 3276.13
+odor off: 3278.15
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.91825, prob: 3.14159, side: 1 
+opt 2 angle: 6.15142, prob: 3.14159, side: 1
+outcome: 5, non-chosen outcome: 0
+outcome revealed: 3280.13
+odor on: 3288.16
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 22, opt1val2: 0, opt1prob: 0.5
+opt2type: 2, opt2val1: 19, opt2val2: 6, opt2prob: 0.5
+choice onset: 3294.21 
+RT: 2.46888, key: 1!
+chose option: 2
+choice made: 3296.7
+odor off: 3298.72
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.40691, prob: 3.14159, side: 2 
+opt 2 angle: 3.11015, prob: 3.14159, side: 2
+outcome: 19, non-chosen outcome: 22
+outcome revealed: 3300.7
+odor on: 3308.73
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 28, opt1val2: 11, opt1prob: 0.75
+opt2type: 1, opt2val1: 23, opt2val2: 0, opt2prob: 1
+choice onset: 3314.78 
+RT: 2.06106, key: 4$
+chose option: 1
+choice made: 3316.86
+odor off: 3318.88
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.13472, prob: 4.71239, side: 2 
+opt 2 angle: 2.42205, prob: 6.28319, side: 2
+outcome: 28, non-chosen outcome: 23
+outcome revealed: 3324.82
+odor on: 3328.84
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 21, opt1val2: 10, opt1prob: 0.25
+opt2type: 2, opt2val1: 17, opt2val2: 13, opt2prob: 0.25
+choice onset: 3334.9 
+RT: 3.01584, key: 1!
+chose option: 2
+choice made: 3337.93
+odor off: 3339.95
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.269665, prob: 1.5708, side: 2 
+opt 2 angle: 1.85551, prob: 1.5708, side: 2
+outcome: 13, non-chosen outcome: 21
+outcome revealed: 3343.9
+odor on: 3347.92
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 22, opt1val2: 0, opt1prob: 0.75
+opt2type: 2, opt2val1: 16, opt2val2: 11, opt2prob: 0.5
+choice onset: 3353.99 
+RT: 7.98158, key: 4$
+chose option: 2
+choice made: 3361.98
+odor off: 3364
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.82769, prob: 4.71239, side: 1 
+opt 2 angle: 3.13114, prob: 3.14159, side: 1
+outcome: 16, non-chosen outcome: 22
+outcome revealed: 3365.98
+odor on: 3370.01
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 17, opt1val2: 7, opt1prob: 0.5
+opt2type: 1, opt2val1: 10, opt2val2: 0, opt2prob: 1
+choice onset: 3376.06 
+RT: 2.53594, key: 1!
+chose option: 1
+choice made: 3378.61
+odor off: 3380.62
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.30776, prob: 3.14159, side: 1 
+opt 2 angle: 0.859805, prob: 6.28319, side: 1
+outcome: 17, non-chosen outcome: 10
+outcome revealed: 3382.6
+odor on: 3388.64
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 7, opt1val2: 0, opt1prob: 0.75
+opt2type: 1, opt2val1: 5, opt2val2: 0, opt2prob: 1
+choice onset: 3394.69 
+RT: 2.14505, key: 1!
+chose option: 2
+choice made: 3396.84
+odor off: 3398.87
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.86334, prob: 4.71239, side: 2 
+opt 2 angle: 1.08541, prob: 6.28319, side: 2
+outcome: 5, non-chosen outcome: 0
+outcome revealed: 3402.83
+odor on: 3406.86
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 18, opt1val2: 0, opt1prob: 0.5
+opt2type: 1, opt2val1: 11, opt2val2: 0, opt2prob: 1
+choice onset: 3412.92 
+RT: 2.79231, key: 4$
+chose option: 2
+choice made: 3415.73
+odor off: 3417.75
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.57041, prob: 3.14159, side: 1 
+opt 2 angle: 3.88647, prob: 6.28319, side: 1
+outcome: 11, non-chosen outcome: 0
+outcome revealed: 3419.73
+odor on: 3427.75
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 27, opt1val2: 0, opt1prob: 0.5
+opt2type: 2, opt2val1: 20, opt2val2: 11, opt2prob: 0.5
+choice onset: 3433.82 
+RT: 1.90735, key: 4$
+chose option: 2
+choice made: 3435.74
+odor off: 3437.76
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.60841, prob: 3.14159, side: 1 
+opt 2 angle: 1.40455, prob: 3.14159, side: 1
+outcome: 20, non-chosen outcome: 0
+outcome revealed: 3439.74
+odor on: 3445.77
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 21, opt1val2: 0, opt1prob: 0
+opt2type: 1, opt2val1: 15, opt2val2: 0, opt2prob: 1
+choice onset: 3451.82 
+RT: 2.2926, key: 4$
+chose option: 2
+choice made: 3454.12
+odor off: 3456.15
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.53854, prob: 0, side: 1 
+opt 2 angle: 3.37326, prob: 6.28319, side: 1
+outcome: 15, non-chosen outcome: 0
+outcome revealed: 3458.13
+odor on: 3464.15
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 30, opt1val2: 12, opt1prob: 0.5
+opt2type: 1, opt2val1: 25, opt2val2: 0, opt2prob: 1
+choice onset: 3470.21 
+RT: 3.12644, key: 4$
+chose option: 1
+choice made: 3473.36
+odor off: 3475.38
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.02901, prob: 3.14159, side: 2 
+opt 2 angle: 1.44569, prob: 6.28319, side: 2
+outcome: 30, non-chosen outcome: 25
+outcome revealed: 3479.32
+odor on: 3483.35
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 14, opt1val2: 0, opt1prob: 0
+opt2type: 2, opt2val1: 12, opt2val2: 7, opt2prob: 0.25
+choice onset: 3489.42 
+RT: 2.64695, key: 4$
+chose option: 2
+choice made: 3492.08
+odor off: 3494.09
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.166462, prob: 0, side: 1 
+opt 2 angle: 0.0234998, prob: 1.5708, side: 1
+outcome: 12, non-chosen outcome: 0
+outcome revealed: 3498.08
+odor on: 3502.1
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 14, opt1val2: 0, opt1prob: 0
+opt2type: 2, opt2val1: 11, opt2val2: 5, opt2prob: 0.25
+choice onset: 3508.16 
+RT: 18.7451, key: 4$
+chose option: 1
+choice made: 3526.92
+odor off: 3528.94
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.605715, prob: 0, side: 2 
+opt 2 angle: 1.71029, prob: 1.5708, side: 2
+outcome: 0, non-chosen outcome: 5
+outcome revealed: 3532.9
+odor on: 3538.93
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 13, opt1val2: 0, opt1prob: 0
+opt2type: 2, opt2val1: 10, opt2val2: 8, opt2prob: 0.25
+choice onset: 3545 
+RT: 4.26599, key: 4$
+chose option: 2
+choice made: 3549.27
+odor off: 3551.29
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.33309, prob: 0, side: 1 
+opt 2 angle: 1.84408, prob: 1.5708, side: 1
+outcome: 8, non-chosen outcome: 0
+outcome revealed: 3555.25
+odor on: 3561.28
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 23, opt1val2: 11, opt1prob: 0.5
+opt2type: 2, opt2val1: 25, opt2val2: 13, opt2prob: 0.5
+choice onset: 3567.34 
+RT: 2.31394, key: 4$
+chose option: 2
+choice made: 3569.68
+odor off: 3571.69
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.5364, prob: 3.14159, side: 1 
+opt 2 angle: 2.13424, prob: 3.14159, side: 1
+outcome: 25, non-chosen outcome: 11
+outcome revealed: 3573.69
+odor on: 3581.72
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 23, opt1val2: 0, opt1prob: 0.25
+opt2type: 1, opt2val1: 16, opt2val2: 0, opt2prob: 1
+choice onset: 3587.78 
+RT: 1.89727, key: 1!
+chose option: 2
+choice made: 3589.69
+odor off: 3591.71
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.65282, prob: 1.5708, side: 2 
+opt 2 angle: 1.05882, prob: 6.28319, side: 2
+outcome: 16, non-chosen outcome: 0
+outcome revealed: 3593.7
+odor on: 3597.73
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 28, opt1val2: 0, opt1prob: 0.5
+opt2type: 2, opt2val1: 20, opt2val2: 10, opt2prob: 0.5
+choice onset: 3603.79 
+RT: 4.10565, key: 1!
+chose option: 2
+choice made: 3607.91
+odor off: 3609.94
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.2018, prob: 3.14159, side: 2 
+opt 2 angle: 1.48653, prob: 3.14159, side: 2
+outcome: 20, non-chosen outcome: 0
+outcome revealed: 3613.9
+odor on: 3617.93
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 29, opt1val2: 0, opt1prob: 0.25
+opt2type: 2, opt2val1: 12, opt2val2: 5, opt2prob: 0.5
+choice onset: 3623.99 
+RT: 2.94703, key: 1!
+chose option: 2
+choice made: 3626.95
+odor off: 3628.97
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.0025893, prob: 1.5708, side: 2 
+opt 2 angle: 3.78611, prob: 3.14159, side: 2
+outcome: 5, non-chosen outcome: 29
+outcome revealed: 3630.97
+odor on: 3639
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 20, opt1val2: 16, opt1prob: 0.25
+opt2type: 1, opt2val1: 17, opt2val2: 0, opt2prob: 1
+choice onset: 3645.05 
+RT: 2.96745, key: 4$
+chose option: 1
+choice made: 3648.03
+odor off: 3650.04
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.78967, prob: 1.5708, side: 2 
+opt 2 angle: 1.26897, prob: 6.28319, side: 2
+outcome: 16, non-chosen outcome: 17
+outcome revealed: 3655.97
+odor on: 3662
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 16, opt1val2: 0, opt1prob: 0
+opt2type: 1, opt2val1: 8, opt2val2: 0, opt2prob: 1
+choice onset: 3668.05 
+RT: 2.12514, key: 1!
+chose option: 2
+choice made: 3670.2
+odor off: 3672.22
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.176124, prob: 0, side: 2 
+opt 2 angle: 1.85922, prob: 6.28319, side: 2
+outcome: 8, non-chosen outcome: 0
+outcome revealed: 3674.2
+odor on: 3682.23
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 20, opt1val2: 0, opt1prob: 0
+opt2type: 1, opt2val1: 13, opt2val2: 0, opt2prob: 1
+choice onset: 3688.29 
+RT: 3.23332, key: 1!
+chose option: 2
+choice made: 3691.54
+odor off: 3693.56
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.23876, prob: 0, side: 2 
+opt 2 angle: 5.85396, prob: 6.28319, side: 2
+outcome: 13, non-chosen outcome: 0
+outcome revealed: 3699.47
+odor on: 3707.5
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 9, opt1val2: 17, opt1prob: 0.75
+opt2type: 2, opt2val1: 19, opt2val2: 10, opt2prob: 0.25
+choice onset: 3713.62 
+RT: 3.84966, key: 1!
+chose option: 1
+choice made: 3717.48
+odor off: 3719.5
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.530396, prob: 4.71239, side: 1 
+opt 2 angle: 3.09458, prob: 1.5708, side: 1
+outcome: 9, non-chosen outcome: 10
+outcome revealed: 3721.48
+odor on: 3729.5
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 21, opt1val2: 9, opt1prob: 0.75
+opt2type: 2, opt2val1: 30, opt2val2: 10, opt2prob: 0.5
+choice onset: 3735.57 
+RT: 3.96164, key: 1!
+chose option: 1
+choice made: 3739.54
+odor off: 3741.56
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.877228, prob: 4.71239, side: 1 
+opt 2 angle: 2.92241, prob: 3.14159, side: 1
+outcome: 21, non-chosen outcome: 30
+outcome revealed: 3747.48
+odor on: 3755.51
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 17, opt1val2: 19, opt1prob: 0.75
+opt2type: 2, opt2val1: 23, opt2val2: 12, opt2prob: 0.75
+choice onset: 3761.57 
+RT: 2.77274, key: 4$
+chose option: 2
+choice made: 3764.36
+odor off: 3766.37
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.16008, prob: 4.71239, side: 1 
+opt 2 angle: 0.244349, prob: 4.71239, side: 1
+outcome: 23, non-chosen outcome: 17
+outcome revealed: 3768.37
+odor on: 3772.39
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 29, opt1val2: 10, opt1prob: 0.75
+opt2type: 2, opt2val1: 30, opt2val2: 19, opt2prob: 0.5
+choice onset: 3778.45 
+RT: 7.50765, key: 4$
+chose option: 2
+choice made: 3785.97
+odor off: 3787.99
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.67212, prob: 4.71239, side: 1 
+opt 2 angle: 2.81206, prob: 3.14159, side: 1
+outcome: 30, non-chosen outcome: 29
+outcome revealed: 3793.9
+odor on: 3801.93
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 29, opt1val2: 15, opt1prob: 0.5
+opt2type: 1, opt2val1: 23, opt2val2: 0, opt2prob: 1
+choice onset: 3807.99 
+RT: 12.7019, key: 4$
+chose option: 1
+choice made: 3820.71
+odor off: 3822.73
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.1971, prob: 3.14159, side: 2 
+opt 2 angle: 0.288571, prob: 6.28319, side: 2
+outcome: 15, non-chosen outcome: 23
+outcome revealed: 3828.66
+odor on: 3836.69
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 17, opt1val2: 10, opt1prob: 0.25
+opt2type: 1, opt2val1: 11, opt2val2: 0, opt2prob: 1
+choice onset: 3842.75 
+RT: 10.2922, key: 4$
+chose option: 1
+choice made: 3853.06
+odor off: 3855.07
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.57445, prob: 1.5708, side: 2 
+opt 2 angle: 0.483025, prob: 6.28319, side: 2
+outcome: 10, non-chosen outcome: 11
+outcome revealed: 3860.99
+odor on: 3865.02
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 18, opt1val2: 6, opt1prob: 0.75
+opt2type: 1, opt2val1: 12, opt2val2: 0, opt2prob: 1
+choice onset: 3871.07 
+RT: 13.87, key: 1!
+chose option: 1
+choice made: 3884.97
+odor off: 3886.98
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.103441, prob: 4.71239, side: 1 
+opt 2 angle: 1.00162, prob: 6.28319, side: 1
+outcome: 18, non-chosen outcome: 12
+outcome revealed: 3892.9
+odor on: 3898.93
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 20, opt1val2: 0, opt1prob: 0.25
+opt2type: 2, opt2val1: 12, opt2val2: 4, opt2prob: 0.25
+choice onset: 3904.99 
+RT: 3.30487, key: 1!
+chose option: 2
+choice made: 3908.31
+odor off: 3910.34
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.703924, prob: 1.5708, side: 2 
+opt 2 angle: 6.25109, prob: 1.5708, side: 2
+outcome: 4, non-chosen outcome: 20
+outcome revealed: 3916.27
+odor on: 3920.29
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 20, opt1val2: 2, opt1prob: 0.75
+opt2type: 1, opt2val1: 16, opt2val2: 0, opt2prob: 1
+choice onset: 3926.35 
+RT: 6.99011, key: 1!
+chose option: 1
+choice made: 3933.35
+odor off: 3935.36
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.12818, prob: 4.71239, side: 1 
+opt 2 angle: 5.13444, prob: 6.28319, side: 1
+outcome: 2, non-chosen outcome: 16
+outcome revealed: 3939.3
+odor on: 3943.33
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 15, opt1val2: 4, opt1prob: 0.25
+opt2type: 1, opt2val1: 6, opt2val2: 0, opt2prob: 1
+choice onset: 3949.38 
+RT: 7.70075, key: 4$
+chose option: 2
+choice made: 3957.09
+odor off: 3959.11
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.08873, prob: 1.5708, side: 1 
+opt 2 angle: 1.3669, prob: 6.28319, side: 1
+outcome: 6, non-chosen outcome: 15
+outcome revealed: 3963.07
+odor on: 3969.1
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 27, opt1val2: 11, opt1prob: 0.5
+opt2type: 2, opt2val1: 30, opt2val2: 11, opt2prob: 0.25
+choice onset: 3975.16 
+RT: 4.96846, key: 1!
+chose option: 1
+choice made: 3980.15
+odor off: 3982.16
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.53489, prob: 3.14159, side: 1 
+opt 2 angle: 4.04643, prob: 1.5708, side: 1
+outcome: 27, non-chosen outcome: 11
+outcome revealed: 3988.1
+odor on: 3996.12
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 24, opt1val2: 0, opt1prob: 1
+opt2type: 2, opt2val1: 20, opt2val2: 28, opt2prob: 0.75
+choice onset: 4002.18 
+RT: 3.61077, key: 4$
+chose option: 2
+choice made: 4005.81
+odor off: 4007.83
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.81965, prob: 6.28319, side: 1 
+opt 2 angle: 0.0183518, prob: 4.71239, side: 1
+outcome: 20, non-chosen outcome: 24
+outcome revealed: 4009.81
+odor on: 4013.84
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 13, opt1val2: 0, opt1prob: 0.5
+opt2type: 1, opt2val1: 10, opt2val2: 0, opt2prob: 1
+choice onset: 4019.9 
+RT: 10.4398, key: 1!
+chose option: 2
+choice made: 4030.35
+odor off: 4032.37
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.11446, prob: 3.14159, side: 2 
+opt 2 angle: 2.10424, prob: 6.28319, side: 2
+outcome: 10, non-chosen outcome: 13
+outcome revealed: 4036.32
+odor on: 4040.34
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 27, opt1val2: 16, opt1prob: 0.5
+opt2type: 2, opt2val1: 25, opt2val2: 18, opt2prob: 0.5
+choice onset: 4046.4 
+RT: 1.43757, key: 4$
+chose option: 2
+choice made: 4047.86
+odor off: 4049.87
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.47936, prob: 3.14159, side: 1 
+opt 2 angle: 3.17987, prob: 3.14159, side: 1
+outcome: 18, non-chosen outcome: 16
+outcome revealed: 4051.85
+odor on: 4055.87
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 30, opt1val2: 15, opt1prob: 0.25
+opt2type: 1, opt2val1: 20, opt2val2: 0, opt2prob: 1
+choice onset: 4061.92 
+RT: 4.06786, key: 1!
+chose option: 1
+choice made: 4066
+odor off: 4068.02
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.25039, prob: 1.5708, side: 1 
+opt 2 angle: 4.15005, prob: 6.28319, side: 1
+outcome: 30, non-chosen outcome: 20
+outcome revealed: 4070
+odor on: 4076.02
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 25, opt1val2: 0, opt1prob: 1
+opt2type: 2, opt2val1: 30, opt2val2: 2, opt2prob: 0.75
+choice onset: 4082.09 
+RT: 9.03762, key: 1!
+chose option: 2
+choice made: 4091.14
+odor off: 4093.15
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.50189, prob: 6.28319, side: 2 
+opt 2 angle: 3.20317, prob: 4.71239, side: 2
+outcome: 30, non-chosen outcome: 25
+outcome revealed: 4095.17
+odor on: 4099.19
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 14, opt1val2: 6, opt1prob: 0.25
+opt2type: 1, opt2val1: 8, opt2val2: 0, opt2prob: 1
+choice onset: 4105.25 
+RT: 5.96456, key: 1!
+chose option: 1
+choice made: 4111.23
+odor off: 4113.25
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.43354, prob: 1.5708, side: 1 
+opt 2 angle: 0.989434, prob: 6.28319, side: 1
+outcome: 14, non-chosen outcome: 8
+outcome revealed: 4115.23
+odor on: 4123.26
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 23, opt1val2: 18, opt1prob: 0.5
+opt2type: 2, opt2val1: 26, opt2val2: 6, opt2prob: 0.75
+choice onset: 4129.32 
+RT: 2.19653, key: 1!
+chose option: 1
+choice made: 4131.53
+odor off: 4133.55
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.57311, prob: 3.14159, side: 1 
+opt 2 angle: 1.72239, prob: 4.71239, side: 1
+outcome: 18, non-chosen outcome: 26
+outcome revealed: 4139.52
+odor on: 4143.54
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 27, opt1val2: 16, opt1prob: 0.5
+opt2type: 1, opt2val1: 20, opt2val2: 0, opt2prob: 1
+choice onset: 4149.6 
+RT: 2.77826, key: 4$
+chose option: 2
+choice made: 4152.4
+odor off: 4154.42
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.15382, prob: 3.14159, side: 1 
+opt 2 angle: 1.06345, prob: 6.28319, side: 1
+outcome: 20, non-chosen outcome: 27
+outcome revealed: 4160.33
+odor on: 4166.36
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 14, opt1val2: 9, opt1prob: 0.75
+opt2type: 2, opt2val1: 20, opt2val2: 10, opt2prob: 0.5
+choice onset: 4172.42 
+RT: 2.10481, key: 1!
+chose option: 2
+choice made: 4174.55
+odor off: 4176.57
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.76151, prob: 4.71239, side: 2 
+opt 2 angle: 0.55605, prob: 3.14159, side: 2
+outcome: 20, non-chosen outcome: 14
+outcome revealed: 4180.52
+odor on: 4184.55
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 9, opt1val2: 0, opt1prob: 0.5
+opt2type: 1, opt2val1: 6, opt2val2: 0, opt2prob: 1
+choice onset: 4190.6 
+RT: 1.48991, key: 4$
+chose option: 2
+choice made: 4192.11
+odor off: 4194.14
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.0187233, prob: 3.14159, side: 1 
+opt 2 angle: 5.41302, prob: 6.28319, side: 1
+outcome: 6, non-chosen outcome: 9
+outcome revealed: 4196.12
+odor on: 4204.16
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 29, opt1val2: 19, opt1prob: 0.5
+opt2type: 2, opt2val1: 26, opt2val2: 20, opt2prob: 0.75
+choice onset: 4210.22 
+RT: 2.20942, key: 4$
+chose option: 1
+choice made: 4212.45
+odor off: 4214.47
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.17127, prob: 3.14159, side: 2 
+opt 2 angle: 5.09613, prob: 4.71239, side: 2
+outcome: 19, non-chosen outcome: 20
+outcome revealed: 4218.42
+odor on: 4224.44
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 18, opt1val2: 5, opt1prob: 0.75
+opt2type: 1, opt2val1: 15, opt2val2: 0, opt2prob: 1
+choice onset: 4230.5 
+RT: 2.85391, key: 1!
+chose option: 2
+choice made: 4233.38
+odor off: 4235.39
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.17007, prob: 4.71239, side: 2 
+opt 2 angle: 3.38413, prob: 6.28319, side: 2
+outcome: 15, non-chosen outcome: 18
+outcome revealed: 4237.38
+odor on: 4243.41
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 26, opt1val2: 0, opt1prob: 0.75
+opt2type: 1, opt2val1: 22, opt2val2: 0, opt2prob: 1
+choice onset: 4249.47 
+RT: 4.2077, key: 4$
+chose option: 2
+choice made: 4253.7
+odor off: 4255.72
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.71211, prob: 4.71239, side: 1 
+opt 2 angle: 3.96128, prob: 6.28319, side: 1
+outcome: 22, non-chosen outcome: 26
+outcome revealed: 4261.65
+odor on: 4265.68
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 25, opt1val2: 14, opt1prob: 0.25
+opt2type: 1, opt2val1: 18, opt2val2: 0, opt2prob: 1
+choice onset: 4271.74 
+RT: 2.32253, key: 1!
+chose option: 2
+choice made: 4274.08
+odor off: 4276.1
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.90277, prob: 1.5708, side: 2 
+opt 2 angle: 6.17075, prob: 6.28319, side: 2
+outcome: 18, non-chosen outcome: 14
+outcome revealed: 4280.05
+odor on: 4286.08
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 15, opt1val2: 5, opt1prob: 0.25
+opt2type: 2, opt2val1: 22, opt2val2: 3, opt2prob: 0.25
+choice onset: 4292.14 
+RT: 3.05847, key: 4$
+chose option: 2
+choice made: 4295.21
+odor off: 4297.22
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 6.13233, prob: 1.5708, side: 1 
+opt 2 angle: 1.98592, prob: 1.5708, side: 1
+outcome: 3, non-chosen outcome: 5
+outcome revealed: 4303.14
+odor on: 4307.16
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 30, opt1val2: 10, opt1prob: 0.5
+opt2type: 1, opt2val1: 19, opt2val2: 0, opt2prob: 1
+choice onset: 4313.22 
+RT: 2.32557, key: 1!
+chose option: 2
+choice made: 4315.57
+odor off: 4317.59
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.85989, prob: 3.14159, side: 2 
+opt 2 angle: 2.16911, prob: 6.28319, side: 2
+outcome: 19, non-chosen outcome: 10
+outcome revealed: 4319.57
+odor on: 4323.59
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 20, opt1val2: 2, opt1prob: 0.25
+opt2type: 1, opt2val1: 7, opt2val2: 0, opt2prob: 1
+choice onset: 4329.65 
+RT: 2.77559, key: 4$
+chose option: 1
+choice made: 4332.45
+odor off: 4334.47
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.91379, prob: 1.5708, side: 2 
+opt 2 angle: 1.91464, prob: 6.28319, side: 2
+outcome: 2, non-chosen outcome: 7
+outcome revealed: 4336.45
+odor on: 4340.47
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 24, opt1val2: 10, opt1prob: 0.25
+opt2type: 2, opt2val1: 17, opt2val2: 11, opt2prob: 0.75
+choice onset: 4346.53 
+RT: 1.99062, key: 1!
+chose option: 1
+choice made: 4348.54
+odor off: 4350.56
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.99195, prob: 1.5708, side: 1 
+opt 2 angle: 3.67464, prob: 4.71239, side: 1
+outcome: 10, non-chosen outcome: 17
+outcome revealed: 4356.48
+odor on: 4364.51
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 19, opt1val2: 0, opt1prob: 0.75
+opt2type: 2, opt2val1: 15, opt2val2: 9, opt2prob: 0.5
+choice onset: 4370.57 
+RT: 1.44229, key: 1!
+chose option: 2
+choice made: 4372.03
+odor off: 4374.05
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.97443, prob: 4.71239, side: 2 
+opt 2 angle: 5.17409, prob: 3.14159, side: 2
+outcome: 9, non-chosen outcome: 19
+outcome revealed: 4378.07
+odor on: 4384.09
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 29, opt1val2: 17, opt1prob: 0.5
+opt2type: 1, opt2val1: 21, opt2val2: 0, opt2prob: 1
+choice onset: 4390.14 
+RT: 3.58775, key: 4$
+chose option: 1
+choice made: 4393.74
+odor off: 4395.75
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.646267, prob: 3.14159, side: 2 
+opt 2 angle: 2.11393, prob: 6.28319, side: 2
+outcome: 29, non-chosen outcome: 21
+outcome revealed: 4399.7
+odor on: 4405.74
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 28, opt1val2: 0, opt1prob: 0.25
+opt2type: 2, opt2val1: 16, opt2val2: 3, opt2prob: 0.25
+choice onset: 4411.81 
+RT: 2.28863, key: 1!
+chose option: 2
+choice made: 4414.11
+odor off: 4416.14
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.04932, prob: 1.5708, side: 2 
+opt 2 angle: 0.65272, prob: 1.5708, side: 2
+outcome: 16, non-chosen outcome: 0
+outcome revealed: 4420.1
+odor on: 4424.13
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 25, opt1val2: 2, opt1prob: 0.75
+opt2type: 1, opt2val1: 17, opt2val2: 0, opt2prob: 1
+choice onset: 4430.18 
+RT: 2.54136, key: 4$
+chose option: 1
+choice made: 4432.73
+odor off: 4434.75
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.06338, prob: 4.71239, side: 2 
+opt 2 angle: 2.08425, prob: 6.28319, side: 2
+outcome: 2, non-chosen outcome: 17
+outcome revealed: 4440.69
+odor on: 4446.73
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 22, opt1val2: 16, opt1prob: 0.25
+opt2type: 2, opt2val1: 30, opt2val2: 12, opt2prob: 0.5
+choice onset: 4452.79 
+RT: 2.07109, key: 4$
+chose option: 2
+choice made: 4454.88
+odor off: 4456.9
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.88804, prob: 1.5708, side: 1 
+opt 2 angle: 4.94377, prob: 3.14159, side: 1
+outcome: 12, non-chosen outcome: 16
+outcome revealed: 4460.85
+odor on: 4464.88
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 17, opt1val2: 29, opt1prob: 0.5
+opt2type: 2, opt2val1: 20, opt2val2: 14, opt2prob: 0.75
+choice onset: 4470.93 
+RT: 2.38722, key: 4$
+chose option: 1
+choice made: 4473.34
+odor off: 4475.37
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.17939, prob: 3.14159, side: 2 
+opt 2 angle: 4.19687, prob: 4.71239, side: 2
+outcome: 29, non-chosen outcome: 20
+outcome revealed: 4481.3
+odor on: 4485.33
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 28, opt1val2: 0, opt1prob: 0.75
+opt2type: 2, opt2val1: 20, opt2val2: 30, opt2prob: 0.75
+choice onset: 4491.39 
+RT: 1.3603, key: 1!
+chose option: 2
+choice made: 4492.77
+odor off: 4494.78
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.50868, prob: 4.71239, side: 2 
+opt 2 angle: 0.331157, prob: 4.71239, side: 2
+outcome: 20, non-chosen outcome: 28
+outcome revealed: 4496.8
+odor on: 4500.82
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 26, opt1val2: 0, opt1prob: 1
+opt2type: 1, opt2val1: 21, opt2val2: 0, opt2prob: 1
+choice onset: 4506.88 
+RT: 1.71968, key: 1!
+chose option: 2
+choice made: 4508.62
+odor off: 4510.65
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.99224, prob: 6.28319, side: 2 
+opt 2 angle: 2.7533, prob: 6.28319, side: 2
+outcome: 21, non-chosen outcome: 26
+outcome revealed: 4514.6
+odor on: 4522.62
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 21, opt1val2: 11, opt1prob: 0.5
+opt2type: 1, opt2val1: 17, opt2val2: 0, opt2prob: 1
+choice onset: 4528.67 
+RT: 1.43861, key: 1!
+chose option: 1
+choice made: 4530.12
+odor off: 4532.15
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.69729, prob: 3.14159, side: 1 
+opt 2 angle: 3.17423, prob: 6.28319, side: 1
+outcome: 21, non-chosen outcome: 17
+outcome revealed: 4536.12
+odor on: 4540.15
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 25, opt1val2: 0, opt1prob: 0.25
+opt2type: 1, opt2val1: 17, opt2val2: 0, opt2prob: 1
+choice onset: 4546.21 
+RT: 2.48295, key: 4$
+chose option: 2
+choice made: 4548.7
+odor off: 4550.71
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.0926, prob: 1.5708, side: 1 
+opt 2 angle: 4.38538, prob: 6.28319, side: 1
+outcome: 17, non-chosen outcome: 0
+outcome revealed: 4554.68
+odor on: 4562.72
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 18, opt1val2: 0, opt1prob: 1
+opt2type: 2, opt2val1: 16, opt2val2: 21, opt2prob: 0.75
+choice onset: 4568.78 
+RT: 1.5946, key: 1!
+chose option: 2
+choice made: 4570.4
+odor off: 4572.41
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 2.44624, prob: 6.28319, side: 2 
+opt 2 angle: 1.72682, prob: 4.71239, side: 2
+outcome: 16, non-chosen outcome: 18
+outcome revealed: 4574.43
+odor on: 4578.45
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 28, opt1val2: 15, opt1prob: 0.75
+opt2type: 2, opt2val1: 30, opt2val2: 10, opt2prob: 0.75
+choice onset: 4584.52 
+RT: 1.78427, key: 1!
+chose option: 1
+choice made: 4586.32
+odor off: 4588.33
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.87938, prob: 4.71239, side: 1 
+opt 2 angle: 5.05967, prob: 4.71239, side: 1
+outcome: 15, non-chosen outcome: 10
+outcome revealed: 4594.26
+odor on: 4598.29
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 26, opt1val2: 15, opt1prob: 0.25
+opt2type: 2, opt2val1: 18, opt2val2: 12, opt2prob: 0.5
+choice onset: 4604.35 
+RT: 2.41444, key: 1!
+chose option: 1
+choice made: 4606.78
+odor off: 4608.79
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.09302, prob: 1.5708, side: 1 
+opt 2 angle: 1.085, prob: 3.14159, side: 1
+outcome: 15, non-chosen outcome: 18
+outcome revealed: 4610.78
+odor on: 4614.82
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 26, opt1val2: 12, opt1prob: 0.5
+opt2type: 1, opt2val1: 22, opt2val2: 0, opt2prob: 1
+choice onset: 4620.88 
+RT: 1.94895, key: 4$
+chose option: 2
+choice made: 4622.84
+odor off: 4624.86
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.66076, prob: 3.14159, side: 1 
+opt 2 angle: 2.78156, prob: 6.28319, side: 1
+outcome: 22, non-chosen outcome: 12
+outcome revealed: 4628.81
+odor on: 4636.85
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 12, opt1val2: 7, opt1prob: 0.5
+opt2type: 2, opt2val1: 18, opt2val2: 4, opt2prob: 0.5
+choice onset: 4642.91 
+RT: 2.00884, key: 4$
+chose option: 2
+choice made: 4644.94
+odor off: 4646.96
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 4.72198, prob: 3.14159, side: 1 
+opt 2 angle: 0.711802, prob: 3.14159, side: 1
+outcome: 18, non-chosen outcome: 7
+outcome revealed: 4652.89
+odor on: 4660.92
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 23, opt1val2: 10, opt1prob: 0.5
+opt2type: 2, opt2val1: 27, opt2val2: 10, opt2prob: 0.25
+choice onset: 4666.98 
+RT: 2.56281, key: 4$
+chose option: 1
+choice made: 4669.56
+odor off: 4671.58
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.663071, prob: 3.14159, side: 2 
+opt 2 angle: 5.43381, prob: 1.5708, side: 2
+outcome: 23, non-chosen outcome: 10
+outcome revealed: 4677.53
+odor on: 4685.55
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 20, opt1val2: 2, opt1prob: 0.75
+opt2type: 1, opt2val1: 14, opt2val2: 0, opt2prob: 1
+choice onset: 4691.62 
+RT: 1.33265, key: 1!
+chose option: 1
+choice made: 4692.97
+odor off: 4694.98
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.702, prob: 4.71239, side: 1 
+opt 2 angle: 4.66557, prob: 6.28319, side: 1
+outcome: 20, non-chosen outcome: 14
+outcome revealed: 4698.94
+odor on: 4702.97
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 12, opt1val2: 0, opt1prob: 1
+opt2type: 1, opt2val1: 10, opt2val2: 0, opt2prob: 1
+choice onset: 4709.03 
+RT: 3.72741, key: 1!
+chose option: 2
+choice made: 4712.78
+odor off: 4714.8
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.11888, prob: 6.28319, side: 2 
+opt 2 angle: 2.99737, prob: 6.28319, side: 2
+outcome: 10, non-chosen outcome: 12
+outcome revealed: 4716.78
+odor on: 4724.81
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 23, opt1val2: 0, opt1prob: 0.75
+opt2type: 1, opt2val1: 18, opt2val2: 0, opt2prob: 1
+choice onset: 4730.87 
+RT: 1.07648, key: 4$
+chose option: 2
+choice made: 4731.96
+odor off: 4733.98
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.89535, prob: 4.71239, side: 1 
+opt 2 angle: 1.90894, prob: 6.28319, side: 1
+outcome: 18, non-chosen outcome: 23
+outcome revealed: 4735.98
+odor on: 4742
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 26, opt1val2: 0, opt1prob: 0.25
+opt2type: 2, opt2val1: 20, opt2val2: 3, opt2prob: 0.25
+choice onset: 4748.06 
+RT: 1.54229, key: 1!
+chose option: 2
+choice made: 4749.63
+odor off: 4751.64
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.438695, prob: 1.5708, side: 2 
+opt 2 angle: 5.44039, prob: 1.5708, side: 2
+outcome: 3, non-chosen outcome: 26
+outcome revealed: 4757.61
+odor on: 4761.64
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 20, opt1val2: 0, opt1prob: 0.25
+opt2type: 2, opt2val1: 15, opt2val2: 2, opt2prob: 0.25
+choice onset: 4767.7 
+RT: 0.643991, key: 4$
+chose option: 2
+choice made: 4768.36
+odor off: 4770.38
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.07444, prob: 1.5708, side: 1 
+opt 2 angle: 1.59911, prob: 1.5708, side: 1
+outcome: 2, non-chosen outcome: 20
+outcome revealed: 4776.33
+odor on: 4780.35
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 26, opt1val2: 0, opt1prob: 0.25
+opt2type: 1, opt2val1: 18, opt2val2: 0, opt2prob: 1
+choice onset: 4786.41 
+RT: 1.35385, key: 4$
+chose option: 2
+choice made: 4787.79
+odor off: 4789.81
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.68052, prob: 1.5708, side: 1 
+opt 2 angle: 5.2212, prob: 6.28319, side: 1
+outcome: 18, non-chosen outcome: 0
+outcome revealed: 4791.8
+odor on: 4799.84
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 11, opt1val2: 6, opt1prob: 0.75
+opt2type: 1, opt2val1: 9, opt2val2: 0, opt2prob: 1
+choice onset: 4805.89 
+RT: 4.17428, key: 1!
+chose option: 1
+choice made: 4810.07
+odor off: 4812.09
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 5.09507, prob: 4.71239, side: 1 
+opt 2 angle: 1.72976, prob: 6.28319, side: 1
+outcome: 6, non-chosen outcome: 9
+outcome revealed: 4818.01
+odor on: 4824.04
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 14, opt1val2: 0, opt1prob: 0
+opt2type: 1, opt2val1: 11, opt2val2: 0, opt2prob: 1
+choice onset: 4830.09 
+RT: 0.818819, key: 1!
+chose option: 2
+choice made: 4830.94
+odor off: 4832.96
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 0.328066, prob: 0, side: 2 
+opt 2 angle: 2.93899, prob: 6.28319, side: 2
+outcome: 11, non-chosen outcome: 0
+outcome revealed: 4836.93
+odor on: 4842.97
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 2, opt1val1: 21, opt1val2: 15, opt1prob: 0.25
+opt2type: 2, opt2val1: 26, opt2val2: 11, opt2prob: 0.5
+choice onset: 4849.03 
+RT: 3.27802, key: 1!
+chose option: 2
+choice made: 4852.33
+odor off: 4854.35
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.85941, prob: 1.5708, side: 2 
+opt 2 angle: 1.869, prob: 3.14159, side: 2
+outcome: 26, non-chosen outcome: 15
+outcome revealed: 4860.28
+odor on: 4866.32
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 25, opt1val2: 0, opt1prob: 0.75
+opt2type: 2, opt2val1: 19, opt2val2: 25, opt2prob: 0.75
+choice onset: 4872.38 
+RT: 0.837414, key: 1!
+chose option: 2
+choice made: 4873.24
+odor off: 4875.26
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 1.0836, prob: 4.71239, side: 2 
+opt 2 angle: 3.34128, prob: 4.71239, side: 2
+outcome: 19, non-chosen outcome: 25
+outcome revealed: 4877.28
+odor on: 4883.3
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 20, opt1val2: 0, opt1prob: 0
+opt2type: 1, opt2val1: 14, opt2val2: 0, opt2prob: 1
+choice onset: 4889.37 
+RT: 1.60052, key: 4$
+chose option: 2
+choice made: 4890.98
+odor off: 4892.99
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 3.09893, prob: 0, side: 1 
+opt 2 angle: 2.57809, prob: 6.28319, side: 1
+outcome: 14, non-chosen outcome: 0
+outcome revealed: 4894.98
+odor on: 4899
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.setChannel(minivas.java:100)
+
+opt1type: 3, opt1val1: 12, opt1val2: 0, opt1prob: 1
+opt2type: 2, opt2val1: 7, opt2val2: 24, opt2prob: 0.75
+choice onset: 4905.07 
+RT: 2.03236, key: 4$
+chose option: 2
+choice made: 4907.11
+odor off: 4909.12
+java.lang.NullPointerException
+	at minivas.send(minivas.java:155)
+	at minivas.allChannelsOff(minivas.java:140)
+opt 1 angle: 6.00715, prob: 6.28319, side: 1 
+opt 2 angle: 0.530063, prob: 4.71239, side: 1
+outcome: 7, non-chosen outcome: 12
+outcome revealed: 4915.08
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 1286 times out of a total of 56005 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+smellambig
+PsychJavaTrouble: Will now try to add the PsychJava folder to Matlabs dynamic classpath...
+PsychJavaTrouble: Added PsychJava folder to dynamic class path. Psychtoolbox Java commands should work now!
+
+ans =
+
+C:\Users\experimenter\Dropbox\odor530\smellambig
+
+Welcome!
+What is the subject number? (0-99): 99

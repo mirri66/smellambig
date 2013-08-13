@@ -1,0 +1,149 @@
+PsychJavaTrouble: Will now try to add the PsychJava folder to Matlabs dynamic classpath...
+PsychJavaTrouble: Added PsychJava folder to dynamic class path. Psychtoolbox Java commands should work now!
+
+
+PTB-INFO: This is Psychtoolbox-3 for Apple OS X, under Matlab (Version 3.0.8 - Build date: Jun 18 2010).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the GNU General Public License (GPL).
+PTB-INFO: See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+
+
+OpenGL-Extensions are: GL_ARB_transpose_matrix GL_ARB_vertex_program GL_ARB_vertex_blend GL_ARB_window_pos GL_ARB_shader_objects GL_ARB_vertex_shader GL_ARB_shading_language_100 GL_EXT_multi_draw_arrays GL_EXT_clip_volume_hint GL_EXT_rescale_normal GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_gpu_program_parameters GL_EXT_geometry_shader4 GL_EXT_transform_feedback GL_APPLE_client_storage GL_APPLE_specular_vector GL_APPLE_transform_hint GL_APPLE_packed_pixels GL_APPLE_fence GL_APPLE_vertex_array_object GL_APPLE_vertex_program_evaluators GL_APPLE_element_array GL_APPLE_flush_render GL_APPLE_aux_depth_stencil GL_NV_texgen_reflection GL_NV_light_max_exponent GL_IBM_rasterpos_clip GL_SGIS_generate_mipmap GL_ARB_imaging GL_ARB_point_parameters GL_ARB_texture_env_crossbar GL_ARB_texture_border_clamp GL_ARB_multitexture GL_ARB_texture_env_add GL_ARB_texture_cube_map GL_ARB_texture_env_dot3 GL_ARB_multisample GL_ARB_texture_env_combine GL_ARB_texture_compression GL_ARB_texture_mirrored_repeat GL_ARB_shadow GL_ARB_depth_texture GL_ARB_shadow_ambient GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_occlusion_query GL_ARB_point_sprite GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ARB_pixel_buffer_object GL_ARB_draw_buffers GL_ARB_shader_texture_lod GL_ARB_color_buffer_float GL_ARB_half_float_vertex GL_ARB_texture_rg GL_ARB_texture_compression_rgtc GL_ARB_framebuffer_object GL_EXT_compiled_vertex_array GL_EXT_draw_buffers2 GL_EXT_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_texture_rectangle GL_ARB_texture_rectangle GL_EXT_texture_env_add GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_texture_lod_bias GL_EXT_abgr GL_EXT_bgra GL_EXT_stencil_wrap GL_EXT_texture_filter_anisotropic GL_EXT_separate_specular_color GL_EXT_secondary_color GL_EXT_blend_func_separate GL_EXT_shadow_funcs GL_EXT_stencil_two_side GL_EXT_texture_compression_s3tc GL_EXT_texture_compression_dxt1 GL_EXT_texture_sRGB GL_EXT_blend_equation_separate GL_EXT_texture_mirror_clamp GL_EXT_packed_depth_stencil GL_EXT_bindable_uniform GL_EXT_texture_integer GL_EXT_gpu_shader4 GL_EXT_framebuffer_sRGB GL_EXT_provoking_vertex GL_APPLE_flush_buffer_range GL_APPLE_ycbcr_422 GL_APPLE_rgb_422 GL_APPLE_vertex_array_range GL_APPLE_texture_range GL_APPLE_float_pixels GL_ATI_texture_float GL_ARB_texture_float GL_ARB_half_float_pixel GL_APPLE_pixel_buffer GL_APPLE_object_purgeable GL_NV_blend_square GL_NV_fog_distance GL_NV_conditional_render GL_ATI_texture_mirror_once GL_ATI_blend_equation_separate GL_ATI_blend_weighted_minmax GL_ATI_texture_env_combine3 GL_ATI_separate_stencil GL_ATI_texture_compression_3dc GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_SGI_color_matrix GL_EXT_texture_array GL_EXT_vertex_array_bgra GL_ARB_instanced_arrays GL_ARB_depth_buffer_float GL_EXT_packed_float GL_EXT_texture_shared_exponent 
+
+
+
+PTB-INFO: OpenGL-Renderer is ATI Technologies Inc. :: ATI Radeon HD 2600 PRO OpenGL Engine :: 2.1 ATI-1.6.26
+PTB-INFO: Renderer has 256 MB of VRAM and a maximum 245 MB of texture memory.
+PTB-INFO: VBL startline = 1200 , VBL Endline = -1
+PTB-INFO: Beamposition queries unsupported on this system. Will try to use kernel-level vbl interrupts as fallback.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.601007 ms [60.237310 Hz]. (50 valid samples taken, stddev=0.043299 ms.)
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Using OpenGL GL_TEXTURE_RECTANGLE_EXT extension for efficient high-performance texture mapping...
+
+
+Huettel Risk/Ambiguity: 
+
+
+trial 1
+opt1type: 3, opt1val1: 0, opt1val2: 45, opt1prob: 0
+opt2type: 1, opt2val1: 14, opt2val2: 0, opt2prob: 1
+choice onset: 0.023991 
+RT: 2.99489, key: 1!
+chose option: 2
+choice made: 3.04321
+opt 1 angle: 4.3542, prob: 0, side: 2 
+opt 2 angle: 3.4689, prob: 6.28319, side: 2
+outcome: 14, non-chosen outcome: 45
+outcome revealed: 4.12442
+
+trial 2
+opt1type: 3, opt1val1: 45, opt1val2: 0, opt1prob: 1
+opt2type: 1, opt2val1: 25, opt2val2: 0, opt2prob: 1
+choice onset: 8.23958 
+RT: 2.63311, key: 4$
+chose option: 2
+choice made: 10.897
+opt 1 angle: 5.75048, prob: 6.28319, side: 1 
+opt 2 angle: 3.18955, prob: 6.28319, side: 1
+outcome: 25, non-chosen outcome: 45
+outcome revealed: 11.9155
+
+trial 3
+opt1type: 3, opt1val1: 15, opt1val2: 0, opt1prob: 1
+opt2type: 1, opt2val1: 12, opt2val2: 0, opt2prob: 1
+choice onset: 12.8839 
+RT: 0.637646, key: 1!
+chose option: 2
+choice made: 13.538
+opt 1 angle: 4.63192, prob: 6.28319, side: 2 
+opt 2 angle: 1.09051, prob: 6.28319, side: 2
+outcome: 12, non-chosen outcome: 15
+outcome revealed: 14.5726
+
+trial 4
+opt1type: 3, opt1val1: 0, opt1val2: 25, opt1prob: 0.25
+opt2type: 1, opt2val1: 20, opt2val2: 0, opt2prob: 1
+choice onset: 15.7872 
+RT: 0.935845, key: 1!
+chose option: 2
+choice made: 16.7361
+opt 1 angle: 1.01934, prob: 1.5708, side: 2 
+opt 2 angle: 0.398679, prob: 6.28319, side: 2
+outcome: 20, non-chosen outcome: 0
+outcome revealed: 17.7592
+
+trial 5
+opt1type: 3, opt1val1: 45, opt1val2: 0, opt1prob: 0.5
+opt2type: 1, opt2val1: 0, opt2val2: 25, opt2prob: 0
+choice onset: 18.1447 
+RT: 0.434357, key: 1!
+chose option: 2
+choice made: 18.5924
+opt 1 angle: 6.06087, prob: 3.14159, side: 2 
+opt 2 angle: 6.21397, prob: 0, side: 2
+outcome: 25, non-chosen outcome: 0
+outcome revealed: 19.6015
+
+trial 6
+opt1type: 3, opt1val1: 50, opt1val2: 0, opt1prob: 0.5
+opt2type: 1, opt2val1: 0, opt2val2: 5, opt2prob: 0
+choice onset: 19.7877 
+RT: 0.353353, key: 1!
+chose option: 1
+choice made: 20.154
+opt 1 angle: 5.18719, prob: 3.14159, side: 1 
+opt 2 angle: 5.48361, prob: 0, side: 1
+outcome: 0, non-chosen outcome: 5
+outcome revealed: 21.1784
+
+trial 7
+opt1type: 3, opt1val1: 0, opt1val2: 40, opt1prob: 1
+opt2type: 1, opt2val1: 0, opt2val2: 10, opt2prob: 0
+choice onset: 21.6139 
+RT: 0.654976, key: 4$
+chose option: 2
+choice made: 22.2813
+opt 1 angle: 3.91743, prob: 6.28319, side: 1 
+opt 2 angle: 5.71527, prob: 0, side: 1
+outcome: 10, non-chosen outcome: 0
+outcome revealed: 23.3035
+
+trial 8
+opt1type: 3, opt1val1: 15, opt1val2: 0, opt1prob: 0
+opt2type: 1, opt2val1: 0, opt2val2: 14, opt2prob: 0
+choice onset: 23.8545 
+RT: 0.333117, key: 4$
+chose option: 1
+choice made: 24.2011
+opt 1 angle: 2.63758, prob: 0, side: 2 
+opt 2 angle: 1.05092, prob: 0, side: 2
+outcome: 0, non-chosen outcome: 14
+outcome revealed: 25.2124
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 8 times out of a total of 522 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+smellambig
+PsychJavaTrouble: Will now try to add the PsychJava folder to Matlabs dynamic classpath...
+PsychJavaTrouble: Added PsychJava folder to dynamic class path. Psychtoolbox Java commands should work now!
+
+ans =
+
+/Users/grace/Dropbox/odor530/smellambig
+
+Welcome!
+What is the subject number? (0-99): 98
